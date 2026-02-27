@@ -1,0 +1,188 @@
+    <!-- Slide 10 (PaymentBilling) -->
+    <section class="slide" data-title="PaymentBilling" data-testid="payment-billing-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="payment-billing-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="payment-billing-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="payment-billing-main">
+          <section class="panel" data-testid="payment-billing-panel">
+            <div class="content">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="4"
+                   data-testid="payment-billing-tabs"></div>
+
+              <div class="dealer-banner" data-customer-view="AuthorizedDealer" style="display:none">
+                <strong>This is an Authorized Dealer account.</strong>
+                <span>Apex Shield Security, Inc.</span>
+                <span>(555) 867-5309</span>
+              </div>
+
+              <!-- Paperless billing toggle -->
+              <div class="paperless-header" data-testid="paperless-billing-header">
+                <span class="paperless-label" id="paperless-label" data-testid="paperless-billing-label" data-automation-id="PBSwitchLabel">Enroll in Paperless Billing</span>
+                <label class="paperless-switch" data-testid="paperless-billing-switch">
+                  <input type="checkbox" id="paperless-toggle" data-testid="paperless-billing-toggle" />
+                  <span class="paperless-slider" data-testid="paperless-billing-slider" data-automation-id="AppSwitchInnerFrame"></span>
+                </label>
+                <div class="paperless-contact-info" id="paperless-contact-info" data-testid="paperless-contact-info">
+                  <div class="contact-display-item" data-testid="paperless-contact-name-item">
+                    <span>Paperless Billing Contact:</span>
+                    <strong id="paperless-contact-name" data-testid="paperless-contact-name">John Doe</strong>
+                    <button class="edit-icon-btn" type="button" data-testid="paperless-contact-name-edit-btn">&#9998;</button>
+                  </div>
+                  <div class="contact-display-item" data-testid="paperless-contact-email-item">
+                    <span>Paperless Email Sent To:</span>
+                    <strong id="paperless-contact-email" data-testid="paperless-contact-email">email@email.com</strong>
+                    <button class="edit-icon-btn" type="button" data-testid="paperless-contact-email-edit-btn">&#9998;</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action cards grid -->
+              <div class="cards-grid" data-testid="payment-billing-cards-grid" data-automation-id="PBCardsCollectionView">
+                <!-- Row 1 -->
+                <div class="action-card" data-testid="payment-home-card">
+                  <div class="card-header" data-testid="payment-home-header">
+                    <span class="card-title" data-testid="payment-home-title" data-automation-id="PBHeaderText">Payment Home</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_PAYMENT HOME">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider" data-automation-id="PBHorizontalLine"></div>
+                  <div class="card-desc" data-testid="payment-home-desc" data-automation-id="PBBodyText">View home page for billing and account information.</div>
+                </div>
+                <div class="action-card" data-testid="collect-payment-card">
+                  <div class="card-header" data-testid="collect-payment-header">
+                    <span class="card-title" data-testid="collect-payment-title">Collect Payment</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_COLLECT PAYMENT">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="card-desc" data-testid="collect-payment-desc">Process a single electronic payment.</div>
+                </div>
+                <div class="action-card" data-testid="ar-history-card">
+                  <div class="card-header" data-testid="ar-history-header">
+                    <span class="card-title" data-testid="ar-history-title">A/R History</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_A/R HISTORY">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="card-desc" data-testid="ar-history-desc">View all processed payments on the account.</div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="action-card" data-testid="scheduled-transactions-card">
+                  <div class="card-header" data-testid="scheduled-transactions-header">
+                    <span class="card-title" data-testid="scheduled-transactions-title">Scheduled Transactions</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_SCHEDULED TRANSACTIONS">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="card-desc" data-testid="scheduled-transactions-desc">View future-dated pending payments.</div>
+                </div>
+                <div class="action-card" data-testid="view-statements-card">
+                  <div class="card-header" data-testid="view-statements-header">
+                    <span class="card-title" data-testid="view-statements-title">View Statements</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_VIEW STATEMENTS">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="card-desc" data-testid="view-statements-desc">View a customer's itemized monthly statements.</div>
+                </div>
+                <div class="action-card" data-testid="autopay-settings-card">
+                  <div class="card-header" data-testid="autopay-settings-header">
+                    <span class="card-title" data-testid="autopay-settings-title">Autopay Settings</span>
+                    <span class="card-arrow" data-automation-id="PBInfoArrow_AUTOPAY SETTINGS">&rsaquo;</span>
+                  </div>
+                  <div class="card-divider"></div>
+                  <div class="card-desc" data-testid="autopay-settings-desc">Add, edit, or cancel AutoPay elections or change payment draft date and billing frequency.</div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+
+        <!-- Setup Contact Modal (Select or Create) -->
+        <div class="pb-modal-overlay" id="pb-setup-modal" data-testid="pb-setup-modal">
+          <div class="pb-modal" data-testid="pb-setup-modal-content">
+            <button class="pb-modal-close" type="button" aria-label="Close" data-testid="pb-setup-modal-close-btn">&times;</button>
+            <h2 data-testid="pb-setup-modal-title">Setup Contact</h2>
+            <p class="pb-modal-subtitle" data-testid="pb-setup-modal-subtitle">Select a contact to receive Paperless Billing Statements</p>
+            <div class="pb-form-group" data-testid="pb-contact-select-field">
+              <select id="pb-contact-select" data-testid="pb-contact-select">
+                <option value="">Select a business contact from list</option>
+                <option value="existing">SARAH MILLER - sarah@email.com</option>
+              </select>
+            </div>
+            <div class="pb-modal-buttons" data-testid="pb-setup-modal-buttons">
+              <button class="pb-btn pb-btn-teal" type="button" id="pb-create-new-btn" data-testid="pb-create-new-btn">Create New Contact</button>
+              <button class="pb-btn pb-btn-light" type="button" id="pb-continue-btn" disabled data-testid="pb-continue-btn">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Setup Contact Form Modal -->
+        <div class="pb-modal-overlay" id="pb-form-modal" data-testid="pb-form-modal">
+          <div class="pb-modal" data-testid="pb-form-modal-content">
+            <button class="pb-modal-close" type="button" aria-label="Close" data-testid="pb-form-modal-close-btn">&times;</button>
+            <h2 data-testid="pb-form-modal-title">Setup Contact</h2>
+            <div class="pb-form-row" data-testid="pb-form-name-row">
+              <div class="pb-form-group" data-testid="pb-firstname-field">
+                <label>First Name*</label>
+                <input type="text" id="pb-first-name" value="John" data-testid="pb-firstname-input" />
+              </div>
+              <div class="pb-form-group" data-testid="pb-lastname-field">
+                <label>Last Name*</label>
+                <input type="text" id="pb-last-name" value="Doe" data-testid="pb-lastname-input" />
+              </div>
+            </div>
+            <div class="pb-form-row" data-testid="pb-form-phone-row">
+              <div class="pb-form-group" data-testid="pb-phone-field">
+                <label>Phone Number*</label>
+                <input type="text" id="pb-phone" value="(111) 111-1111" data-testid="pb-phone-input" />
+              </div>
+              <div class="pb-form-group" data-testid="pb-extension-field">
+                <label>Extension</label>
+                <input type="text" id="pb-extension" value="1234" data-testid="pb-extension-input" />
+              </div>
+            </div>
+            <div class="pb-form-group pb-full-width" data-testid="pb-email-field">
+              <label>Email*</label>
+              <input type="email" id="pb-email" value="email@email.com" data-testid="pb-email-input" />
+            </div>
+            <button class="pb-btn pb-btn-teal pb-full-width" type="button" id="pb-save-contact-btn" data-testid="pb-save-contact-btn">Save New Contact</button>
+          </div>
+        </div>
+
+        <!-- Unenroll Warning Modal -->
+        <div class="pb-modal-overlay" id="pb-warning-modal" data-testid="pb-warning-modal">
+          <div class="pb-modal pb-modal-warning" data-testid="pb-warning-modal-content">
+            <p class="pb-warning-text" data-testid="pb-warning-text">
+              By electing to receive paper statements, you will incur an additional paper statement fee of <strong>$5.99 plus taxes</strong>, beginning with your next bill. Would you like to proceed?
+            </p>
+            <div class="pb-modal-buttons" data-testid="pb-warning-modal-buttons">
+              <button class="pb-btn pb-btn-teal" type="button" id="pb-cancel-unenroll-btn" data-testid="pb-cancel-unenroll-btn">No</button>
+              <button class="pb-btn pb-btn-teal" type="button" id="pb-confirm-unenroll-btn" data-testid="pb-confirm-unenroll-btn">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

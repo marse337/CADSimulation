@@ -1,0 +1,168 @@
+    <!-- Slide 1 -->
+    <section class="slide" data-title="LoggedIn">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="false"
+             data-show-status="false"
+             data-disabled-nav='["alarm","voziq"]'
+             data-nav-goto='{"myaccount":"31","support":"30"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-market-type="--"></div>
+
+        <!-- Incoming Call buttons -->
+        <div class="incoming-call-btns">
+          <div class="incoming-call-btn" id="incomingCallBtn">
+            <span class="incoming-call-icon">📞</span> Incoming Verified Call
+          </div>
+          <div class="incoming-call-btn not-verified" id="notVerifiedCallBtn">
+            <span class="incoming-call-icon">📞</span> Not Verified Incoming Call
+          </div>
+        </div>
+
+        <!-- Main -->
+        <main class="main">
+          <!-- Connected Banner (hidden until Incoming Verified Call clicked) -->
+          <div class="connected-banner" id="connectedBanner" style="display:none">
+            <div class="phone-icon-circle">📞</div>
+            <div class="connected-info">
+              <span class="connected-label">Currently Connected: <strong>Jane M Doe</strong></span>
+              <span class="connected-address">456 Maple Ave, RIVERSIDE, CA, 92501</span>
+            </div>
+          </div>
+
+          <!-- Call Connected Popup (hidden until Incoming Verified Call clicked) -->
+          <div class="call-popup" id="callPopup" style="display:none">
+            <div class="call-popup-header">
+              <div class="call-popup-header-left">
+                <span class="popup-phone-icon">📞</span>
+                <span class="popup-title">Call Connected</span>
+              </div>
+              <span class="popup-close" id="callPopupClose">✕</span>
+            </div>
+            <div class="popup-name">Jane M Doe</div>
+            <div class="popup-address">456 Maple Ave, RIVERSIDE, CA, 92501</div>
+            <div class="goto-zone" data-goto-on-click="6">
+              <a class="popup-open-site">Open Site</a>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+
+          <!-- Not Verified Call Popup (hidden until Not Verified Incoming Call clicked) -->
+          <div class="call-popup not-verified-popup" id="notVerifiedPopup" style="display:none">
+            <div class="call-popup-header">
+              <div class="call-popup-header-left">
+                <span class="popup-phone-icon">📞</span>
+                <span class="popup-title">Call Connected</span>
+              </div>
+              <span class="popup-close" id="notVerifiedPopupClose">✕</span>
+            </div>
+            <div class="popup-name">Jane M Doe</div>
+            <div class="popup-address">456 Maple Ave, RIVERSIDE, CA, 92501</div>
+            <div class="goto-zone" data-goto-on-click="4">
+              <a class="popup-open-site">Verify Customer</a>
+            </div>
+            <div style="clear:both;"></div>
+          </div>
+
+          <section class="panel">
+            <div class="content">
+              <h1 class="h1">Customer Lookup</h1>
+              <div class="goto-zone" data-goto-on-click="2">
+                <div class="form-grid">
+                  <div class="field">
+                    <label>Phone Number</label>
+                    <input class="input" type="text" data-automation-id="PhoneEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Email Address</label>
+                    <input class="input" type="email" data-automation-id="EmailEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Job Number</label>
+                    <input class="input" type="text" data-automation-id="JobEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Customer Number</label>
+                    <input class="input" type="text" data-automation-id="CustomerNoEntryLookup_Entry" />
+                  </div>
+                </div>
+
+                <div class="form-grid row2">
+                  <div class="field">
+                    <label>First Name</label>
+                    <input class="input" type="text" data-automation-id="FirstNameEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Last Name</label>
+                    <input class="input" type="text" data-automation-id="LastNameEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Site Number</label>
+                    <input class="input" type="text" data-automation-id="SiteNoEntryLookup_Entry" />
+                  </div>
+                </div>
+
+                <div class="form-grid row3">
+                  <div class="field">
+                    <label>Street Number</label>
+                    <input class="input" type="text" data-automation-id="StreetNoEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>Street Name</label>
+                    <input class="input" type="text" data-automation-id="StreetNameEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>City</label>
+                    <input class="input" type="text" data-automation-id="CityEntryLookup_Entry" />
+                  </div>
+                  <div class="field">
+                    <label>State</label>
+                    <div class="select-wrap">
+                      <select class="select" data-automation-id="StateListComboEntry">
+                        <option value=""></option>
+                        <option>AL</option><option>AK</option><option>AZ</option><option>AR</option>
+                        <option>CA</option><option>CO</option><option>CT</option><option>DE</option>
+                        <option>FL</option><option>GA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Zip Code</label>
+                    <input class="input" type="text" data-automation-id="ZipEntryLookup_Entry" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button class="btn" type="button" data-automation-id="SearchButtonLookup">Search</button>
+                <button class="btn dark" type="button" data-automation-id="ClearSearchButtonLookup">Clear Search</button>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="results-head">
+              <span data-automation-id="StatusLabelSwicth">Status:</span>
+              <span style="opacity:.85;" data-automation-id="AllLabelSwicth">All</span>
+              <span class="toggle" role="switch" aria-checked="true" aria-label="Active toggle"></span>
+              <span style="opacity:.85;" data-automation-id="ActiveLabelSwicth">Active</span>
+            </div>
+
+            <div class="table">
+              <div class="table-header">
+                <div><span class="th-caret">Status </span></div>
+                <div data-automation-id="NameTableRow">Site Name</div>
+                <div data-automation-id="AddressTableRow">Site Address</div>
+                <div data-automation-id="PhoneTableRow">Phone Number</div>
+              </div>
+              <div class="table-body"></div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>

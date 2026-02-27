@@ -1,0 +1,116 @@
+    <!-- Slide 5 -->
+    <section class="slide" data-title="VerifyAccount">
+      <div class="app">
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="false"
+             data-show-status="false"
+             data-disabled-nav='["alarm","voziq"]'
+             data-nav-goto='{"myaccount":"31","support":"30"}'></div>
+
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-market-type="--"></div>
+
+        <main class="main">
+          <section class="panel">
+            <div class="content">
+              <h1 class="h1">Customer Lookup</h1>
+
+              <div class="form-grid">
+                <div class="field"><label>Phone Number</label><input class="input" type="text" value="999-999-9999"></div>
+                <div class="field"><label>Email Address</label><input class="input" type="email" value="99999@99.com"></div>
+                <div class="field"><label>Job Number</label><input class="input" type="text" value="99999999"></div>
+                <div class="field"><label>Customer Number</label><input class="input" type="text" value="99999999"></div>
+              </div>
+
+              <div class="form-grid row2">
+                <div class="field"><label>First Name</label><input class="input" type="text" value="First Name"></div>
+                <div class="field"><label>Last Name</label><input class="input" type="text" value="Last Name"></div>
+                <div class="field"><label>Site Number</label><input class="input" type="text" value="999999999"></div>
+              </div>
+
+              <div class="form-grid row3">
+                <div class="field"><label>Street Number</label><input class="input" type="text" value="999"></div>
+                <div class="field"><label>Street Name</label><input class="input" type="text" value="Street Name"></div>
+                <div class="field"><label>City</label><input class="input" type="text" value="City"></div>
+                <div class="field"><label>State</label><div class="select-wrap"><select class="select"><option value="" selected></option><option>IL</option></select></div></div>
+                <div class="field"><label>Zip Code</label><input class="input" type="text" value="99999"></div>
+              </div>
+
+              <div class="actions">
+                <button class="btn primary" type="button">Search</button>
+                <button class="btn dark" type="button">Clear Search</button>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="results-head">
+              <span>Status:</span>
+              <span style="opacity:.85;">All</span>
+              <span class="toggle" role="switch" aria-checked="true"></span>
+              <span style="opacity:.85;">Active</span>
+            </div>
+
+            <div class="table">
+              <div class="table-header">
+                <div><span class="th-caret">Status </span></div>
+                <div>Site Name</div>
+                <div>Site Address</div>
+                <div>Phone Number</div>
+                <div class="th-right"></div>
+              </div>
+
+              <div class="table-body">
+                <div class="table-row">
+                  <div><span class="status-pill">Stage 2</span></div>
+                  <div class="cell">John F Jones</div>
+                  <div class="cell muted">1234 Oak Street, SPRINGFIELD IL - 627018383</div>
+                  <div class="cell">555-123-4567</div>
+                  <div><button class="select-btn" type="button">Select</button></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Verify Account Modal Overlay -->
+        <div class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Verify Account">
+          <div class="modal">
+            <button class="modal-close" type="button" aria-label="Close" data-automation-id="CloseVerifationMethodPopup">x</button>
+            <h2 class="verify-title">Verify Account</h2>
+            <div class="verify-subtitle">Select a method to verify the account.</div>
+            <div class="field-block">
+              <div class="field-label">Method</div>
+              <div class="modal-select-wrap">
+                <select class="modal-select" data-automation-id="SelectedItemPickerLabel">
+                  <option selected>Codeword</option>
+                  <option>Emergency Contacts</option>
+                  <option>Last 4 of social security number</option>
+                  <option>Last 4 of any payment method on file</option>
+                  <option>Outbound call</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-block">
+              <div class="field-label">Codeword</div>
+              <input class="modal-input is-focus" type="text" value="codeword" data-automation-id="CodewordSelectVerificationEntry" />
+            </div>
+            <div class="goto-zone" data-goto-on-click="6">
+              <button class="verify-btn" type="button" data-automation-id="VerifyAccountUsingCodewordBtn">Verify Codeword</button>
+            </div>
+            <div class="goto-zone" data-goto-on-click="6" style="display:none;">
+              <button class="verify-btn" type="button" data-automation-id="VerifyAccountUsingOutboundCallBtn">Continue</button>
+            </div>
+            <div class="verify-links">
+              <span class="muted" data-automation-id="UnableToVerifyLabel">Unable to Verify</span>
+              <a href="javascript:void(0)" data-automation-id="GoBackLabel">Go Back</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

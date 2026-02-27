@@ -1,0 +1,218 @@
+/* =========================================================
+   ACCOUNT MANAGEMENT MODALS (Slide 9)
+   ========================================================= */
+
+/* Edit Icon Button */
+.slide[data-title="AccountManagement"] .edit-icon {
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: #374151;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.slide[data-title="AccountManagement"] .edit-icon:hover {
+  opacity: 1;
+}
+
+/* Modal Overlay */
+.slide[data-title="AccountManagement"] .acct-modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-overlay.active {
+  display: flex;
+}
+
+/* Modal Container */
+.slide[data-title="AccountManagement"] .acct-modal {
+  background-color: #0f212b;
+  width: 500px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modal Header */
+.slide[data-title="AccountManagement"] .acct-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Close Button */
+.slide[data-title="AccountManagement"] .acct-modal-close {
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 1;
+  opacity: 0.8;
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 0;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-close:hover {
+  opacity: 1;
+}
+
+/* Field Groups */
+.slide[data-title="AccountManagement"] .acct-field-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slide[data-title="AccountManagement"] .acct-field-group label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.slide[data-title="AccountManagement"] .acct-field-group input,
+.slide[data-title="AccountManagement"] .acct-field-group select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+.slide[data-title="AccountManagement"] .acct-field-group input:focus,
+.slide[data-title="AccountManagement"] .acct-field-group select:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+.slide[data-title="AccountManagement"] .acct-field-group input::placeholder {
+  color: #ccc;
+}
+
+.slide[data-title="AccountManagement"] .acct-field-group .disabled-field {
+  background-color: #d1d1d1 !important;
+}
+
+/* Address Grid (City, State, Zip) */
+.slide[data-title="AccountManagement"] .acct-address-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Warning Text */
+.slide[data-title="AccountManagement"] .acct-warning-text {
+  color: #ffd700;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slide[data-title="AccountManagement"] .acct-warning-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffd700;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Info Header (for Monitored Site) */
+.slide[data-title="AccountManagement"] .acct-info-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+/* Checkbox Group */
+.slide[data-title="AccountManagement"] .acct-checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 0.95rem;
+}
+
+.slide[data-title="AccountManagement"] .acct-checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.slide[data-title="AccountManagement"] .acct-checkbox-group label {
+  cursor: pointer;
+}
+
+/* Buttons */
+.slide[data-title="AccountManagement"] .acct-modal-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-btn.teal {
+  background-color: #15803d;
+  color: white;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-btn.teal:hover {
+  background-color: #16a34a;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-btn.grey {
+  background-color: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-btn.grey:hover {
+  background-color: #f9fafb;
+}
+
+.slide[data-title="AccountManagement"] .acct-modal-btn:active {
+  transform: translateY(1px);
+}

@@ -1,0 +1,87 @@
+    <!-- Slide 31 (MyAccountCSTab) - My Account CS External Tab -->
+    <section class="slide" data-title="MyAccountCSTab">
+      <div class="external-tab-container myaccount-tab">
+        <!-- Window Title Bar -->
+        <div class="myaccount-window-bar">
+          <span class="myaccount-window-title">My Account CS</span>
+          <div class="myaccount-window-controls">
+            <span class="myaccount-window-btn">&#8211;</span>
+            <span class="myaccount-window-btn">&#9633;</span>
+            <span class="myaccount-window-btn close">&#10005;</span>
+          </div>
+        </div>
+
+        <!-- Version Banner -->
+        <div class="myaccount-version-banner">
+          STG 1.200.0-beta.4
+        </div>
+
+        <!-- Navigation Header -->
+        <header class="myaccount-header">
+          <nav class="myaccount-nav-bar">
+            <a class="myaccount-nav-link">Home</a>
+            <a class="myaccount-nav-link">Register</a>
+            <a class="myaccount-nav-link active">Customer Lookup</a>
+            <a class="myaccount-nav-link">History</a>
+            <a class="myaccount-nav-link">Logout</a>
+          </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="myaccount-main">
+          <div class="myaccount-container">
+            <h1 class="myaccount-title">Customer Lookup and Retention Tool</h1>
+
+            <p class="myaccount-description">
+              This page helps identify a customer as a MONI or a Livewatch customer, and whether the account should be transferred to retention. You may search by address, phone, or email. Searching by address requires at minimum a house number in Address Line 1 and a valid zip code to work, and does not search Livewatch's data.
+            </p>
+
+            <div class="myaccount-form">
+              <!-- Search Type -->
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">Search Type</label>
+                <div class="myaccount-tabs">
+                  <button class="myaccount-tab active">Address</button>
+                  <button class="myaccount-tab">Phone</button>
+                  <button class="myaccount-tab">Email</button>
+                  <button class="myaccount-tab">Customer Number</button>
+                  <button class="myaccount-tab">Site Number</button>
+                  <button class="myaccount-tab">CS Number</button>
+                </div>
+              </div>
+
+              <!-- Address Fields -->
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">Address Line 1*</label>
+                <input type="text" class="myaccount-input" placeholder="Address Line 1" />
+              </div>
+
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">Address Line 2</label>
+                <input type="text" class="myaccount-input" placeholder="Address Line 2" />
+              </div>
+
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">City</label>
+                <input type="text" class="myaccount-input" placeholder="City" />
+              </div>
+
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">State</label>
+                <input type="text" class="myaccount-input" placeholder="State" />
+              </div>
+
+              <div class="myaccount-form-row">
+                <label class="myaccount-label">Zip Code*</label>
+                <input type="text" class="myaccount-input" placeholder="Zip Code" />
+              </div>
+
+              <!-- Search Button -->
+              <div class="myaccount-form-actions">
+                <button class="myaccount-search-btn">Search</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

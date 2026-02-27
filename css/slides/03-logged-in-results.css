@@ -1,0 +1,88 @@
+/* =========================================================
+   SLIDE 6 (LoggedInResults) TWEAKS
+   ========================================================= */
+.slide[data-title="LoggedInResults"] .input.is-focus{
+  border-color:#2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.slide[data-title^="LoggedIn"] .actions .btn{
+  border: none;
+  border-radius: 8px;
+  height: 44px;
+  min-width: 220px;
+}
+.slide[data-title="LoggedInResults"] .actions .btn.primary{
+  background:#1f5b6b;
+  color:#fff;
+}
+.slide[data-title="LoggedInResults"] .actions .btn.dark{
+  background:#6b6b6b;
+  color:#fff;
+}
+
+.slide[data-title="LoggedInResults"] .main{
+  overflow-y: auto;
+}
+.slide[data-title="LoggedInResults"] .table-body{
+  height:auto;
+  background:#fff;
+  border-top:1px solid var(--line);
+  padding: 10px 0;
+}
+
+.slide[data-title="LoggedInResults"] .table-row{
+  display:grid;
+  grid-template-columns: 160px 1.1fr 1.5fr 220px 140px;
+  gap:10px;
+  align-items:center;
+  padding: 14px 14px;
+  margin: 0 8px;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.slide[data-title="LoggedInResults"] .status-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width: 92px;
+  height: 30px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: #15803d;
+  color:#fff;
+  font-weight:650;
+  font-size: 12px;
+}
+
+.slide[data-title="LoggedInResults"] .cell{
+  font-size: 13px;
+  color:#111827;
+}
+.slide[data-title="LoggedInResults"] .cell.muted{
+  color:#374151;
+}
+
+.slide[data-title="LoggedInResults"] .select-btn{
+  justify-self:end;
+  height: 34px;
+  min-width: 92px;
+  border-radius: 6px;
+  border: none;
+  background: #0f2a33;
+  color:#fff;
+  font-weight:650;
+  cursor:pointer;
+}
+.slide[data-title="LoggedInResults"] .select-btn:active{
+  transform: translateY(1px);
+}
+
+.slide[data-title="LoggedInResults"] .table-header{
+  grid-template-columns: 160px 1.1fr 1.5fr 220px 140px;
+}
+.slide[data-title="LoggedInResults"] .th-right{
+  text-align:right;
+}

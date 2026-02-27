@@ -1,0 +1,140 @@
+    <!-- Slide 24 (EitherMarketJobOpened) - Job Creation Tool for Either Market -->
+    <section class="slide" data-title="EitherMarketJobOpened">
+      <div class="app">
+        <!-- Sidebar - click to go back to slide 11 -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="jobcreation"
+             data-show-cr-only="false"
+             data-show-status="true"
+             data-show-job-creation="true"
+             data-nav-goto='{"lookup":"6"}'
+             data-goto-on-click="11"></div>
+
+        <!-- Top bar - click to go back to slide 11 -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-back-goto="11"
+             data-goto-on-click="11"></div>
+
+        <!-- Main -->
+        <main class="main">
+          <!-- Job Creation Tool Modal -->
+          <div class="jct-modal">
+            <div class="jct-titlebar">
+              <span>Job Creation Tool</span>
+              <div class="jct-controls">
+                <span class="jct-minimize">&#8212;</span>
+                <span class="jct-maximize">&#9633;</span>
+                <span class="jct-close">&times;</span>
+              </div>
+            </div>
+            <div class="jct-content">
+              <h1 class="jct-title">Job Creation Tool</h1>
+
+              <!-- Service Plan Overview -->
+              <div class="jct-section service-plan">
+                <h2 class="jct-section-title">Service Plan Overview</h2>
+                <div class="jct-plan-grid">
+                  <div class="jct-plan-left">
+                    <div class="jct-plan-row">Warranty Information <span class="info-icon">&#9432;</span></div>
+                    <div class="jct-plan-row">Labor Exempt <span class="info-icon">&#9432;</span></div>
+                    <div class="jct-plan-row">Home Automation Coverage <span class="info-icon">&#9432;</span></div>
+                    <div class="jct-plan-row">DIY <span class="info-icon">&#9432;</span></div>
+                  </div>
+                  <div class="jct-plan-right">
+                    <div class="jct-plan-value">No Service Plan</div>
+                    <div class="jct-plan-value">No</div>
+                    <div class="jct-plan-value">No</div>
+                    <div class="jct-plan-value">No</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Brinks Home Plus -->
+              <div class="jct-section brinks-plus">
+                <div class="jct-brinks-row">
+                  <div class="jct-brinks-info">
+                    <span class="jct-brinks-label">Brinks Home Plus</span>
+                    <span class="info-icon">&#9432;</span>
+                    <span class="jct-brinks-price">$11.99 per month</span>
+                  </div>
+                  <button class="jct-btn-add">Add Brinks Home Plus</button>
+                  <div class="jct-upgrade-row">
+                    <span>Upgrade System</span>
+                    <input type="checkbox" class="jct-checkbox" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- BreakFix (Empty) - click to go to slide 25 -->
+              <div class="jct-section breakfix" data-goto-on-click="25">
+                <h2 class="jct-section-title">BreakFix <span class="info-icon">&#9432;</span></h2>
+                <div class="jct-breakfix-row">
+                  <select class="jct-select device-select">
+                    <option selected>Select Device</option>
+                  </select>
+                  <select class="jct-select issue-select">
+                    <option></option>
+                  </select>
+                  <div class="jct-actions">
+                    <button class="jct-btn-icon delete">&#128465;</button>
+                    <button class="jct-btn-icon add">&#43;</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Add-On with inputs -->
+              <div class="jct-section addon">
+                <h2 class="jct-section-title">Add-On <span class="info-icon">&#9432;</span></h2>
+                <div class="jct-addon-header-full">
+                  <span>Select Equipment</span>
+                  <span></span>
+                  <span>Quantity</span>
+                  <span>Price</span>
+                  <span>Discount % <span class="info-icon">&#9432;</span></span>
+                  <span></span>
+                </div>
+                <div class="jct-addon-row-full">
+                  <select class="jct-select">
+                    <option selected>Select Equipment</option>
+                  </select>
+                  <select class="jct-select">
+                    <option selected>Select SKU</option>
+                  </select>
+                  <input type="text" class="jct-input qty-input" value="1" />
+                  <div class="jct-price-field"></div>
+                  <input type="text" class="jct-input" />
+                  <div class="jct-actions">
+                    <button class="jct-btn-icon delete">&#128465;</button>
+                    <button class="jct-btn-icon add">&#43;</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job Type -->
+              <div class="jct-section jobtype">
+                <h2 class="jct-section-title">Job Type</h2>
+                <div class="jct-jobtype-box">
+                  <span class="jct-jobtype-label">Required Type:</span>
+                  <span class="jct-jobtype-value">-</span>
+                </div>
+              </div>
+
+              <!-- Calculate Button (Disabled) -->
+              <div class="jct-footer">
+                <button class="jct-btn-calculate">Calculate Billable Amount</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

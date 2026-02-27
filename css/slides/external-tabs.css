@@ -1,0 +1,1623 @@
+/* =========================================================
+   EXTERNAL TAB SLIDES (Alarm.com, Voziq, Support Center, My Account CS)
+   ========================================================= */
+
+.slide[data-title="AlarmTab"],
+.slide[data-title="VoziqTab"],
+.slide[data-title="SupportCenterTab"],
+.slide[data-title="MyAccountCSTab"] {
+  padding: 0;
+  background: #1a1a2e;
+}
+
+/* =========================================================
+   SHARED CONTAINER STYLES
+   ========================================================= */
+
+.external-tab-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #0f0f1a;
+  color: #fff;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* =========================================================
+   SHARED HEADER STYLES
+   ========================================================= */
+
+.ext-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #0d1b2a 100%);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  min-height: 56px;
+}
+
+.ext-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ext-logo-icon {
+  font-size: 24px;
+  color: #4fc3f7;
+}
+
+.ext-logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.ext-header-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.ext-nav-item {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ext-nav-item:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.ext-nav-item.active {
+  background: rgba(79,195,247,0.2);
+  color: #4fc3f7;
+}
+
+.ext-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ext-user {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
+.ext-back-btn {
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ext-back-btn:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* =========================================================
+   SHARED MAIN CONTENT STYLES
+   ========================================================= */
+
+.ext-main {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.ext-main h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  color: #fff;
+}
+
+.ext-main h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  color: rgba(255,255,255,0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   ALARM.COM PARTNER PORTAL STYLES
+   ========================================================= */
+
+/* Window Title Bar */
+.alarm-window-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.alarm-window-title {
+  font-size: 12px;
+  color: #333;
+}
+
+.alarm-window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.alarm-window-btn {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.alarm-window-btn.close:hover {
+  color: #e74c3c;
+}
+
+/* Main Header */
+.alarm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.alarm-header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.alarm-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alarm-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.alarm-logo-top {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00a4b4;
+  letter-spacing: 1px;
+}
+
+.alarm-logo-bottom {
+  font-size: 10px;
+  font-weight: 600;
+  color: #f7941d;
+  letter-spacing: 0.5px;
+}
+
+.alarm-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.alarm-nav-item {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alarm-nav-item:hover {
+  color: #00a4b4;
+}
+
+.alarm-nav-icon {
+  padding: 8px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.alarm-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.alarm-alert-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7941d;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alarm-refresh-icon,
+.alarm-help-icon {
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+}
+
+.alarm-help-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00a4b4;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.alarm-user,
+.alarm-company {
+  font-size: 12px;
+  color: #333;
+}
+
+.alarm-tab .ext-back-btn {
+  padding: 6px 12px;
+  background: #00a4b4;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+}
+
+.alarm-tab .ext-back-btn:hover {
+  background: #008a99;
+}
+
+/* Main Layout */
+.alarm-main {
+  flex: 1;
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Left Sidebar */
+.alarm-sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.alarm-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.alarm-search-icon {
+  font-size: 14px;
+  color: #999;
+}
+
+.alarm-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #333;
+  background: transparent;
+}
+
+.alarm-search-input::placeholder {
+  color: #999;
+}
+
+.alarm-menu-section {
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.alarm-menu-header {
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #999;
+  letter-spacing: 0.5px;
+}
+
+.alarm-menu-item {
+  display: block;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.alarm-menu-item:hover {
+  background: #f5f5f5;
+}
+
+.alarm-menu-item.active {
+  color: #f7941d;
+  font-weight: 600;
+}
+
+/* Customer Box */
+.alarm-customer-box {
+  margin: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  font-size: 11px;
+}
+
+.alarm-customer-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+.alarm-customer-close {
+  cursor: pointer;
+  color: #999;
+}
+
+.alarm-customer-name-link {
+  color: #00a4b4;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.alarm-customer-location {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.alarm-customer-meta {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 10px;
+}
+
+.alarm-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-meta-label {
+  color: #999;
+  font-size: 9px;
+}
+
+.alarm-events-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 10px;
+  color: #666;
+}
+
+.alarm-events-select {
+  padding: 4px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+/* Main Content */
+.alarm-content {
+  flex: 1;
+  padding: 12px 16px;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.alarm-page-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.alarm-star {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.alarm-page-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7941d;
+  margin: 0;
+}
+
+.alarm-page-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.alarm-link {
+  font-size: 11px;
+  color: #00a4b4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.alarm-link.small {
+  font-size: 10px;
+}
+
+.alarm-link-sep {
+  font-size: 11px;
+  color: #999;
+}
+
+/* Panels Grid */
+.alarm-panels-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.alarm-panel {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.alarm-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.alarm-edit-link {
+  font-size: 11px;
+  color: #00a4b4;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.alarm-panel-body {
+  padding: 8px 12px;
+}
+
+.alarm-info-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 3px 0;
+  font-size: 11px;
+}
+
+.alarm-info-row.spacer {
+  height: 8px;
+}
+
+.alarm-info-row.full {
+  flex-direction: column;
+}
+
+.alarm-info-label {
+  color: #666;
+  min-width: 120px;
+  text-align: right;
+}
+
+.alarm-info-label.link {
+  color: #00a4b4;
+}
+
+.alarm-info-value {
+  color: #333;
+  font-weight: 500;
+}
+
+.alarm-info-value.link {
+  color: #00a4b4;
+  cursor: pointer;
+}
+
+.alarm-info-value.orange {
+  color: #f7941d;
+}
+
+.alarm-info-value.green {
+  color: #2e7d32;
+}
+
+.alarm-info-value.small {
+  font-size: 10px;
+}
+
+/* Chat Icon */
+.alarm-chat-icon {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 48px;
+  height: 48px;
+  background: #f7941d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* =========================================================
+   VOZIQ TAB STYLES - CS Guidance Interface
+   ========================================================= */
+
+/* Window Title Bar */
+.voziq-window-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #ccc;
+}
+
+.voziq-window-title {
+  font-size: 12px;
+  color: #333;
+}
+
+.voziq-window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.voziq-window-btn {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.voziq-window-btn.close:hover {
+  color: #e74c3c;
+}
+
+/* Main Header */
+.voziq-header {
+  display: flex;
+  align-items: stretch;
+  min-height: 48px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.voziq-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  background: #f5c518;
+}
+
+.voziq-menu-icon {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+.voziq-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.voziq-logo-text1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0066cc;
+}
+
+.voziq-logo-text2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff8c00;
+}
+
+.voziq-search-menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.voziq-search-icon {
+  font-size: 12px;
+  color: #666;
+}
+
+.voziq-search-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.voziq-header-center {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  flex: 1;
+}
+
+.voziq-tab-icon {
+  font-size: 16px;
+  color: #666;
+}
+
+.voziq-tab-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.voziq-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 16px;
+}
+
+.voziq-star-icon {
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.voziq-user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Main Layout */
+.voziq-main {
+  flex: 1;
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Left Sidebar */
+.voziq-sidebar {
+  width: 200px;
+  background: #f5c518;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.voziq-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.voziq-menu-item:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.voziq-menu-icon-item {
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+}
+
+.voziq-arrow {
+  margin-left: auto;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Main Content */
+.voziq-content {
+  flex: 1;
+  padding: 12px 16px;
+  background: #fafafa;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Search Bar */
+.voziq-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.voziq-search-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.voziq-search-field label {
+  font-size: 12px;
+  color: #333;
+}
+
+.voziq-site-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  width: 100px;
+}
+
+.voziq-search-btn {
+  padding: 6px 16px;
+  background: #28a745;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.voziq-search-btn:hover {
+  background: #218838;
+}
+
+/* Customer Info Bar */
+.voziq-customer-bar {
+  display: flex;
+  gap: 0;
+  background: #008b8b;
+  padding: 10px 16px;
+  color: #fff;
+}
+
+.voziq-cust-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-right: 1px solid rgba(255,255,255,0.2);
+  padding: 0 12px;
+}
+
+.voziq-cust-item:first-child {
+  padding-left: 0;
+}
+
+.voziq-cust-item:last-child {
+  border-right: none;
+}
+
+.voziq-cust-label {
+  font-size: 10px;
+  color: rgba(255,255,255,0.8);
+}
+
+.voziq-cust-value {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Panels Row */
+.voziq-panels-row {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  min-height: 0;
+}
+
+.voziq-panel {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.voziq-panel h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 10px 12px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* NPS Score Panel */
+.voziq-panel.nps {
+  flex: 0.8;
+}
+
+.voziq-nps-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 12px;
+}
+
+.voziq-nps-gauge {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.voziq-nps-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #666;
+}
+
+.voziq-nps-label {
+  font-size: 14px;
+  color: #999;
+}
+
+.voziq-nps-icons {
+  display: flex;
+  gap: 16px;
+  padding: 8px 12px;
+  justify-content: center;
+}
+
+.voziq-nps-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.voziq-nps-dot.active {
+  background: #666;
+}
+
+.voziq-alerts {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  justify-content: center;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.voziq-alert-icon {
+  font-size: 20px;
+  color: #999;
+}
+
+.voziq-alert-icon.small {
+  font-size: 14px;
+}
+
+.voziq-alerts-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #666;
+}
+
+.voziq-alert-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.voziq-alert-dot.green {
+  background: #28a745;
+}
+
+/* Health Indicators Panel */
+.voziq-panel.health {
+  flex: 1.2;
+}
+
+.voziq-health-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 12px;
+}
+
+.voziq-health-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 6px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.voziq-health-card.green {
+  background: #d4edda;
+  border: 1px solid #28a745;
+}
+
+.voziq-health-card.yellow {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+}
+
+.voziq-health-card.red {
+  background: #f8d7da;
+  border: 1px solid #dc3545;
+}
+
+.voziq-health-card.teal {
+  background: #d1ecf1;
+  border: 1px solid #17a2b8;
+}
+
+.voziq-health-icon {
+  font-size: 20px;
+}
+
+.voziq-health-card.green .voziq-health-icon { color: #28a745; }
+.voziq-health-card.yellow .voziq-health-icon { color: #ffc107; }
+.voziq-health-card.red .voziq-health-icon { color: #dc3545; }
+.voziq-health-card.teal .voziq-health-icon { color: #17a2b8; }
+
+.voziq-health-label {
+  font-size: 9px;
+  color: #666;
+}
+
+.voziq-health-value {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.voziq-health-card.green .voziq-health-value { color: #155724; }
+.voziq-health-card.yellow .voziq-health-value { color: #856404; }
+.voziq-health-card.red .voziq-health-value { color: #721c24; }
+.voziq-health-card.teal .voziq-health-value { color: #0c5460; }
+
+.voziq-health-legend {
+  display: flex;
+  gap: 16px;
+  padding: 8px 12px;
+  justify-content: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.voziq-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #666;
+}
+
+.voziq-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.voziq-legend-dot.green { background: #28a745; }
+.voziq-legend-dot.gray { background: #999; }
+.voziq-legend-dot.red { background: #dc3545; }
+
+/* Home Image Panel */
+.voziq-panel.home-image {
+  flex: 1;
+}
+
+.voziq-home-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: #e8f5e9;
+  margin: 12px;
+}
+
+.voziq-home-icon {
+  font-size: 24px;
+  color: #17a2b8;
+}
+
+.voziq-home-text {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+.voziq-home-meta {
+  display: flex;
+  gap: 8px;
+  padding: 8px 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.voziq-meta-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  font-size: 10px;
+  text-align: center;
+}
+
+.voziq-meta-box span:first-child {
+  color: #666;
+}
+
+.voziq-meta-box span:last-child {
+  font-weight: 600;
+  color: #333;
+}
+
+/* History Row */
+.voziq-history-row {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.voziq-history-panel {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+.voziq-history-panel h4 {
+  font-size: 11px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.voziq-history-header {
+  display: flex;
+  padding: 6px 12px;
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+.voziq-history-header span {
+  flex: 1;
+}
+
+.voziq-history-empty {
+  padding: 16px 12px;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+}
+
+/* =========================================================
+   SUPPORT CENTER TAB STYLES - Zendesk Style
+   ========================================================= */
+
+/* Window Title Bar */
+.support-window-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #ccc;
+}
+
+.support-window-title {
+  font-size: 12px;
+  color: #333;
+}
+
+.support-window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.support-window-btn {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.support-window-btn.close:hover {
+  color: #e74c3c;
+}
+
+/* Main Header */
+.support-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.support-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.support-logo-img {
+  height: 36px;
+  width: auto;
+}
+
+.support-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.support-submit-link {
+  font-size: 13px;
+  color: #285566;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.support-submit-link:hover {
+  text-decoration: underline;
+}
+
+.support-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.support-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.support-user-name {
+  font-size: 13px;
+  color: #333;
+}
+
+.support-user-arrow {
+  font-size: 10px;
+  color: #666;
+}
+
+/* Main Content */
+.support-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.support-hero {
+  background: #0f2835;
+  padding: 40px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-search-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.support-search-input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  color: #333;
+  background: #fff;
+}
+
+.support-search-input::placeholder {
+  color: #999;
+}
+
+.support-search-input:focus {
+  border-color: #285566;
+}
+
+/* Content Area */
+.support-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Categories Grid */
+.support-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.support-block {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.support-block:hover {
+  border-color: #285566;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.support-block h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.support-block p {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Promoted Articles */
+.support-promoted {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 24px;
+}
+
+.support-promoted h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+  text-align: center;
+}
+
+.support-articles-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.support-articles-list li {
+  padding: 0;
+}
+
+.support-articles-list a {
+  font-size: 13px;
+  color: #285566;
+  text-decoration: none;
+}
+
+.support-articles-list a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.support-footer {
+  padding: 16px 24px;
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.support-footer a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+
+.support-footer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   MY ACCOUNT CS TAB STYLES - Customer Lookup Tool
+   ========================================================= */
+
+/* Window Title Bar */
+.myaccount-window-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #ccc;
+}
+
+.myaccount-window-title {
+  font-size: 12px;
+  color: #333;
+}
+
+.myaccount-window-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.myaccount-window-btn {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #666;
+  cursor: pointer;
+}
+
+.myaccount-window-btn.close:hover {
+  color: #e74c3c;
+}
+
+/* Version Banner */
+.myaccount-version-banner {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* Navigation Header */
+.myaccount-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.myaccount-nav-bar {
+  display: flex;
+  gap: 32px;
+}
+
+.myaccount-nav-link {
+  font-size: 16px;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.myaccount-nav-link:hover {
+  color: #333;
+}
+
+.myaccount-nav-link.active {
+  color: #333;
+  font-weight: 500;
+  border-bottom-color: #333;
+}
+
+/* Main Content */
+.myaccount-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.myaccount-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  width: 100%;
+}
+
+.myaccount-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.myaccount-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+/* Form */
+.myaccount-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.myaccount-form-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.myaccount-label {
+  width: 120px;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Tabs */
+.myaccount-tabs {
+  display: flex;
+  gap: 0;
+  flex: 1;
+}
+
+.myaccount-tab {
+  padding: 8px 16px;
+  font-size: 13px;
+  color: #0066cc;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.myaccount-tab:hover {
+  background: #f0f0f0;
+}
+
+.myaccount-tab.active {
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Input */
+.myaccount-input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.myaccount-input:focus {
+  border-color: #0d6efd;
+}
+
+.myaccount-input::placeholder {
+  color: #999;
+}
+
+/* Form Actions */
+.myaccount-form-actions {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.myaccount-search-btn {
+  width: 50%;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: #198754;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.myaccount-search-btn:hover {
+  background: #157347;
+}

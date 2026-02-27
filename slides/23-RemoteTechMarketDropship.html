@@ -1,0 +1,175 @@
+    <!-- Slide 23 (RemoteTechMarketDropship) - Job Creation Tool with Dropship for Remote Tech -->
+    <section class="slide" data-title="RemoteTechMarketDropship">
+      <div class="app">
+        <!-- Sidebar - click to go back to slide 11 -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="jobcreation"
+             data-show-cr-only="false"
+             data-show-status="true"
+             data-show-job-creation="true"
+             data-nav-goto='{"lookup":"6"}'
+             data-goto-on-click="11"></div>
+
+        <!-- Top bar - click to go back to slide 11 -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-back-goto="22"
+             data-goto-on-click="11"></div>
+
+        <!-- Main -->
+        <main class="main">
+          <!-- Job Creation Tool Modal with Dropship -->
+          <div class="jct-modal jct-with-sidebar">
+            <div class="jct-titlebar">
+              <span>Job Creation Tool</span>
+              <div class="jct-controls">
+                <span class="jct-minimize">&#8212;</span>
+                <span class="jct-maximize">&#9633;</span>
+                <span class="jct-close">&times;</span>
+              </div>
+            </div>
+            <div class="jct-body">
+              <div class="jct-content">
+                <!-- Brinks Home Plus -->
+                <div class="jct-section brinks-plus">
+                  <div class="jct-brinks-row">
+                    <div class="jct-brinks-info">
+                      <span class="jct-brinks-label">Brinks Home Plus</span>
+                      <span class="info-icon">&#9432;</span>
+                      <span class="jct-brinks-price">$7.99 per month</span>
+                    </div>
+                    <button class="jct-btn-add">Add Brinks Home Plus</button>
+                    <div class="jct-upgrade-row">
+                      <span>Upgrade System</span>
+                      <input type="checkbox" class="jct-checkbox" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BreakFix (Filled with Replace) -->
+                <div class="jct-section breakfix">
+                  <h2 class="jct-section-title">BreakFix <span class="info-icon">&#9432;</span></h2>
+                  <div class="jct-breakfix-row">
+                    <select class="jct-select device-select">
+                      <option selected>ZONE 1: Contact(Door/Window), Qolsys IQ/GE M...</option>
+                    </select>
+                    <select class="jct-select issue-select">
+                      <option selected>Replace</option>
+                    </select>
+                    <div class="jct-actions">
+                      <button class="jct-btn-icon delete">&#128465;</button>
+                      <button class="jct-btn-icon add">&#43;</button>
+                    </div>
+                    <span class="jct-available">&#10004; Available</span>
+                  </div>
+                </div>
+
+                <!-- Add-On (Simplified) -->
+                <div class="jct-section addon">
+                  <h2 class="jct-section-title">Add-On <span class="info-icon">&#9432;</span></h2>
+                  <div class="jct-addon-header-simple">
+                    <span>Select Equipment</span>
+                    <span>Quantity</span>
+                    <span>Price</span>
+                    <span>Discount % <span class="info-icon">&#9432;</span></span>
+                    <button class="jct-btn-icon add">&#43;</button>
+                  </div>
+                </div>
+
+                <!-- Job Type - Dropship with Shipping & Handling -->
+                <div class="jct-section jobtype">
+                  <h2 class="jct-section-title">Job Type</h2>
+                  <div class="jct-jobtype-box dropship">
+                    <div class="jct-jobtype-row">
+                      <span class="jct-jobtype-label">Required Type:</span>
+                      <span class="jct-jobtype-value">Dropship</span>
+                    </div>
+                    <div class="jct-shipping-row">
+                      <span class="jct-shipping-label">Shipping &amp; Handling:</span>
+                      <div class="jct-radio-group">
+                        <label class="jct-radio">
+                          <input type="radio" name="shipping-23" checked />
+                          <span>Standard</span>
+                        </label>
+                        <label class="jct-radio">
+                          <input type="radio" name="shipping-23" />
+                          <span>Expedited</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Calculate Button (Active) -->
+                <div class="jct-footer">
+                  <button class="jct-btn-calculate active">Calculate Billable Amount</button>
+                </div>
+
+                <!-- Job Details -->
+                <div class="jct-section job-details">
+                  <h2 class="jct-section-title">Job Details</h2>
+                  <div class="jct-details-grid">
+                    <div class="jct-field">
+                      <label class="jct-label">Requested By*</label>
+                      <input type="text" class="jct-input" value="tester" />
+                    </div>
+                    <div class="jct-field">
+                      <label class="jct-label">Phone Number* <span class="info-icon">&#9432;</span></label>
+                      <input type="text" class="jct-input" value="(111) 111-1111" />
+                    </div>
+                    <div class="jct-field">
+                      <label class="jct-label">Alternative Phone Number</label>
+                      <input type="text" class="jct-input" placeholder="(XXX) XXX-XXXX" />
+                    </div>
+                  </div>
+                  <div class="jct-field comment-field">
+                    <label class="jct-label">Comment</label>
+                    <textarea class="jct-textarea">Dropship Job</textarea>
+                    <span class="jct-char-count">12/255 characters</span>
+                  </div>
+                </div>
+
+                <!-- Create Job Button -->
+                <div class="jct-create-footer">
+                  <button class="jct-btn-create">Create Job</button>
+                </div>
+              </div>
+
+              <!-- Billable Cost Sidebar -->
+              <div class="jct-cost-sidebar">
+                <h3 class="jct-cost-title">Billable Cost</h3>
+                <div class="jct-cost-row">
+                  <span>S&amp;H <span class="info-icon">&#9432;</span></span>
+                  <span>$10.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Equipment Price <span class="info-icon">&#9432;</span></span>
+                  <span>$39.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Labor <span class="info-icon">&#9432;</span></span>
+                  <span>$0.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Total Discount <span class="info-icon">&#9432;</span></span>
+                  <span>$0.00</span>
+                </div>
+                <div class="jct-cost-row total">
+                  <span>Total <span class="info-icon">&#9432;</span></span>
+                  <span>$49.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

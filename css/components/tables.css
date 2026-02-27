@@ -1,0 +1,35 @@
+/* =========================================================
+   TABLE STYLES
+   ========================================================= */
+.slide[data-title^="LoggedIn"] .table,
+.slide[data-title="VerifyAccount"] .table{
+  padding:0 18px 16px;
+}
+.slide[data-title^="LoggedIn"] .table-header,
+.slide[data-title="VerifyAccount"] .table-header{
+  display:grid;
+  grid-template-columns: 160px 1.1fr 1.5fr 220px;
+  gap:10px;
+  padding:12px 8px;
+  border-top:1px solid var(--line);
+  color:#111827;
+  font-weight:650;
+  font-size:13px;
+}
+.slide[data-title^="LoggedIn"] .th-caret,
+.slide[data-title="VerifyAccount"] .th-caret{
+  display:inline-flex;
+  gap:6px;
+  align-items:center;
+}
+.slide[data-title^="LoggedIn"] .caret,
+.slide[data-title="VerifyAccount"] .caret{
+  font-size:12px;
+  opacity:.7;
+}
+.slide[data-title^="LoggedIn"] .table-body,
+.slide[data-title="VerifyAccount"] .table-body{
+  height:320px;
+  border-top:1px solid var(--line);
+  background:#fff;
+}

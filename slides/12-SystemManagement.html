@@ -1,0 +1,730 @@
+    <!-- Slide 12 (SystemManagement) -->
+    <section class="slide" data-title="SystemManagement" data-testid="system-management-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="system-management-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="system-management-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="system-management-main">
+          <section class="panel" data-testid="system-management-panel">
+            <div class="dealer-banner" data-customer-view="AuthorizedDealer" style="display:none">
+              <strong>This is an Authorized Dealer account.</strong>
+              <span>Apex Shield Security, Inc.</span>
+              <span>(555) 867-5309</span>
+            </div>
+            <div class="content" data-customer-view="AlarmDotCom">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="6"
+                   data-testid="system-management-tabs"></div>
+
+              <!-- Service Add-Ons section -->
+              <div class="addons-section" data-testid="addons-section">
+                <div class="addons-header" data-testid="addons-header">
+                  <span class="addons-title" data-testid="addons-title" data-automation-id="ServiceAddOnsTitleLabelSM">Service Add-Ons <span class="available" data-testid="addons-available" data-automation-id="ServiceAddOnsCountLabelSM">(2 available)</span></span>
+                  <button class="addons-expand-btn" type="button" data-automation-id="ServiceAddOnsExpandImageSM" aria-label="Expand">&#9662;</button>
+                </div>
+                <div class="addons-content" data-testid="addons-content">
+                  <div class="addon-fields-row" data-testid="addon-fields-row">
+                    <div class="addon-field" data-testid="brinks-plus-field">
+                      <div class="addon-label" data-testid="brinks-plus-label">Brinks Home Plus <span class="info-icon" data-testid="brinks-plus-info">ⓘ</span></div>
+                      <select class="addon-select" id="brinks-plus-select" data-testid="brinks-plus-select">
+                        <option value="0">Not Enrolled</option>
+                        <option value="7.99">Enrolled - $7.99/mo</option>
+                      </select>
+                    </div>
+                    <div class="addon-field" data-testid="clip-packs-field">
+                      <div class="addon-label" data-testid="clip-packs-label">Clip Packs <span class="info-icon" data-testid="clip-packs-info">ⓘ</span></div>
+                      <select class="addon-select addon-select-highlight" id="clip-packs-select" data-testid="clip-packs-select">
+                        <option value="0">3,000 clips (Included)</option>
+                        <option value="6.75">8,000 clips - $6.75/mo</option>
+                        <option value="10.75">13,000 clips - $10.75/mo</option>
+                        <option value="15.75">18,000 clips - $15.75/mo</option>
+                        <option value="28.75">33,000 clips - $28.75/mo</option>
+                        <option value="60.75">68,000 clips - $60.75/mo</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="summary-box" data-testid="addons-summary-box">
+                    <div class="summary-title" data-testid="addons-summary-title">Summary</div>
+                    <div class="summary-row" data-testid="summary-brinks-row">
+                      <span class="label">Brinks Home Plus</span>
+                      <span class="value" id="summary-brinks" data-testid="summary-brinks-value">Not Enrolled</span>
+                    </div>
+                    <div class="summary-row" data-testid="summary-clips-row">
+                      <span class="label">Clip Packs</span>
+                      <span class="value" id="summary-clips" data-testid="summary-clips-value">3,000 clips</span>
+                    </div>
+                    <div class="summary-row-cost" id="clip-cost-row" data-testid="clip-cost-row">
+                      <span class="cost-text" id="clip-cost-text" data-testid="clip-cost-text">included</span>
+                    </div>
+                    <div class="summary-divider" data-testid="summary-divider"></div>
+                    <div class="summary-total" data-testid="summary-total">
+                      <span>Current RMR</span>
+                      <span data-testid="current-rmr-value">$66.96/mo</span>
+                    </div>
+                    <div class="summary-estimated hidden" id="estimated-rmr-row" data-testid="estimated-rmr-row">
+                      <span>Estimated RMR Subtotal:</span>
+                      <span id="estimated-rmr" data-testid="estimated-rmr-value">$66.96/mo</span>
+                    </div>
+                    <div class="summary-actions hidden" id="summary-actions" data-testid="summary-actions">
+                      <button class="btn-discard" type="button" id="btn-discard" data-testid="btn-discard">Discard</button>
+                      <button class="btn-confirm" type="button" id="btn-confirm" data-testid="btn-confirm">Confirm Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- System Information section -->
+              <div class="sysinfo-section" data-testid="sysinfo-section">
+                <div class="sysinfo-header" data-testid="sysinfo-header">
+                  <span class="sysinfo-title" data-testid="sysinfo-title">System Information</span>
+                  <button class="clear-btn" type="button" data-testid="sysinfo-clear-btn">Clear All Filters</button>
+                </div>
+                <div class="sysinfo-grid" data-testid="sysinfo-grid">
+                  <div class="sysinfo-item" data-testid="sysinfo-service-provider">
+                    <span class="label">Service Provider:</span>
+                    <span class="value" data-testid="sysinfo-service-provider-value">ALMCOM</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-system-type">
+                    <span class="label">System Type:</span>
+                    <span class="value" data-testid="sysinfo-system-type-value">2GIG EDGE v1.2</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-cell-provider">
+                    <span class="label">Cell Provider:</span>
+                    <span class="value" data-testid="sysinfo-cell-provider-value">Alarm.com</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-transformer-location">
+                    <span class="label" data-automation-id="SystemManagementTransformerLocationLabel">Transformer Location:</span>
+                    <span class="value editable" data-modal="transformer-location" data-testid="sysinfo-transformer-location-value">Master</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-frequency">
+                    <span class="label">Frequency:</span>
+                    <span class="value" data-testid="sysinfo-frequency-value">-</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-translator">
+                    <span class="label">Translator:</span>
+                    <span class="value" data-testid="sysinfo-translator-value">No</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-cs">
+                    <span class="label">CS:</span>
+                    <span class="value" data-testid="sysinfo-cs-value">#761308661</span>
+                  </div>
+                  <div class="sysinfo-item" data-testid="sysinfo-installer-code">
+                    <span class="label">Installer Code:</span>
+                    <span class="value" data-testid="sysinfo-installer-code-value">3789</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equipment List section -->
+              <div class="equipment-section" data-testid="equipment-section">
+                <div class="equipment-header" data-testid="equipment-header">
+                  <span class="equipment-title" data-testid="equipment-title" data-automation-id="SystemManagementEquipmentListLabel">Equipment List <span class="refresh-icon" data-testid="equipment-refresh-icon">&#8635;</span></span>
+                  <button class="edit-btn" type="button" disabled data-testid="equipment-edit-btn">Edit</button>
+                </div>
+                <div class="equipment-table-container" data-testid="equipment-table-container">
+                  <div class="equipment-table" data-testid="equipment-table">
+                    <div class="equipment-head" data-testid="equipment-table-header">
+                      <div data-testid="equipment-col-checkbox"></div>
+                      <div data-testid="equipment-col-id">ID</div>
+                      <div data-testid="equipment-col-trouble">Trouble</div>
+                      <div class="sortable" data-testid="equipment-col-device-name">Device Name</div>
+                      <div class="sortable" data-testid="equipment-col-reporting-type">Reporting Type</div>
+                      <div data-testid="equipment-col-avg-strength">Avg Strength</div>
+                      <div class="sortable" data-testid="equipment-col-state">State</div>
+                      <div class="sortable" data-testid="equipment-col-group">Group</div>
+                      <div class="sortable" data-testid="equipment-col-type">Type</div>
+                      <div class="sortable" data-testid="equipment-col-zone">Zone</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-1">
+                      <div><input type="checkbox" data-testid="equipment-row-1-checkbox" /></div>
+                      <div data-testid="equipment-row-1-id">1</div>
+                      <div data-testid="equipment-row-1-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-1-device-name">Front Door</div>
+                      <div data-testid="equipment-row-1-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-1-avg-strength">-</div>
+                      <div data-testid="equipment-row-1-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-1-group">1</div>
+                      <div data-testid="equipment-row-1-type">Contact</div>
+                      <div data-testid="equipment-row-1-zone">1</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-2">
+                      <div><input type="checkbox" data-testid="equipment-row-2-checkbox" /></div>
+                      <div data-testid="equipment-row-2-id">2</div>
+                      <div data-testid="equipment-row-2-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-2-device-name">Living Room Window</div>
+                      <div data-testid="equipment-row-2-reporting-type">Perimeter</div>
+                      <div data-testid="equipment-row-2-avg-strength">-</div>
+                      <div data-testid="equipment-row-2-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-2-group">3</div>
+                      <div data-testid="equipment-row-2-type">Contact</div>
+                      <div data-testid="equipment-row-2-zone">2</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-3">
+                      <div><input type="checkbox" data-testid="equipment-row-3-checkbox" /></div>
+                      <div data-testid="equipment-row-3-id">3</div>
+                      <div data-testid="equipment-row-3-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-3-device-name">Back Door</div>
+                      <div data-testid="equipment-row-3-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-3-avg-strength">-</div>
+                      <div data-testid="equipment-row-3-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-3-group">1</div>
+                      <div data-testid="equipment-row-3-type">Contact</div>
+                      <div data-testid="equipment-row-3-zone">3</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-4">
+                      <div><input type="checkbox" data-testid="equipment-row-4-checkbox" /></div>
+                      <div data-testid="equipment-row-4-id">4</div>
+                      <div data-testid="equipment-row-4-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-4-device-name">Kitchen Window</div>
+                      <div data-testid="equipment-row-4-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-4-avg-strength">-</div>
+                      <div data-testid="equipment-row-4-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-4-group">1</div>
+                      <div data-testid="equipment-row-4-type">Contact</div>
+                      <div data-testid="equipment-row-4-zone">4</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-5">
+                      <div><input type="checkbox" data-testid="equipment-row-5-checkbox" /></div>
+                      <div data-testid="equipment-row-5-id">5</div>
+                      <div data-testid="equipment-row-5-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-5-device-name">Master Bath Window</div>
+                      <div data-testid="equipment-row-5-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-5-avg-strength">-</div>
+                      <div data-testid="equipment-row-5-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-5-group">1</div>
+                      <div data-testid="equipment-row-5-type">Contact</div>
+                      <div data-testid="equipment-row-5-zone">5</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-6">
+                      <div><input type="checkbox" data-testid="equipment-row-6-checkbox" /></div>
+                      <div data-testid="equipment-row-6-id">6</div>
+                      <div data-testid="equipment-row-6-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-6-device-name">Master Bed Window</div>
+                      <div data-testid="equipment-row-6-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-6-avg-strength">-</div>
+                      <div data-testid="equipment-row-6-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-6-group">1</div>
+                      <div data-testid="equipment-row-6-type">Contact</div>
+                      <div data-testid="equipment-row-6-zone">6</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-7">
+                      <div><input type="checkbox" data-testid="equipment-row-7-checkbox" /></div>
+                      <div data-testid="equipment-row-7-id">7</div>
+                      <div data-testid="equipment-row-7-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-7-device-name">South Bed Window</div>
+                      <div data-testid="equipment-row-7-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-7-avg-strength">-</div>
+                      <div data-testid="equipment-row-7-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-7-group">1</div>
+                      <div data-testid="equipment-row-7-type">Contact</div>
+                      <div data-testid="equipment-row-7-zone">7</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-8">
+                      <div><input type="checkbox" data-testid="equipment-row-8-checkbox" /></div>
+                      <div data-testid="equipment-row-8-id">8</div>
+                      <div data-testid="equipment-row-8-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-8-device-name">North Bed Window</div>
+                      <div data-testid="equipment-row-8-reporting-type">Perimeter</div>
+                      <div data-testid="equipment-row-8-avg-strength">-</div>
+                      <div data-testid="equipment-row-8-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-8-group">3</div>
+                      <div data-testid="equipment-row-8-type">Contact</div>
+                      <div data-testid="equipment-row-8-zone">8</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-9">
+                      <div><input type="checkbox" data-testid="equipment-row-9-checkbox" /></div>
+                      <div data-testid="equipment-row-9-id">9</div>
+                      <div data-testid="equipment-row-9-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-9-device-name">North Garage Door</div>
+                      <div data-testid="equipment-row-9-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-9-avg-strength">-</div>
+                      <div data-testid="equipment-row-9-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-9-group">1</div>
+                      <div data-testid="equipment-row-9-type">Contact</div>
+                      <div data-testid="equipment-row-9-zone">9</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-10">
+                      <div><input type="checkbox" data-testid="equipment-row-10-checkbox" /></div>
+                      <div data-testid="equipment-row-10-id">10</div>
+                      <div data-testid="equipment-row-10-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-10-device-name">Laundry Window</div>
+                      <div data-testid="equipment-row-10-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-10-avg-strength">-</div>
+                      <div data-testid="equipment-row-10-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-10-group">1</div>
+                      <div data-testid="equipment-row-10-type">Contact</div>
+                      <div data-testid="equipment-row-10-zone">10</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-11">
+                      <div><input type="checkbox" data-testid="equipment-row-11-checkbox" /></div>
+                      <div data-testid="equipment-row-11-id">11</div>
+                      <div data-testid="equipment-row-11-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-11-device-name">Basement E Window</div>
+                      <div data-testid="equipment-row-11-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-11-avg-strength">-</div>
+                      <div data-testid="equipment-row-11-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-11-group">1</div>
+                      <div data-testid="equipment-row-11-type">Contact</div>
+                      <div data-testid="equipment-row-11-zone">11</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-12">
+                      <div><input type="checkbox" data-testid="equipment-row-12-checkbox" /></div>
+                      <div data-testid="equipment-row-12-id">12</div>
+                      <div data-testid="equipment-row-12-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-12-device-name">Bedroom W Window</div>
+                      <div data-testid="equipment-row-12-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-12-avg-strength">-</div>
+                      <div data-testid="equipment-row-12-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-12-group">1</div>
+                      <div data-testid="equipment-row-12-type">Contact</div>
+                      <div data-testid="equipment-row-12-zone">12</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-13">
+                      <div><input type="checkbox" data-testid="equipment-row-13-checkbox" /></div>
+                      <div data-testid="equipment-row-13-id">13</div>
+                      <div data-testid="equipment-row-13-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-13-device-name">East Garage Door</div>
+                      <div data-testid="equipment-row-13-reporting-type">Entry/Exit</div>
+                      <div data-testid="equipment-row-13-avg-strength">-</div>
+                      <div data-testid="equipment-row-13-state">Closed Malf.</div>
+                      <div data-testid="equipment-row-13-group">1</div>
+                      <div data-testid="equipment-row-13-type">Contact</div>
+                      <div data-testid="equipment-row-13-zone">13</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-14">
+                      <div><input type="checkbox" data-testid="equipment-row-14-checkbox" /></div>
+                      <div data-testid="equipment-row-14-id">14</div>
+                      <div data-testid="equipment-row-14-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-14-device-name">Upstairs Smoke</div>
+                      <div data-testid="equipment-row-14-reporting-type">Fire</div>
+                      <div data-testid="equipment-row-14-avg-strength">-</div>
+                      <div data-testid="equipment-row-14-state">Malf/Tamper</div>
+                      <div data-testid="equipment-row-14-group">9</div>
+                      <div data-testid="equipment-row-14-type">SmokeHeat</div>
+                      <div data-testid="equipment-row-14-zone">14</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-15">
+                      <div><input type="checkbox" data-testid="equipment-row-15-checkbox" /></div>
+                      <div data-testid="equipment-row-15-id">15</div>
+                      <div data-testid="equipment-row-15-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-15-device-name">Downstairs Smoke</div>
+                      <div data-testid="equipment-row-15-reporting-type">Fire</div>
+                      <div data-testid="equipment-row-15-avg-strength">-</div>
+                      <div data-testid="equipment-row-15-state">OK</div>
+                      <div data-testid="equipment-row-15-group">9</div>
+                      <div data-testid="equipment-row-15-type">SmokeHeat</div>
+                      <div data-testid="equipment-row-15-zone">15</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-16">
+                      <div><input type="checkbox" data-testid="equipment-row-16-checkbox" /></div>
+                      <div data-testid="equipment-row-16-id">16</div>
+                      <div data-testid="equipment-row-16-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-16-device-name">Downstairs CO</div>
+                      <div data-testid="equipment-row-16-reporting-type">Carbon Monoxide</div>
+                      <div data-testid="equipment-row-16-avg-strength">-</div>
+                      <div data-testid="equipment-row-16-state">OK</div>
+                      <div data-testid="equipment-row-16-group">14</div>
+                      <div data-testid="equipment-row-16-type">CO</div>
+                      <div data-testid="equipment-row-16-zone">16</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-17">
+                      <div><input type="checkbox" data-testid="equipment-row-17-checkbox" /></div>
+                      <div data-testid="equipment-row-17-id">127</div>
+                      <div data-testid="equipment-row-17-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-17-device-name">System</div>
+                      <div data-testid="equipment-row-17-reporting-type">Panic</div>
+                      <div data-testid="equipment-row-17-avg-strength">-</div>
+                      <div data-testid="equipment-row-17-state">Disarmed</div>
+                      <div data-testid="equipment-row-17-group">7</div>
+                      <div data-testid="equipment-row-17-type">Partition</div>
+                      <div data-testid="equipment-row-17-zone">127</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-18">
+                      <div><input type="checkbox" data-testid="equipment-row-18-checkbox" /></div>
+                      <div data-testid="equipment-row-18-id">251</div>
+                      <div data-testid="equipment-row-18-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-18-device-name">Panel Camera</div>
+                      <div data-testid="equipment-row-18-reporting-type">Non-Reporting</div>
+                      <div data-testid="equipment-row-18-avg-strength">-</div>
+                      <div data-testid="equipment-row-18-state">OK</div>
+                      <div data-testid="equipment-row-18-group">-</div>
+                      <div data-testid="equipment-row-18-type">Camera</div>
+                      <div data-testid="equipment-row-18-zone">251</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-19">
+                      <div><input type="checkbox" data-testid="equipment-row-19-checkbox" /></div>
+                      <div data-testid="equipment-row-19-id">2048</div>
+                      <div data-testid="equipment-row-19-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-19-device-name">Driveway</div>
+                      <div data-testid="equipment-row-19-reporting-type">Video Device</div>
+                      <div data-testid="equipment-row-19-avg-strength">69%</div>
+                      <div data-testid="equipment-row-19-state">OK</div>
+                      <div data-testid="equipment-row-19-group">-</div>
+                      <div data-testid="equipment-row-19-type">Camera</div>
+                      <div data-testid="equipment-row-19-zone">2048</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-20">
+                      <div><input type="checkbox" data-testid="equipment-row-20-checkbox" /></div>
+                      <div data-testid="equipment-row-20-id">2049</div>
+                      <div data-testid="equipment-row-20-trouble"><span class="trouble-dot dot-red"></span></div>
+                      <div data-testid="equipment-row-20-device-name">Doorbell</div>
+                      <div data-testid="equipment-row-20-reporting-type">Video Device</div>
+                      <div data-testid="equipment-row-20-avg-strength">74%</div>
+                      <div data-testid="equipment-row-20-state">OK</div>
+                      <div data-testid="equipment-row-20-group">-</div>
+                      <div data-testid="equipment-row-20-type">Camera</div>
+                      <div data-testid="equipment-row-20-zone">2049</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-21">
+                      <div><input type="checkbox" data-testid="equipment-row-21-checkbox" /></div>
+                      <div data-testid="equipment-row-21-id">4001</div>
+                      <div data-testid="equipment-row-21-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-21-device-name">Broadband</div>
+                      <div data-testid="equipment-row-21-reporting-type">Local Gateway</div>
+                      <div data-testid="equipment-row-21-avg-strength">-</div>
+                      <div data-testid="equipment-row-21-state">OK</div>
+                      <div data-testid="equipment-row-21-group">-</div>
+                      <div data-testid="equipment-row-21-type">Gateway</div>
+                      <div data-testid="equipment-row-21-zone">4001</div>
+                    </div>
+                    <div class="equip-row" data-testid="equipment-row-22">
+                      <div><input type="checkbox" data-testid="equipment-row-22-checkbox" /></div>
+                      <div data-testid="equipment-row-22-id">1</div>
+                      <div data-testid="equipment-row-22-trouble"><span class="trouble-dot dot-green"></span></div>
+                      <div data-testid="equipment-row-22-device-name">Keyfob</div>
+                      <div data-testid="equipment-row-22-reporting-type">Unknown</div>
+                      <div data-testid="equipment-row-22-avg-strength">-</div>
+                      <div data-testid="equipment-row-22-state">OK</div>
+                      <div data-testid="equipment-row-22-group">-</div>
+                      <div data-testid="equipment-row-22-type">Unknown</div>
+                      <div data-testid="equipment-row-22-zone">5257</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- NonAlarm customer view -->
+            <div class="content" data-customer-view="NonAlarm" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="6"></div>
+
+              <!-- Warning Banner -->
+              <div class="nonalarm-banner">
+                <div class="nonalarm-banner-icon">i</div>
+                <div>This is not an ADC customer. &nbsp;Some information may not be available for their equipment.</div>
+              </div>
+
+              <!-- Service Add-Ons section (empty for NonAlarm) -->
+              <div class="addons-section">
+                <div class="addons-header">
+                  <span class="addons-title">Service Add-Ons <span class="available">(0 available)</span></span>
+                </div>
+              </div>
+
+              <!-- System Information section -->
+              <div class="sysinfo-section">
+                <div class="sysinfo-header">
+                  <span class="sysinfo-title">System Information</span>
+                  <button class="clear-btn" type="button">Clear All Filters</button>
+                </div>
+                <div class="sysinfo-grid">
+                  <div class="sysinfo-item">
+                    <span class="label">Service Provider:</span>
+                    <span class="value">ALMNET</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">System Type:</span>
+                    <span class="value">Honeywell LTE-X</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">Cell Provider:</span>
+                    <span class="value">AlarmNet</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">Transformer Location:</span>
+                    <span class="value">Front Lobby</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">Frequency:</span>
+                    <span class="value">-</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">Translator:</span>
+                    <span class="value">No</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">CS:</span>
+                    <span class="value">#768878462</span>
+                  </div>
+                  <div class="sysinfo-item">
+                    <span class="label">Installer Code:</span>
+                    <span class="value">4112</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Equipment List section -->
+              <div class="equipment-section">
+                <div class="equipment-header">
+                  <span class="equipment-title">Equipment List <span class="refresh-icon">&#8635;</span></span>
+                  <button class="edit-btn" type="button" disabled>Edit</button>
+                </div>
+                <div class="equipment-table-container">
+                  <div class="equipment-table">
+                    <div class="equipment-head">
+                      <div></div>
+                      <div>ID</div>
+                      <div>Trouble</div>
+                      <div class="sortable">Device Name</div>
+                      <div>Central Station Reporting Type</div>
+                      <div>Average Signal Strength</div>
+                      <div class="sortable">State</div>
+                      <div class="sortable">Group</div>
+                      <div class="sortable">Device Type</div>
+                      <div class="sortable">Zone</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>FRNT</div>
+                      <div>Contact(Door/Window)</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>CONTCT</div>
+                      <div>1</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OTHR Room 106</div>
+                      <div>Glassbreak</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>GLSBK</div>
+                      <div>2</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OTHR Room 106</div>
+                      <div>Motion/Photobeam</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>PIR</div>
+                      <div>3</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OTHR All</div>
+                      <div>Fire (Smoke)</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>SMOKE</div>
+                      <div>4</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OTHR Waterflows</div>
+                      <div>Fire (Water Flow)</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>WTR</div>
+                      <div>5</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>LOBY</div>
+                      <div>Motion/Photobeam</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>PIR</div>
+                      <div>6</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>BACK and Side</div>
+                      <div>Contact(Door/Window)</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>CONTCT</div>
+                      <div>7</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OFFC</div>
+                      <div>Motion/Photobeam</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>PIR</div>
+                      <div>8</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div></div>
+                      <div>Panel</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>PANEL</div>
+                      <div>-</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div></div>
+                      <div>From Cell Unit</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>CELL</div>
+                      <div>-</div>
+                    </div>
+                    <div class="equip-row">
+                      <div><input type="checkbox" /></div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>OTHR</div>
+                      <div>From Cell Unit</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>-</div>
+                      <div>CELL</div>
+                      <div>-</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trouble Condition History -->
+              <div class="trouble-history-bar">
+                <span>Trouble Condition History</span>
+                <span class="trouble-history-msg">Unable to fetch Trouble Condition History</span>
+              </div>
+
+            </div>
+
+            <!-- AuthorizedDealer customer view -->
+            <div class="content" data-customer-view="AuthorizedDealer" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="6"></div>
+
+              <!-- MAS Alert -->
+              <div class="mas-alert-banner">
+                <div class="mas-alert-left">
+                  <span class="mas-info-icon">i</span>
+                  <span class="mas-alert-text">MAS info not found for site number.</span>
+                </div>
+                <button class="mas-retry-btn" type="button">Retry</button>
+              </div>
+
+              <!-- Service Add-Ons -->
+              <div class="addons-section">
+                <div class="addons-header">
+                  <span class="addons-title">Service Add-Ons <span class="available">(0 available)</span></span>
+                </div>
+              </div>
+
+              <!-- System Information -->
+              <div class="sysinfo-section">
+                <div class="sysinfo-header">
+                  <span class="sysinfo-title">System Information</span>
+                  <button class="clear-btn" type="button">Clear All Filters</button>
+                </div>
+                <div class="sysinfo-grid">
+                  <div class="sysinfo-item"><span class="label">Service Provider:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">System Type:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">Cell Provider:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">Transformer Location:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">Frequency:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">Translator:</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">CS: #</span><span class="value"></span></div>
+                  <div class="sysinfo-item"><span class="label">Installer Code:</span><span class="value"></span></div>
+                </div>
+              </div>
+
+              <!-- Equipment List -->
+              <div class="equipment-section">
+                <div class="equipment-header">
+                  <span class="equipment-title">Equipment List</span>
+                </div>
+                <div class="equipment-no-data">No Data</div>
+              </div>
+
+              <!-- Trouble Condition History -->
+              <div class="trouble-history-bar">
+                <span>Trouble Condition History</span>
+                <span class="trouble-history-msg">No Data</span>
+              </div>
+
+            </div>
+
+          </section>
+        </main>
+
+        <!-- Edit Transformer Location Modal -->
+        <div class="sysm-modal-overlay" id="transformer-modal" data-testid="transformer-modal">
+          <div class="sysm-modal" data-testid="transformer-modal-content">
+            <div class="sysm-modal-header" data-testid="transformer-modal-header">
+              <h3 data-testid="transformer-modal-title">Edit Transformer Location</h3>
+              <button class="sysm-modal-close" type="button" aria-label="Close" data-testid="transformer-modal-close-btn">&times;</button>
+            </div>
+            <p class="sysm-modal-desc" data-testid="transformer-modal-desc">Update Transformer Location</p>
+            <input type="text" class="sysm-modal-input" value="Master" data-testid="transformer-modal-input" />
+            <button class="sysm-modal-btn" type="button" data-testid="transformer-modal-update-btn">Update</button>
+          </div>
+        </div>
+      </div>
+    </section>

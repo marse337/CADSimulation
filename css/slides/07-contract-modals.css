@@ -1,0 +1,125 @@
+/* =========================================================
+   CONTRACT INFO MODALS (Slide 7)
+   ========================================================= */
+
+/* Modal Overlay */
+.slide[data-title="ContractInfo"] .contract-modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-overlay.active {
+  display: flex;
+}
+
+/* Modal Container */
+.slide[data-title="ContractInfo"] .contract-modal {
+  width: 420px;
+  background: #082c3a;
+  padding: 20px 30px;
+  border-radius: 4px;
+  color: #ffffff;
+  position: relative;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Header */
+.slide[data-title="ContractInfo"] .contract-modal-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Close Button */
+.slide[data-title="ContractInfo"] .contract-modal-close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #ffffff;
+  background: none;
+  border: none;
+  line-height: 1;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-close:hover {
+  opacity: 0.8;
+}
+
+/* Warning Box */
+.slide[data-title="ContractInfo"] .contract-modal-warning {
+  background: #ffffff;
+  color: #000000;
+  padding: 20px;
+  border-left: 6px solid #ffc107;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-warning-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Email Label */
+.slide[data-title="ContractInfo"] .contract-modal-label {
+  margin-bottom: 8px;
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Email Input */
+.slide[data-title="ContractInfo"] .contract-modal-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+/* Send Button */
+.slide[data-title="ContractInfo"] .contract-modal-send {
+  width: 100%;
+  background: #ffcc33;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-send:hover {
+  background: #e6b82e;
+}
+
+.slide[data-title="ContractInfo"] .contract-modal-send:active {
+  transform: translateY(1px);
+}

@@ -1,0 +1,165 @@
+/* =========================================================
+   EVENT HISTORY - TEMPORARY DISPATCH NOTE MODAL (Slide 8)
+   ========================================================= */
+
+/* Modal Overlay */
+.slide[data-title="EventHistory"] .dispatch-modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide[data-title="EventHistory"] .dispatch-modal-overlay.active {
+  display: flex;
+}
+
+/* Modal Container */
+.slide[data-title="EventHistory"] .dispatch-modal {
+  background-color: #0f212b;
+  width: 550px;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modal Header */
+.slide[data-title="EventHistory"] .dispatch-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.slide[data-title="EventHistory"] .dispatch-modal-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Close Button */
+.slide[data-title="EventHistory"] .dispatch-modal-close {
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.slide[data-title="EventHistory"] .dispatch-modal-close:hover {
+  opacity: 0.8;
+}
+
+/* Form Grid */
+.slide[data-title="EventHistory"] .dispatch-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Field Group */
+.slide[data-title="EventHistory"] .dispatch-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.slide[data-title="EventHistory"] .dispatch-field-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.slide[data-title="EventHistory"] .dispatch-field-group input,
+.slide[data-title="EventHistory"] .dispatch-field-group textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  outline: none;
+  font-family: inherit;
+}
+.slide[data-title="EventHistory"] .dispatch-field-group input:focus,
+.slide[data-title="EventHistory"] .dispatch-field-group textarea:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+/* Date Input with Calendar Icon */
+.slide[data-title="EventHistory"] .dispatch-date-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slide[data-title="EventHistory"] .dispatch-date-input input {
+  width: 100%;
+  padding-right: 35px;
+}
+
+.slide[data-title="EventHistory"] .dispatch-calendar-icon {
+  position: absolute;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="grey" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>') no-repeat center;
+  pointer-events: none;
+}
+
+/* Full Width Field */
+.slide[data-title="EventHistory"] .dispatch-full-width {
+  grid-column: span 2;
+}
+
+/* Textarea */
+.slide[data-title="EventHistory"] .dispatch-field-group textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* Footer Note */
+.slide[data-title="EventHistory"] .dispatch-footer-note {
+  font-style: italic;
+  font-size: 0.85rem;
+  margin: 15px 0 20px 0;
+  color: #ffffff;
+}
+
+/* Create Button */
+.slide[data-title="EventHistory"] .dispatch-create-btn {
+  width: 100%;
+  background-color: #15803d;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.slide[data-title="EventHistory"] .dispatch-create-btn:hover {
+  background-color: #16a34a;
+}
+
+.slide[data-title="EventHistory"] .dispatch-create-btn:active {
+  transform: translateY(1px);
+}

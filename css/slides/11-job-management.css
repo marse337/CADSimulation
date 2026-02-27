@@ -1,0 +1,823 @@
+/* =========================================================
+   SLIDE 14 (JobManagement / JobManagementCRSE)
+   ========================================================= */
+.slide[data-title="JobManagement"],
+.slide[data-title="JobManagementCRSE"]{
+  padding:0;
+  --app-bg:#f3f4f6;
+  --panel-bg:#ffffff;
+  --topbar:#7a7a7a;
+  --sidebar:#74797c;
+  --text:#111827;
+  --muted:#6b7280;
+  --line:#d1d5db;
+}
+
+.slide[data-title="JobManagement"] .app,
+.slide[data-title="JobManagementCRSE"] .app{
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 86px 1fr;
+  background:var(--app-bg);
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  color:var(--text);
+}
+
+.slide[data-title="JobManagement"] .topbar,
+.slide[data-title="JobManagementCRSE"] .topbar{
+  grid-column:2 / 3;
+  grid-row:1 / 2;
+  background:var(--topbar);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  padding:14px 18px;
+  gap:14px;
+}
+.slide[data-title="JobManagement"] .topbar-back,
+.slide[data-title="JobManagementCRSE"] .topbar-back{
+  width:28px;
+  height:28px;
+  border-radius:6px;
+  background:rgba(255,255,255,.15);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  flex-shrink:0;
+}
+.slide[data-title="JobManagement"] .topbar-grid,
+.slide[data-title="JobManagementCRSE"] .topbar-grid{
+  display:grid;
+  grid-template-columns: repeat(8, minmax(90px, 1fr));
+  gap:18px;
+  flex:1;
+}
+.slide[data-title="JobManagement"] .topbar-item,
+.slide[data-title="JobManagementCRSE"] .topbar-item{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+.slide[data-title="JobManagement"] .topbar-item .label,
+.slide[data-title="JobManagementCRSE"] .topbar-item .label{
+  font-size:13px;
+  font-weight:600;
+}
+.slide[data-title="JobManagement"] .topbar-item .value,
+.slide[data-title="JobManagementCRSE"] .topbar-item .value{
+  font-size:12px;
+  opacity:.85;
+  margin-top:6px;
+}
+
+.slide[data-title="JobManagement"] .sidebar,
+.slide[data-title="JobManagementCRSE"] .sidebar{
+  grid-column:1 / 2;
+  grid-row:1 / 3;
+  background:var(--sidebar);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+}
+.slide[data-title="JobManagement"] .sidebar-head,
+.slide[data-title="JobManagementCRSE"] .sidebar-head{
+  padding:18px 16px 14px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.slide[data-title="JobManagement"] .sidebar-row,
+.slide[data-title="JobManagementCRSE"] .sidebar-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.slide[data-title="JobManagement"] .back-btn,
+.slide[data-title="JobManagementCRSE"] .back-btn{
+  width:28px;height:28px;border-radius:6px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.10);
+}
+.slide[data-title="JobManagement"] .app-title,
+.slide[data-title="JobManagementCRSE"] .app-title{
+  font-weight:600;
+  font-size:14px;
+  opacity:.95;
+}
+.slide[data-title="JobManagement"] .brand,
+.slide[data-title="JobManagementCRSE"] .brand{
+  display:grid;
+  place-items:center;
+  height:86px;
+  margin-top:6px;
+}
+.slide[data-title="JobManagement"] .brand-badge,
+.slide[data-title="JobManagementCRSE"] .brand-badge{
+  width:52px;height:52px;border-radius:14px;
+  border:2px solid rgba(255,255,255,.35);
+  display:grid;place-items:center;
+  font-weight:800;
+}
+.slide[data-title="JobManagement"] .userbox,
+.slide[data-title="JobManagementCRSE"] .userbox{
+  padding:0 16px 14px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.slide[data-title="JobManagement"] .userbox .email,
+.slide[data-title="JobManagementCRSE"] .userbox .email{font-size:13px; opacity:.95}
+.slide[data-title="JobManagement"] .userbox .signout,
+.slide[data-title="JobManagementCRSE"] .userbox .signout{
+  font-size:12px;
+  opacity:.85;
+  text-decoration:underline;
+  cursor:pointer;
+  margin-top:4px;
+}
+
+.slide[data-title="JobManagement"] .nav,
+.slide[data-title="JobManagementCRSE"] .nav{
+  padding:10px 0;
+  flex:1;
+}
+.slide[data-title="JobManagement"] .nav-item,
+.slide[data-title="JobManagementCRSE"] .nav-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  color:#fff;
+  opacity:.9;
+  cursor:pointer;
+}
+.slide[data-title="JobManagement"] .nav-item.active,
+.slide[data-title="JobManagementCRSE"] .nav-item.active{
+  background:rgba(0,0,0,.12);
+  opacity:1;
+}
+.slide[data-title="JobManagement"] .nav-ico,
+.slide[data-title="JobManagementCRSE"] .nav-ico{
+  width:22px;height:22px;
+  display:grid;
+  place-items:center;
+  opacity:.95;
+}
+.slide[data-title="JobManagement"] .nav-text,
+.slide[data-title="JobManagementCRSE"] .nav-text{
+  font-size:14px;
+  font-weight:600;
+}
+.slide[data-title="JobManagement"] .nav-item .ext,
+.slide[data-title="JobManagementCRSE"] .nav-item .ext{
+  margin-left:auto;
+  opacity:.8;
+}
+.slide[data-title="JobManagement"] .nav-item .dot,
+.slide[data-title="JobManagementCRSE"] .nav-item .dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  margin-right:4px;
+}
+.slide[data-title="JobManagement"] .nav-item .dot.orange,
+.slide[data-title="JobManagementCRSE"] .nav-item .dot.orange{ background:#f97316; }
+.slide[data-title="JobManagement"] .nav-item .dot.yellow,
+.slide[data-title="JobManagementCRSE"] .nav-item .dot.yellow{ background:#facc15; }
+
+.slide[data-title="JobManagement"] .sidebar-foot,
+.slide[data-title="JobManagementCRSE"] .sidebar-foot{
+  padding:12px 16px;
+  border-top:1px solid rgba(255,255,255,.12);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  opacity:.9;
+}
+.slide[data-title="JobManagement"] .version,
+.slide[data-title="JobManagementCRSE"] .version{
+  font-size:12px;
+  opacity:.9;
+}
+
+.slide[data-title="JobManagement"] .main,
+.slide[data-title="JobManagementCRSE"] .main{
+  grid-column:2 / 3;
+  grid-row:2 / 3;
+  padding:12px 16px;
+  overflow:hidden;
+}
+.slide[data-title="JobManagement"] .panel,
+.slide[data-title="JobManagementCRSE"] .panel{
+  background:var(--panel-bg);
+  border: none;
+  height:100%;
+  overflow-y:auto;
+  position: relative;
+}
+
+/* Custom scrollbar styling */
+.slide[data-title="JobManagement"] .panel::-webkit-scrollbar,
+.slide[data-title="JobManagementCRSE"] .panel::-webkit-scrollbar{
+  width: 8px;
+}
+.slide[data-title="JobManagement"] .panel::-webkit-scrollbar-track,
+.slide[data-title="JobManagementCRSE"] .panel::-webkit-scrollbar-track{
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.slide[data-title="JobManagement"] .panel::-webkit-scrollbar-thumb,
+.slide[data-title="JobManagementCRSE"] .panel::-webkit-scrollbar-thumb{
+  background: rgba(15,42,51,0.3);
+  border-radius: 4px;
+}
+.slide[data-title="JobManagement"] .panel::-webkit-scrollbar-thumb:hover,
+.slide[data-title="JobManagementCRSE"] .panel::-webkit-scrollbar-thumb:hover{
+  background: rgba(15,42,51,0.5);
+}
+.slide[data-title="JobManagement"] .content,
+.slide[data-title="JobManagementCRSE"] .content{
+  padding:10px 14px 14px;
+}
+
+/* Tabs */
+.slide[data-title="JobManagement"] .tabs,
+.slide[data-title="JobManagementCRSE"] .tabs{
+  display:flex;
+  gap:0;
+  padding: 6px 4px 0;
+  align-items:flex-end;
+  border-bottom: 1px solid #d1d5db;
+}
+.slide[data-title="JobManagement"] .tab,
+.slide[data-title="JobManagementCRSE"] .tab{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding: 8px 12px;
+  border-radius: 6px 6px 0 0;
+  background:#d6d6d6;
+  color:#111827;
+  font-size: 11px;
+  font-weight: 650;
+  border: 1px solid #cfcfcf;
+  border-bottom: none;
+  cursor: default;
+  position: relative;
+  top: 1px;
+}
+.slide[data-title="JobManagement"] .tab.active,
+.slide[data-title="JobManagementCRSE"] .tab.active{
+  background:#ffffff;
+  border-color:#d1d5db;
+  border-bottom: 1px solid #ffffff;
+}
+.slide[data-title="JobManagement"] .tab .ext,
+.slide[data-title="JobManagementCRSE"] .tab .ext{
+  display:inline-flex;
+  font-size: 9px;
+  opacity:.7;
+}
+
+/* Search section */
+.slide[data-title="JobManagement"] .search-section,
+.slide[data-title="JobManagementCRSE"] .search-section{
+  padding:16px 0;
+}
+
+.slide[data-title="JobManagement"] .search-label,
+.slide[data-title="JobManagementCRSE"] .search-label{
+  font-size:13px;
+  font-weight:700;
+  color:#111827;
+  margin-bottom:8px;
+}
+
+.slide[data-title="JobManagement"] .search-row,
+.slide[data-title="JobManagementCRSE"] .search-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.slide[data-title="JobManagement"] .search-input,
+.slide[data-title="JobManagementCRSE"] .search-input{
+  flex:0 0 280px;
+  height:38px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  padding:8px 12px;
+  font-size:12px;
+  color:#6b7280;
+  background:#fff;
+  outline: none;
+}
+.slide[data-title="JobManagement"] .search-input:focus,
+.slide[data-title="JobManagementCRSE"] .search-input:focus{
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+.slide[data-title="JobManagement"] .search-btn,
+.slide[data-title="JobManagementCRSE"] .search-btn{
+  height:38px;
+  padding:0 28px;
+  border-radius:20px;
+  border:none;
+  background:#15803d;
+  color:#fff;
+  font-size:13px;
+  font-weight:650;
+  cursor:pointer;
+}
+.slide[data-title="JobManagement"] .search-btn:hover,
+.slide[data-title="JobManagementCRSE"] .search-btn:hover{
+  background:#16a34a;
+}
+.slide[data-title="JobManagement"] .search-btn:active,
+.slide[data-title="JobManagementCRSE"] .search-btn:active{
+  transform: translateY(1px);
+}
+
+.slide[data-title="JobManagement"] .search-actions,
+.slide[data-title="JobManagementCRSE"] .search-actions{
+  margin-left:auto;
+  display:flex;
+  gap:10px;
+}
+
+.slide[data-title="JobManagement"] .create-btn,
+.slide[data-title="JobManagementCRSE"] .create-btn{
+  height:38px;
+  padding:0 24px;
+  border-radius:20px;
+  border:1px solid #15803d;
+  background:transparent;
+  color:#15803d;
+  font-size:13px;
+  font-weight:650;
+  cursor:pointer;
+}
+.slide[data-title="JobManagement"] .create-btn:hover,
+.slide[data-title="JobManagementCRSE"] .create-btn:hover{
+  background:#15803d;
+  color:#fff;
+}
+.slide[data-title="JobManagement"] .create-btn:active,
+.slide[data-title="JobManagementCRSE"] .create-btn:active{
+  transform: translateY(1px);
+}
+
+.slide[data-title="JobManagement"] .refresh-btn,
+.slide[data-title="JobManagementCRSE"] .refresh-btn{
+  width:38px;
+  height:38px;
+  border-radius:6px;
+  border:none;
+  background:#e5e7eb;
+  color:#374151;
+  font-size:16px;
+  cursor:pointer;
+  display:grid;
+  place-items:center;
+}
+.slide[data-title="JobManagement"] .refresh-btn:hover,
+.slide[data-title="JobManagementCRSE"] .refresh-btn:hover{
+  background:#d1d5db;
+}
+.slide[data-title="JobManagement"] .refresh-btn:active,
+.slide[data-title="JobManagementCRSE"] .refresh-btn:active{
+  transform: translateY(1px);
+}
+
+/* Jobs table */
+.slide[data-title="JobManagement"] .jobs-table,
+.slide[data-title="JobManagementCRSE"] .jobs-table{
+  margin-top:8px;
+}
+
+.slide[data-title="JobManagement"] .jobs-head,
+.slide[data-title="JobManagementCRSE"] .jobs-head{
+  display:grid;
+  grid-template-columns: 160px 80px 100px 80px 1fr 50px;
+  gap:14px;
+  padding:12px 14px;
+  border-top:1px solid #e5e7eb;
+  border-bottom:1px solid #e5e7eb;
+  font-size:12px;
+  font-weight:600;
+  color:#374151;
+}
+
+.slide[data-title="JobManagement"] .jobs-head .sortable,
+.slide[data-title="JobManagementCRSE"] .jobs-head .sortable{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  cursor:pointer;
+}
+
+.slide[data-title="JobManagement"] .jobs-head .caret,
+.slide[data-title="JobManagementCRSE"] .jobs-head .caret{
+  font-size:10px;
+  opacity:.6;
+}
+
+.slide[data-title="JobManagement"] .job-row,
+.slide[data-title="JobManagementCRSE"] .job-row{
+  display:grid;
+  grid-template-columns: 160px 80px 100px 80px 1fr 50px;
+  gap:14px;
+  padding:12px 14px;
+  border-bottom:1px solid #e5e7eb;
+  font-size:11px;
+  color:#374151;
+  align-items:center;
+  min-height:48px;
+}
+
+.slide[data-title="JobManagement"] .status-pill,
+.slide[data-title="JobManagementCRSE"] .status-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px 12px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:600;
+  width:fit-content;
+}
+.slide[data-title="JobManagement"] .status-pill.closed,
+.slide[data-title="JobManagementCRSE"] .status-pill.closed{
+  background:#16a34a;
+  color:#fff;
+}
+.slide[data-title="JobManagement"] .status-pill.canceled,
+.slide[data-title="JobManagementCRSE"] .status-pill.canceled{
+  background:#f97316;
+  color:#fff;
+}
+
+.slide[data-title="JobManagement"] .job-comment,
+.slide[data-title="JobManagementCRSE"] .job-comment{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.slide[data-title="JobManagement"] .job-actions,
+.slide[data-title="JobManagementCRSE"] .job-actions{
+  text-align:center;
+  font-size:16px;
+  color:#0d9488;
+  cursor:pointer;
+}
+.slide[data-title="JobManagement"] .job-actions:hover,
+.slide[data-title="JobManagementCRSE"] .job-actions:hover{
+  color:#0f766e;
+}
+
+/* Clickable Row */
+.slide[data-title="JobManagement"] .job-row.clickable-row,
+.slide[data-title="JobManagementCRSE"] .job-row.clickable-row{
+  cursor:pointer;
+  transition:background 0.15s;
+}
+.slide[data-title="JobManagement"] .job-row.clickable-row:hover,
+.slide[data-title="JobManagementCRSE"] .job-row.clickable-row:hover{
+  background:#f1f5f9;
+}
+.slide[data-title="JobManagement"] .job-row.clickable-row.expanded,
+.slide[data-title="JobManagementCRSE"] .job-row.clickable-row.expanded{
+  background:#e8f4f8;
+}
+
+/* Actions Cell & Three Dots Menu */
+.slide[data-title="JobManagement"] .actions-cell,
+.slide[data-title="JobManagementCRSE"] .actions-cell{
+  position:relative;
+  text-align:center;
+}
+
+.slide[data-title="JobManagement"] .dots-btn,
+.slide[data-title="JobManagementCRSE"] .dots-btn{
+  background:none;
+  border:none;
+  font-size:18px;
+  cursor:pointer;
+  padding:4px 8px;
+  color:#0d9488;
+  user-select:none;
+}
+.slide[data-title="JobManagement"] .dots-btn:hover,
+.slide[data-title="JobManagementCRSE"] .dots-btn:hover{
+  color:#0f766e;
+}
+
+.slide[data-title="JobManagement"] .action-menu,
+.slide[data-title="JobManagementCRSE"] .action-menu{
+  position:absolute;
+  right:0;
+  top:100%;
+  background:#fff;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  z-index:100;
+  display:none;
+  width:130px;
+  overflow:hidden;
+}
+.slide[data-title="JobManagement"] .action-menu.active,
+.slide[data-title="JobManagementCRSE"] .action-menu.active{
+  display:block;
+}
+
+.slide[data-title="JobManagement"] .action-menu div,
+.slide[data-title="JobManagementCRSE"] .action-menu div{
+  padding:10px 14px;
+  font-size:12px;
+  cursor:pointer;
+  border-bottom:1px solid #f3f4f6;
+  color:#374151;
+}
+.slide[data-title="JobManagement"] .action-menu div:last-child,
+.slide[data-title="JobManagementCRSE"] .action-menu div:last-child{
+  border-bottom:none;
+}
+.slide[data-title="JobManagement"] .action-menu div:hover,
+.slide[data-title="JobManagementCRSE"] .action-menu div:hover{
+  background:#f1f5f9;
+  color:#0d9488;
+}
+
+/* Expanded Job Details */
+.slide[data-title="JobManagement"] .job-details,
+.slide[data-title="JobManagementCRSE"] .job-details{
+  display:none;
+  background:#f9fafb;
+  padding:20px;
+  border:1px solid #d1d5db;
+  border-top:none;
+  border-radius:0 0 8px 8px;
+  max-height:300px;
+  overflow-y:auto;
+}
+.slide[data-title="JobManagement"] .job-details.active,
+.slide[data-title="JobManagementCRSE"] .job-details.active{
+  display:block;
+}
+
+/* Custom Scrollbar for Details */
+.slide[data-title="JobManagement"] .job-details::-webkit-scrollbar,
+.slide[data-title="JobManagementCRSE"] .job-details::-webkit-scrollbar{
+  width:8px;
+}
+.slide[data-title="JobManagement"] .job-details::-webkit-scrollbar-track,
+.slide[data-title="JobManagementCRSE"] .job-details::-webkit-scrollbar-track{
+  background:#f1f5f9;
+  border-radius:4px;
+}
+.slide[data-title="JobManagement"] .job-details::-webkit-scrollbar-thumb,
+.slide[data-title="JobManagementCRSE"] .job-details::-webkit-scrollbar-thumb{
+  background:rgba(15,42,51,0.3);
+  border-radius:4px;
+}
+.slide[data-title="JobManagement"] .job-details::-webkit-scrollbar-thumb:hover,
+.slide[data-title="JobManagementCRSE"] .job-details::-webkit-scrollbar-thumb:hover{
+  background:rgba(15,42,51,0.5);
+}
+
+/* Details Grid */
+.slide[data-title="JobManagement"] .details-grid,
+.slide[data-title="JobManagementCRSE"] .details-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  margin-bottom:20px;
+}
+
+.slide[data-title="JobManagement"] .details-column h4,
+.slide[data-title="JobManagementCRSE"] .details-column h4{
+  margin:0 0 12px 0;
+  font-size:13px;
+  font-weight:700;
+  color:#374151;
+}
+
+.slide[data-title="JobManagement"] .detail-row,
+.slide[data-title="JobManagementCRSE"] .detail-row{
+  display:flex;
+  margin-bottom:8px;
+  font-size:12px;
+}
+
+.slide[data-title="JobManagement"] .detail-label,
+.slide[data-title="JobManagementCRSE"] .detail-label{
+  width:140px;
+  font-weight:600;
+  color:#6b7280;
+}
+
+/* Billing Section */
+.slide[data-title="JobManagement"] .billing-section,
+.slide[data-title="JobManagementCRSE"] .billing-section{
+  margin-bottom:20px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.slide[data-title="JobManagement"] .billing-head,
+.slide[data-title="JobManagementCRSE"] .billing-head{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+  gap:8px;
+  padding:10px 12px;
+  background:#f8fafc;
+  font-size:11px;
+  font-weight:700;
+  color:#374151;
+  border-bottom:1px solid #e5e7eb;
+}
+
+.slide[data-title="JobManagement"] .billing-row,
+.slide[data-title="JobManagementCRSE"] .billing-row{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+  gap:8px;
+  padding:10px 12px;
+  font-size:11px;
+  color:#374151;
+  border-bottom:1px solid #f3f4f6;
+}
+.slide[data-title="JobManagement"] .billing-row:last-child,
+.slide[data-title="JobManagementCRSE"] .billing-row:last-child{
+  border-bottom:none;
+}
+.slide[data-title="JobManagement"] .billing-row.subtotal,
+.slide[data-title="JobManagementCRSE"] .billing-row.subtotal{
+  background:#f8fafc;
+  font-weight:700;
+  border-top:2px solid #374151;
+}
+
+/* Activity Section */
+.slide[data-title="JobManagement"] .job-details .activity-section,
+.slide[data-title="JobManagementCRSE"] .job-details .activity-section{
+  border-top:1px solid #e5e7eb;
+  padding-top:16px;
+}
+
+.slide[data-title="JobManagement"] .job-details .activity-section h4,
+.slide[data-title="JobManagementCRSE"] .job-details .activity-section h4{
+  margin:0 0 12px 0;
+  font-size:13px;
+  font-weight:700;
+  color:#374151;
+}
+
+.slide[data-title="JobManagement"] .filter-buttons,
+.slide[data-title="JobManagementCRSE"] .filter-buttons{
+  display:flex;
+  gap:8px;
+  margin-bottom:16px;
+}
+
+.slide[data-title="JobManagement"] .btn-filter,
+.slide[data-title="JobManagementCRSE"] .btn-filter{
+  padding:6px 18px;
+  border-radius:20px;
+  border:1px solid #d1d5db;
+  background:#ffffff;
+  color:#374151;
+  font-size:11px;
+  font-weight:600;
+  cursor:pointer;
+  transition:background 0.15s, border-color 0.15s;
+}
+.slide[data-title="JobManagement"] .btn-filter:hover,
+.slide[data-title="JobManagementCRSE"] .btn-filter:hover{
+  background:#f9fafb;
+  border-color:#9ca3af;
+}
+.slide[data-title="JobManagement"] .btn-filter.active,
+.slide[data-title="JobManagementCRSE"] .btn-filter.active{
+  background:#15803d;
+  border-color:#15803d;
+  color:#fff;
+}
+.slide[data-title="JobManagement"] .btn-filter:active,
+.slide[data-title="JobManagementCRSE"] .btn-filter:active{
+  transform: translateY(1px);
+}
+
+.slide[data-title="JobManagement"] .activity-list,
+.slide[data-title="JobManagementCRSE"] .activity-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.slide[data-title="JobManagement"] .activity-item,
+.slide[data-title="JobManagementCRSE"] .activity-item{
+  font-size:12px;
+}
+
+.slide[data-title="JobManagement"] .activity-header,
+.slide[data-title="JobManagementCRSE"] .activity-header{
+  display:flex;
+  justify-content:space-between;
+  font-weight:600;
+  color:#374151;
+  margin-bottom:4px;
+}
+
+.slide[data-title="JobManagement"] .activity-date,
+.slide[data-title="JobManagementCRSE"] .activity-date{
+  font-weight:400;
+  color:#9ca3af;
+}
+
+.slide[data-title="JobManagement"] .activity-body,
+.slide[data-title="JobManagementCRSE"] .activity-body{
+  color:#6b7280;
+}
+
+.slide[data-title="JobManagement"] .slide-controls,
+.slide[data-title="JobManagementCRSE"] .slide-controls{
+  z-index: 40;
+}
+
+/* Environment theme support */
+.canvas[data-env="training"] .slide[data-title="JobManagement"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="JobManagementCRSE"] .sidebar {
+  background: var(--env-sidebar);
+}
+.canvas[data-env="training"] .slide[data-title="JobManagement"] .topbar,
+.canvas[data-env="training"] .slide[data-title="JobManagementCRSE"] .topbar {
+  background: var(--env-topbar);
+}
+.canvas[data-env="production"] .slide[data-title="JobManagement"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="JobManagementCRSE"] .sidebar {
+  background: var(--env-sidebar);
+}
+.canvas[data-env="production"] .slide[data-title="JobManagement"] .topbar,
+.canvas[data-env="production"] .slide[data-title="JobManagementCRSE"] .topbar {
+  background: var(--env-topbar);
+}
+
+/* =========================================================
+   Disabled Create Button + Tooltip (JobManagementCRSE)
+   ========================================================= */
+.slide[data-title="JobManagementCRSE"] .create-btn-disabled{
+  height:38px;
+  padding:0 24px;
+  border-radius:20px;
+  border:none;
+  background:#9fb0b8;
+  color:#fff;
+  font-size:13px;
+  font-weight:650;
+  cursor:not-allowed;
+}
+
+.slide[data-title="JobManagementCRSE"] .create-tooltip-wrap{
+  position:relative;
+  display:inline-block;
+}
+
+.slide[data-title="JobManagementCRSE"] .create-tooltip{
+  position:absolute;
+  right:0;
+  bottom:calc(100% + 10px);
+  width:290px;
+  background:#ffffff;
+  color:#111827;
+  border:1px solid #d1d5db;
+  border-radius:4px;
+  padding:10px 12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+  font-size:12px;
+  font-weight:650;
+  line-height:1.35;
+  display:none;
+  z-index:5;
+}
+
+.slide[data-title="JobManagementCRSE"] .create-tooltip-wrap:hover .create-tooltip{
+  display:block;
+}
+
+.jobs-empty {
+  text-align: center;
+  padding: 28px;
+  color: #c0392b;
+  font-size: 14px;
+  font-style: italic;
+}

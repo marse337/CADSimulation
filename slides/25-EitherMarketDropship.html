@@ -1,0 +1,160 @@
+    <!-- Slide 25 (EitherMarketDropship) - Job Creation Tool with Dropship for Either Market -->
+    <section class="slide" data-title="EitherMarketDropship">
+      <div class="app">
+        <!-- Sidebar - click to go back to slide 11 -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="jobcreation"
+             data-show-cr-only="false"
+             data-show-status="true"
+             data-show-job-creation="true"
+             data-nav-goto='{"lookup":"6"}'
+             data-goto-on-click="11"></div>
+
+        <!-- Top bar - click to go back to slide 11 -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-back-goto="24"
+             data-goto-on-click="11"></div>
+
+        <!-- Main -->
+        <main class="main">
+          <!-- Job Creation Tool Modal with Dropship -->
+          <div class="jct-modal jct-with-sidebar">
+            <div class="jct-titlebar">
+              <span>Job Creation Tool</span>
+              <div class="jct-controls">
+                <span class="jct-minimize">&#8212;</span>
+                <span class="jct-maximize">&#9633;</span>
+                <span class="jct-close">&times;</span>
+              </div>
+            </div>
+            <div class="jct-body">
+              <div class="jct-content">
+                <!-- BreakFix (Filled with Replace) - click to go to slide 26 -->
+                <div class="jct-section breakfix" data-goto-on-click="26">
+                  <h2 class="jct-section-title">BreakFix <span class="info-icon">&#9432;</span></h2>
+                  <div class="jct-breakfix-row">
+                    <select class="jct-select device-select">
+                      <option selected>ZONE 1: Contact(Door/Window), Misc Contact</option>
+                    </select>
+                    <select class="jct-select issue-select">
+                      <option selected>Replace</option>
+                    </select>
+                    <div class="jct-actions">
+                      <button class="jct-btn-icon delete">&#128465;</button>
+                      <button class="jct-btn-icon add">&#43;</button>
+                    </div>
+                    <span class="jct-available">&#10004; Available</span>
+                  </div>
+                </div>
+
+                <!-- Add-On (Simplified) -->
+                <div class="jct-section addon">
+                  <h2 class="jct-section-title">Add-On <span class="info-icon">&#9432;</span></h2>
+                  <div class="jct-addon-header-simple">
+                    <span>Select Equipment</span>
+                    <span>Quantity</span>
+                    <span>Price</span>
+                    <span>Discount % <span class="info-icon">&#9432;</span></span>
+                    <button class="jct-btn-icon add">&#43;</button>
+                  </div>
+                </div>
+
+                <!-- Job Type - Dropship with Override -->
+                <div class="jct-section jobtype">
+                  <h2 class="jct-section-title">Job Type</h2>
+                  <div class="jct-jobtype-box dropship">
+                    <div class="jct-jobtype-row">
+                      <span class="jct-jobtype-label">Required Type:</span>
+                      <span class="jct-jobtype-value">Dropship</span>
+                    </div>
+                    <div class="jct-shipping-row">
+                      <span class="jct-shipping-label">Shipping &amp; Handling:</span>
+                      <div class="jct-radio-group">
+                        <label class="jct-radio">
+                          <input type="radio" name="shipping-25" checked />
+                          <span>Standard</span>
+                        </label>
+                        <label class="jct-radio">
+                          <input type="radio" name="shipping-25" />
+                          <span>Expedited</span>
+                        </label>
+                      </div>
+                    </div>
+                    <button class="jct-btn-override">Override</button>
+                  </div>
+                </div>
+
+                <!-- Calculate Button (Active) -->
+                <div class="jct-footer">
+                  <button class="jct-btn-calculate active">Calculate Billable Amount</button>
+                </div>
+
+                <!-- Job Details -->
+                <div class="jct-section job-details">
+                  <h2 class="jct-section-title">Job Details</h2>
+                  <div class="jct-details-grid">
+                    <div class="jct-field">
+                      <label class="jct-label">Requested By*</label>
+                      <input type="text" class="jct-input" value="Tester" />
+                    </div>
+                    <div class="jct-field">
+                      <label class="jct-label">Phone Number* <span class="info-icon">&#9432;</span></label>
+                      <input type="text" class="jct-input" value="(111) 111-1111" />
+                    </div>
+                    <div class="jct-field">
+                      <label class="jct-label">Alternative Phone Number</label>
+                      <input type="text" class="jct-input" placeholder="(XXX) XXX-XXXX" />
+                    </div>
+                  </div>
+                  <div class="jct-field comment-field">
+                    <label class="jct-label">Comment</label>
+                    <textarea class="jct-textarea">This is a Dropship Job</textarea>
+                    <span class="jct-char-count">22/255 characters</span>
+                  </div>
+                </div>
+
+                <!-- Create Job Button -->
+                <div class="jct-create-footer">
+                  <button class="jct-btn-create">Create Job</button>
+                </div>
+              </div>
+
+              <!-- Billable Cost Sidebar -->
+              <div class="jct-cost-sidebar">
+                <h3 class="jct-cost-title">Billable Cost</h3>
+                <div class="jct-cost-row">
+                  <span>S&amp;H <span class="info-icon">&#9432;</span></span>
+                  <span>$10.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Equipment Price <span class="info-icon">&#9432;</span></span>
+                  <span>$19.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Labor <span class="info-icon">&#9432;</span></span>
+                  <span>$0.00</span>
+                </div>
+                <div class="jct-cost-row">
+                  <span>Total Discount <span class="info-icon">&#9432;</span></span>
+                  <span>$0.00</span>
+                </div>
+                <div class="jct-cost-row total">
+                  <span>Total <span class="info-icon">&#9432;</span></span>
+                  <span>$29.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

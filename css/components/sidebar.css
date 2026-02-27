@@ -1,0 +1,314 @@
+/* =========================================================
+   SIDEBAR STYLES
+   ========================================================= */
+.slide[data-title^="LoggedIn"] .sidebar,
+.slide[data-title="VerifyAccount"] .sidebar,
+.slide[data-title^="AccountActivity"] .sidebar,
+.slide[data-title="TruckRollJobCreation"] .sidebar,
+.slide[data-title="TruckRollMarketTruckRoll"] .sidebar,
+.slide[data-title="RemoteTechJobCreation"] .sidebar,
+.slide[data-title="RemoteTechMarketRemoteTech"] .sidebar,
+.slide[data-title="RemoteTechMarketDropship"] .sidebar,
+.slide[data-title="EitherMarketJobOpened"] .sidebar,
+.slide[data-title="EitherMarketDropship"] .sidebar,
+.slide[data-title="EitherMarketRemoteTech"] .sidebar,
+.slide[data-title="EitherMarketTruckRoll"] .sidebar{
+  grid-column:1 / 2;
+  grid-row:1 / 3;
+  background:var(--sidebar);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+}
+.slide[data-title^="LoggedIn"] .sidebar-head,
+.slide[data-title="VerifyAccount"] .sidebar-head,
+.slide[data-title^="AccountActivity"] .sidebar-head,
+.slide[data-title="TruckRollJobCreation"] .sidebar-head,
+.slide[data-title="TruckRollMarketTruckRoll"] .sidebar-head,
+.slide[data-title="RemoteTechJobCreation"] .sidebar-head,
+.slide[data-title="RemoteTechMarketRemoteTech"] .sidebar-head,
+.slide[data-title="RemoteTechMarketDropship"] .sidebar-head,
+.slide[data-title="EitherMarketJobOpened"] .sidebar-head,
+.slide[data-title="EitherMarketDropship"] .sidebar-head,
+.slide[data-title="EitherMarketRemoteTech"] .sidebar-head,
+.slide[data-title="EitherMarketTruckRoll"] .sidebar-head{
+  padding:18px 16px 14px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.slide[data-title^="LoggedIn"] .sidebar-row,
+.slide[data-title="VerifyAccount"] .sidebar-row,
+.slide[data-title^="AccountActivity"] .sidebar-row,
+.slide[data-title="TruckRollJobCreation"] .sidebar-row,
+.slide[data-title="TruckRollMarketTruckRoll"] .sidebar-row,
+.slide[data-title="RemoteTechJobCreation"] .sidebar-row,
+.slide[data-title="RemoteTechMarketRemoteTech"] .sidebar-row,
+.slide[data-title="RemoteTechMarketDropship"] .sidebar-row,
+.slide[data-title="EitherMarketJobOpened"] .sidebar-row,
+.slide[data-title="EitherMarketDropship"] .sidebar-row,
+.slide[data-title="EitherMarketRemoteTech"] .sidebar-row,
+.slide[data-title="EitherMarketTruckRoll"] .sidebar-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.slide[data-title^="LoggedIn"] .back-btn,
+.slide[data-title="VerifyAccount"] .back-btn,
+.slide[data-title^="AccountActivity"] .back-btn,
+.slide[data-title="TruckRollJobCreation"] .back-btn,
+.slide[data-title="TruckRollMarketTruckRoll"] .back-btn,
+.slide[data-title="RemoteTechJobCreation"] .back-btn,
+.slide[data-title="RemoteTechMarketRemoteTech"] .back-btn,
+.slide[data-title="RemoteTechMarketDropship"] .back-btn,
+.slide[data-title="EitherMarketJobOpened"] .back-btn,
+.slide[data-title="EitherMarketDropship"] .back-btn,
+.slide[data-title="EitherMarketRemoteTech"] .back-btn,
+.slide[data-title="EitherMarketTruckRoll"] .back-btn{
+  width:28px;height:28px;border-radius:6px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.10);
+}
+.slide[data-title^="LoggedIn"] .app-title,
+.slide[data-title="VerifyAccount"] .app-title,
+.slide[data-title^="AccountActivity"] .app-title,
+.slide[data-title="TruckRollJobCreation"] .app-title,
+.slide[data-title="TruckRollMarketTruckRoll"] .app-title,
+.slide[data-title="RemoteTechJobCreation"] .app-title,
+.slide[data-title="RemoteTechMarketRemoteTech"] .app-title,
+.slide[data-title="RemoteTechMarketDropship"] .app-title,
+.slide[data-title="EitherMarketJobOpened"] .app-title,
+.slide[data-title="EitherMarketDropship"] .app-title,
+.slide[data-title="EitherMarketRemoteTech"] .app-title,
+.slide[data-title="EitherMarketTruckRoll"] .app-title{
+  font-weight:600;
+  font-size:14px;
+  opacity:.95;
+}
+.slide[data-title^="LoggedIn"] .brand,
+.slide[data-title="VerifyAccount"] .brand,
+.slide[data-title^="AccountActivity"] .brand,
+.slide[data-title="TruckRollJobCreation"] .brand,
+.slide[data-title="TruckRollMarketTruckRoll"] .brand,
+.slide[data-title="RemoteTechJobCreation"] .brand,
+.slide[data-title="RemoteTechMarketRemoteTech"] .brand,
+.slide[data-title="RemoteTechMarketDropship"] .brand,
+.slide[data-title="EitherMarketJobOpened"] .brand,
+.slide[data-title="EitherMarketDropship"] .brand,
+.slide[data-title="EitherMarketRemoteTech"] .brand,
+.slide[data-title="EitherMarketTruckRoll"] .brand{
+  display:grid;
+  place-items:center;
+  height:86px;
+  margin-top:6px;
+}
+.slide[data-title^="LoggedIn"] .brand-badge,
+.slide[data-title="VerifyAccount"] .brand-badge,
+.slide[data-title^="AccountActivity"] .brand-badge,
+.slide[data-title="TruckRollJobCreation"] .brand-badge,
+.slide[data-title="TruckRollMarketTruckRoll"] .brand-badge,
+.slide[data-title="RemoteTechJobCreation"] .brand-badge,
+.slide[data-title="RemoteTechMarketRemoteTech"] .brand-badge,
+.slide[data-title="RemoteTechMarketDropship"] .brand-badge,
+.slide[data-title="EitherMarketJobOpened"] .brand-badge,
+.slide[data-title="EitherMarketDropship"] .brand-badge,
+.slide[data-title="EitherMarketRemoteTech"] .brand-badge,
+.slide[data-title="EitherMarketTruckRoll"] .brand-badge{
+  width:52px;height:52px;border-radius:14px;
+  border:2px solid rgba(255,255,255,.35);
+  display:grid;place-items:center;
+  font-weight:800;
+}
+.slide[data-title^="LoggedIn"] .userbox,
+.slide[data-title="VerifyAccount"] .userbox,
+.slide[data-title^="AccountActivity"] .userbox,
+.slide[data-title="TruckRollJobCreation"] .userbox,
+.slide[data-title="TruckRollMarketTruckRoll"] .userbox,
+.slide[data-title="RemoteTechJobCreation"] .userbox,
+.slide[data-title="RemoteTechMarketRemoteTech"] .userbox,
+.slide[data-title="RemoteTechMarketDropship"] .userbox,
+.slide[data-title="EitherMarketJobOpened"] .userbox,
+.slide[data-title="EitherMarketDropship"] .userbox,
+.slide[data-title="EitherMarketRemoteTech"] .userbox,
+.slide[data-title="EitherMarketTruckRoll"] .userbox{
+  padding:0 16px 14px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.slide[data-title^="LoggedIn"] .userbox .email,
+.slide[data-title="VerifyAccount"] .userbox .email,
+.slide[data-title^="AccountActivity"] .userbox .email,
+.slide[data-title="TruckRollJobCreation"] .userbox .email,
+.slide[data-title="TruckRollMarketTruckRoll"] .userbox .email,
+.slide[data-title="RemoteTechJobCreation"] .userbox .email,
+.slide[data-title="RemoteTechMarketRemoteTech"] .userbox .email,
+.slide[data-title="RemoteTechMarketDropship"] .userbox .email,
+.slide[data-title="EitherMarketJobOpened"] .userbox .email,
+.slide[data-title="EitherMarketDropship"] .userbox .email,
+.slide[data-title="EitherMarketRemoteTech"] .userbox .email,
+.slide[data-title="EitherMarketTruckRoll"] .userbox .email{font-size:13px; opacity:.95}
+.slide[data-title^="LoggedIn"] .userbox .signout,
+.slide[data-title="VerifyAccount"] .userbox .signout,
+.slide[data-title^="AccountActivity"] .userbox .signout,
+.slide[data-title="TruckRollJobCreation"] .userbox .signout,
+.slide[data-title="TruckRollMarketTruckRoll"] .userbox .signout,
+.slide[data-title="RemoteTechJobCreation"] .userbox .signout,
+.slide[data-title="RemoteTechMarketRemoteTech"] .userbox .signout,
+.slide[data-title="RemoteTechMarketDropship"] .userbox .signout,
+.slide[data-title="EitherMarketJobOpened"] .userbox .signout,
+.slide[data-title="EitherMarketDropship"] .userbox .signout,
+.slide[data-title="EitherMarketRemoteTech"] .userbox .signout,
+.slide[data-title="EitherMarketTruckRoll"] .userbox .signout{
+  font-size:12px;
+  opacity:.85;
+  text-decoration:underline;
+  cursor:pointer;
+  margin-top:4px
+}
+
+.slide[data-title^="LoggedIn"] .nav,
+.slide[data-title="VerifyAccount"] .nav,
+.slide[data-title^="AccountActivity"] .nav,
+.slide[data-title="TruckRollJobCreation"] .nav,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav,
+.slide[data-title="RemoteTechJobCreation"] .nav,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav,
+.slide[data-title="RemoteTechMarketDropship"] .nav,
+.slide[data-title="EitherMarketJobOpened"] .nav,
+.slide[data-title="EitherMarketDropship"] .nav,
+.slide[data-title="EitherMarketRemoteTech"] .nav,
+.slide[data-title="EitherMarketTruckRoll"] .nav{
+  padding:10px 0;
+  flex:1;
+}
+.slide[data-title^="LoggedIn"] .nav-item,
+.slide[data-title="VerifyAccount"] .nav-item,
+.slide[data-title^="AccountActivity"] .nav-item,
+.slide[data-title="TruckRollJobCreation"] .nav-item,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-item,
+.slide[data-title="RemoteTechJobCreation"] .nav-item,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-item,
+.slide[data-title="RemoteTechMarketDropship"] .nav-item,
+.slide[data-title="EitherMarketJobOpened"] .nav-item,
+.slide[data-title="EitherMarketDropship"] .nav-item,
+.slide[data-title="EitherMarketRemoteTech"] .nav-item,
+.slide[data-title="EitherMarketTruckRoll"] .nav-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  color:#fff;
+  opacity:.9;
+  cursor:pointer;
+}
+.slide[data-title^="LoggedIn"] .nav-item.active,
+.slide[data-title="VerifyAccount"] .nav-item.active,
+.slide[data-title^="AccountActivity"] .nav-item.active,
+.slide[data-title="TruckRollJobCreation"] .nav-item.active,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-item.active,
+.slide[data-title="RemoteTechJobCreation"] .nav-item.active,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-item.active,
+.slide[data-title="RemoteTechMarketDropship"] .nav-item.active,
+.slide[data-title="EitherMarketJobOpened"] .nav-item.active,
+.slide[data-title="EitherMarketDropship"] .nav-item.active,
+.slide[data-title="EitherMarketRemoteTech"] .nav-item.active,
+.slide[data-title="EitherMarketTruckRoll"] .nav-item.active{
+  background:rgba(0,0,0,.12);
+  opacity:1;
+}
+.slide[data-title^="LoggedIn"] .nav-item.muted,
+.slide[data-title="VerifyAccount"] .nav-item.muted,
+.slide[data-title^="AccountActivity"] .nav-item.muted,
+.slide[data-title="TruckRollJobCreation"] .nav-item.muted,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-item.muted,
+.slide[data-title="RemoteTechJobCreation"] .nav-item.muted,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-item.muted,
+.slide[data-title="RemoteTechMarketDropship"] .nav-item.muted,
+.slide[data-title="EitherMarketJobOpened"] .nav-item.muted,
+.slide[data-title="EitherMarketDropship"] .nav-item.muted,
+.slide[data-title="EitherMarketRemoteTech"] .nav-item.muted,
+.slide[data-title="EitherMarketTruckRoll"] .nav-item.muted{ opacity:.45; }
+.nav-item.disabled{ cursor:not-allowed; pointer-events:none; }
+.slide[data-title^="LoggedIn"] .nav-ico,
+.slide[data-title="VerifyAccount"] .nav-ico,
+.slide[data-title^="AccountActivity"] .nav-ico,
+.slide[data-title="TruckRollJobCreation"] .nav-ico,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-ico,
+.slide[data-title="RemoteTechJobCreation"] .nav-ico,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-ico,
+.slide[data-title="RemoteTechMarketDropship"] .nav-ico,
+.slide[data-title="EitherMarketJobOpened"] .nav-ico,
+.slide[data-title="EitherMarketDropship"] .nav-ico,
+.slide[data-title="EitherMarketRemoteTech"] .nav-ico,
+.slide[data-title="EitherMarketTruckRoll"] .nav-ico{
+  width:22px;height:22px;
+  display:grid;
+  place-items:center;
+  opacity:.95;
+}
+.slide[data-title^="LoggedIn"] .nav-text,
+.slide[data-title="VerifyAccount"] .nav-text,
+.slide[data-title^="AccountActivity"] .nav-text,
+.slide[data-title="TruckRollJobCreation"] .nav-text,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-text,
+.slide[data-title="RemoteTechJobCreation"] .nav-text,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-text,
+.slide[data-title="RemoteTechMarketDropship"] .nav-text,
+.slide[data-title="EitherMarketJobOpened"] .nav-text,
+.slide[data-title="EitherMarketDropship"] .nav-text,
+.slide[data-title="EitherMarketRemoteTech"] .nav-text,
+.slide[data-title="EitherMarketTruckRoll"] .nav-text{
+  font-size:14px;
+  font-weight:600;
+}
+.slide[data-title^="LoggedIn"] .nav-item .ext,
+.slide[data-title="VerifyAccount"] .nav-item .ext,
+.slide[data-title^="AccountActivity"] .nav-item .ext,
+.slide[data-title="TruckRollJobCreation"] .nav-item .ext,
+.slide[data-title="TruckRollMarketTruckRoll"] .nav-item .ext,
+.slide[data-title="RemoteTechJobCreation"] .nav-item .ext,
+.slide[data-title="RemoteTechMarketRemoteTech"] .nav-item .ext,
+.slide[data-title="RemoteTechMarketDropship"] .nav-item .ext,
+.slide[data-title="EitherMarketJobOpened"] .nav-item .ext,
+.slide[data-title="EitherMarketDropship"] .nav-item .ext,
+.slide[data-title="EitherMarketRemoteTech"] .nav-item .ext,
+.slide[data-title="EitherMarketTruckRoll"] .nav-item .ext{
+  margin-left:auto;
+  opacity:.8;
+}
+
+.slide[data-title^="LoggedIn"] .sidebar-foot,
+.slide[data-title="VerifyAccount"] .sidebar-foot,
+.slide[data-title^="AccountActivity"] .sidebar-foot,
+.slide[data-title="TruckRollJobCreation"] .sidebar-foot,
+.slide[data-title="TruckRollMarketTruckRoll"] .sidebar-foot,
+.slide[data-title="RemoteTechJobCreation"] .sidebar-foot,
+.slide[data-title="RemoteTechMarketRemoteTech"] .sidebar-foot,
+.slide[data-title="RemoteTechMarketDropship"] .sidebar-foot,
+.slide[data-title="EitherMarketJobOpened"] .sidebar-foot,
+.slide[data-title="EitherMarketDropship"] .sidebar-foot,
+.slide[data-title="EitherMarketRemoteTech"] .sidebar-foot,
+.slide[data-title="EitherMarketTruckRoll"] .sidebar-foot{
+  padding:12px 16px;
+  border-top:1px solid rgba(255,255,255,.12);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  opacity:.9;
+}
+.slide[data-title^="LoggedIn"] .version,
+.slide[data-title="VerifyAccount"] .version,
+.slide[data-title^="AccountActivity"] .version,
+.slide[data-title="TruckRollJobCreation"] .version,
+.slide[data-title="TruckRollMarketTruckRoll"] .version,
+.slide[data-title="RemoteTechJobCreation"] .version,
+.slide[data-title="RemoteTechMarketRemoteTech"] .version,
+.slide[data-title="RemoteTechMarketDropship"] .version,
+.slide[data-title="EitherMarketJobOpened"] .version,
+.slide[data-title="EitherMarketDropship"] .version,
+.slide[data-title="EitherMarketRemoteTech"] .version,
+.slide[data-title="EitherMarketTruckRoll"] .version{
+  font-size:12px;
+  opacity:.9;
+}

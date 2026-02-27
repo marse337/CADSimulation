@@ -1,0 +1,337 @@
+    <!-- Slide 8 (EventHistory) -->
+    <section class="slide" data-title="EventHistory" data-testid="event-history-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="event-history-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="event-history-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="event-history-main">
+          <section class="panel" data-testid="event-history-panel">
+            <div class="content">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="2"
+                   data-testid="event-history-tabs"></div>
+
+              <!-- Default view (non-Cancelled, non-AuthorizedDealer) -->
+              <div class="eh-view" data-customer-view-hide="Cancelled,AuthorizedDealer">
+
+              <!-- Filter row -->
+              <div class="filter-row" data-testid="event-history-filters">
+                <div class="filter-field" data-testid="event-history-start-date-field">
+                  <label data-automation-id="EventFilterStartDateLabel">Start Date</label>
+                  <input class="filter-input date" value="Start Date" readonly data-testid="event-history-start-date" />
+                </div>
+                <div class="filter-field" data-testid="event-history-start-time-field">
+                  <label data-automation-id="EventFilterStartTimeLabel">Start Time</label>
+                  <input class="filter-input time" value="00:00" readonly data-testid="event-history-start-time" data-automation-id="EventStartTimeFilter" />
+                </div>
+                <span class="filter-arrow" data-automation-id="EventArrowRangeOne">&harr;</span>
+                <div class="filter-field" data-testid="event-history-end-date-field">
+                  <label data-automation-id="EventFilterEndDateLabel">End Date</label>
+                  <input class="filter-input date" value="End Date" readonly data-testid="event-history-end-date" />
+                </div>
+                <div class="filter-field" data-testid="event-history-end-time-field">
+                  <label data-automation-id="EventFilterEndTimeLabel">End Time</label>
+                  <input class="filter-input time" value="00:00" readonly data-testid="event-history-end-time" data-automation-id="EventEndTimeFilter" />
+                </div>
+                <div class="filter-field" data-testid="event-history-from-zone-field">
+                  <label data-automation-id="EventFilterFromZoneLabel">From Zone</label>
+                  <select class="filter-input zone" data-testid="event-history-from-zone" data-automation-id="EventFromZoneFilter">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <span class="filter-arrow" data-automation-id="EventArrowRangeTwo">&harr;</span>
+                <div class="filter-field" data-testid="event-history-to-zone-field">
+                  <label data-automation-id="EventFilterToZoneLabel">To Zone</label>
+                  <select class="filter-input zone" data-testid="event-history-to-zone" data-automation-id="EventToZoneFilter">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <button class="filter-btn refresh" type="button" data-testid="event-history-refresh-btn" data-automation-id="EventHistoryRefreshBtn">â†»</button>
+                <button class="filter-btn apply" type="button" data-testid="event-history-apply-btn" data-automation-id="LoadEventDateButton">Apply</button>
+                <button class="filter-btn clear" type="button" data-testid="event-history-clear-btn" data-automation-id="ClearEventFiltersButton">Clear</button>
+              </div>
+
+              <!-- Event table -->
+              <div class="event-table" data-testid="event-history-table">
+                <div class="event-head" data-testid="event-history-table-header">
+                  <div data-testid="event-history-col-datetime" data-automation-id="EHDateTimeLabel">Date/Time</div>
+                  <div data-testid="event-history-col-event" data-automation-id="EHNameLabel">Event</div>
+                  <div data-testid="event-history-col-zone" data-automation-id="EHZoneLabel">Zone</div>
+                  <div data-testid="event-history-col-location" data-automation-id="EHLocationLabel">Location</div>
+                  <div data-testid="event-history-col-comment" data-automation-id="EHCommentLabel">Comment</div>
+                </div>
+                <div class="event-empty" style="display:none;" data-automation-id="NoEventMessage">No events found.</div>
+                <div class="event-body" data-testid="event-history-table-body">
+                  <div class="event-row" data-testid="event-history-row-1"><div data-testid="event-history-row-1-datetime" data-automation-id="EHDateTime">Sun, 01/25/2026 12:00:39</div><div data-testid="event-history-row-1-event" data-automation-id="EHName">Verified Codeword/PIN</div><div data-testid="event-history-row-1-zone" data-automation-id="EHZone">-</div><div data-testid="event-history-row-1-location" data-automation-id="EHLocation"></div><div data-testid="event-history-row-1-comment" data-automation-id="EHComment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-2"><div data-testid="event-history-row-2-datetime">Sat, 01/24/2026 18:55:08</div><div data-testid="event-history-row-2-event">Verified Codeword/PIN</div><div data-testid="event-history-row-2-zone">-</div><div data-testid="event-history-row-2-location"></div><div data-testid="event-history-row-2-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-3"><div data-testid="event-history-row-3-datetime">Fri, 01/23/2026 15:42:15</div><div data-testid="event-history-row-3-event">Verified Codeword/PIN</div><div data-testid="event-history-row-3-zone">-</div><div data-testid="event-history-row-3-location"></div><div data-testid="event-history-row-3-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-4"><div data-testid="event-history-row-4-datetime">Fri, 01/23/2026 14:05:40</div><div data-testid="event-history-row-4-event">Verified Codeword/PIN</div><div data-testid="event-history-row-4-zone">-</div><div data-testid="event-history-row-4-location"></div><div data-testid="event-history-row-4-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-5"><div data-testid="event-history-row-5-datetime">Thu, 01/22/2026 16:50:38</div><div data-testid="event-history-row-5-event">Verified Codeword/PIN</div><div data-testid="event-history-row-5-zone">-</div><div data-testid="event-history-row-5-location"></div><div data-testid="event-history-row-5-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-6"><div data-testid="event-history-row-6-datetime">Thu, 01/22/2026 16:25:36</div><div data-testid="event-history-row-6-event">Verified Codeword/PIN</div><div data-testid="event-history-row-6-zone">-</div><div data-testid="event-history-row-6-location"></div><div data-testid="event-history-row-6-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-7"><div data-testid="event-history-row-7-datetime">Thu, 01/22/2026 16:04:28</div><div data-testid="event-history-row-7-event">Verified Codeword/PIN</div><div data-testid="event-history-row-7-zone">-</div><div data-testid="event-history-row-7-location"></div><div data-testid="event-history-row-7-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-8"><div data-testid="event-history-row-8-datetime">Thu, 01/22/2026 15:53:55</div><div data-testid="event-history-row-8-event">Verified Codeword/PIN</div><div data-testid="event-history-row-8-zone">-</div><div data-testid="event-history-row-8-location"></div><div data-testid="event-history-row-8-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-9"><div data-testid="event-history-row-9-datetime">Thu, 01/22/2026 15:51:01</div><div data-testid="event-history-row-9-event">Verified Codeword/PIN</div><div data-testid="event-history-row-9-zone">-</div><div data-testid="event-history-row-9-location"></div><div data-testid="event-history-row-9-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-10"><div data-testid="event-history-row-10-datetime">Thu, 01/22/2026 15:47:36</div><div data-testid="event-history-row-10-event">Verified Codeword/PIN</div><div data-testid="event-history-row-10-zone">-</div><div data-testid="event-history-row-10-location"></div><div data-testid="event-history-row-10-comment">Common Agent Desktop</div></div>
+                  <div class="event-row" data-testid="event-history-row-11"><div data-testid="event-history-row-11-datetime">Thu, 01/22/2026 15:43:52</div><div data-testid="event-history-row-11-event">Verified Codeword/PIN</div><div data-testid="event-history-row-11-zone">-</div><div data-testid="event-history-row-11-location"></div><div data-testid="event-history-row-11-comment">Common Agent Desktop</div></div>
+                </div>
+              </div>
+
+              <!-- Dispatch notes section -->
+              <div class="dispatch-section" data-testid="event-history-dispatch-section">
+                <div class="dispatch-col" data-testid="event-history-temp-dispatch">
+                  <div class="dispatch-header" data-testid="event-history-temp-dispatch-header">
+                    <span class="dispatch-title" data-testid="event-history-temp-dispatch-title" data-automation-id="TDNHeading">Temporary Dispatch Note</span>
+                    <span class="dispatch-help" data-testid="event-history-temp-dispatch-help">?</span>
+                    <div class="dispatch-actions">
+                      <button class="dispatch-btn refresh-small" type="button" data-automation-id="TemporaryDisptachRefreshBtn">&#x21BB;</button>
+                      <button class="dispatch-btn new" type="button" data-modal="temp-dispatch" data-testid="event-history-temp-dispatch-new-btn" data-automation-id="TDNNewBtn">+ New</button>
+                    </div>
+                  </div>
+                  <div class="dispatch-content" data-testid="event-history-temp-dispatch-content" data-automation-id="TDNZero">No dispatch note found.</div>
+                </div>
+                <div class="dispatch-col" data-testid="event-history-perm-dispatch">
+                  <div class="dispatch-header" data-testid="event-history-perm-dispatch-header">
+                    <span class="dispatch-title" data-testid="event-history-perm-dispatch-title" data-automation-id="PDNHeading">Permanent Dispatch Note</span>
+                    <span class="dispatch-help" data-testid="event-history-perm-dispatch-help">?</span>
+                  </div>
+                  <div class="dispatch-content note" data-testid="event-history-perm-dispatch-content">SUBDIVISION IS LOCATED OFF ROUTE 113</div>
+                  <div class="dispatch-content empty" style="display:none;" data-automation-id="PDNEmpty">No dispatch note found.</div>
+                </div>
+              </div>
+
+              </div><!-- end default view -->
+
+              <!-- Cancelled customer view -->
+              <div class="eh-view" data-customer-view="Cancelled" style="display:none">
+
+              <!-- Filter row -->
+              <div class="filter-row">
+                <div class="filter-field">
+                  <label>Start Date</label>
+                  <input class="filter-input date" value="Start Date" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>Start Time</label>
+                  <input class="filter-input time" value="00:00" readonly />
+                </div>
+                <span class="filter-arrow">&harr;</span>
+                <div class="filter-field">
+                  <label>End Date</label>
+                  <input class="filter-input date" value="End Date" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>End Time</label>
+                  <input class="filter-input time" value="00:00" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>From Zone</label>
+                  <select class="filter-input zone">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <span class="filter-arrow">&harr;</span>
+                <div class="filter-field">
+                  <label>To Zone</label>
+                  <select class="filter-input zone">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <button class="filter-btn refresh" type="button">&#x21BB;</button>
+                <button class="filter-btn apply" type="button">Apply</button>
+                <button class="filter-btn clear" type="button">Clear</button>
+              </div>
+
+              <!-- Event table - empty state -->
+              <div class="event-table">
+                <div class="event-head">
+                  <div>Date/Time</div>
+                  <div>Event</div>
+                  <div>Zone</div>
+                  <div>Location</div>
+                  <div>Comment</div>
+                </div>
+                <div class="event-empty">
+                  <div class="event-empty-msg">System number needs to a counting number.</div>
+                </div>
+              </div>
+
+              <!-- Dispatch notes section -->
+              <div class="dispatch-section">
+                <div class="dispatch-col">
+                  <div class="dispatch-header">
+                    <span class="dispatch-title">Temporary Dispatch Note</span>
+                    <span class="dispatch-help">?</span>
+                    <div class="dispatch-actions">
+                      <button class="dispatch-btn refresh-small" type="button">&#x21BB;</button>
+                      <button class="dispatch-btn new disabled" type="button" disabled>+ New</button>
+                    </div>
+                  </div>
+                  <div class="dispatch-content">No dispatch note found.</div>
+                </div>
+                <div class="dispatch-col">
+                  <div class="dispatch-header">
+                    <span class="dispatch-title">Permanent Dispatch Note</span>
+                    <span class="dispatch-help">?</span>
+                  </div>
+                  <div class="dispatch-content">No dispatch note found.</div>
+                </div>
+              </div>
+
+              </div><!-- end Cancelled view -->
+
+              <!-- AuthorizedDealer customer view -->
+              <div class="eh-view" data-customer-view="AuthorizedDealer" style="display:none">
+
+              <div class="dealer-banner">
+                <strong>This is an Authorized Dealer account.</strong>
+                <span>Apex Shield Security, Inc.</span>
+                <span>(555) 867-5309</span>
+              </div>
+
+              <!-- Filter row -->
+              <div class="filter-row">
+                <div class="filter-field">
+                  <label>Start Date</label>
+                  <input class="filter-input date" value="Start Date" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>Start Time</label>
+                  <input class="filter-input time" value="00:00" readonly />
+                </div>
+                <span class="filter-arrow">&harr;</span>
+                <div class="filter-field">
+                  <label>End Date</label>
+                  <input class="filter-input date" value="End Date" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>End Time</label>
+                  <input class="filter-input time" value="00:00" readonly />
+                </div>
+                <div class="filter-field">
+                  <label>From Zone</label>
+                  <select class="filter-input zone">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <span class="filter-arrow">&harr;</span>
+                <div class="filter-field">
+                  <label>To Zone</label>
+                  <select class="filter-input zone">
+                    <option>Zone</option>
+                  </select>
+                </div>
+                <button class="filter-btn refresh" type="button">&#x21BB;</button>
+                <button class="filter-btn apply" type="button">Apply</button>
+                <button class="filter-btn clear" type="button">Clear</button>
+              </div>
+
+              <!-- Event table - empty state -->
+              <div class="event-table">
+                <div class="event-head">
+                  <div>Date/Time</div>
+                  <div>Event</div>
+                  <div>Zone</div>
+                  <div>Location</div>
+                  <div>Comment</div>
+                </div>
+                <div class="event-empty">
+                  <div class="event-empty-msg">System number needs to a counting number.</div>
+                </div>
+              </div>
+
+              <!-- Dispatch notes section -->
+              <div class="dispatch-section">
+                <div class="dispatch-col">
+                  <div class="dispatch-header">
+                    <span class="dispatch-title">Temporary Dispatch Note</span>
+                    <span class="dispatch-help">?</span>
+                    <div class="dispatch-actions">
+                      <button class="dispatch-btn refresh-small" type="button">&#x21BB;</button>
+                      <button class="dispatch-btn new" type="button" data-modal="temp-dispatch">+ New</button>
+                    </div>
+                  </div>
+                  <div class="dispatch-content">No dispatch note found.</div>
+                </div>
+                <div class="dispatch-col">
+                  <div class="dispatch-header">
+                    <span class="dispatch-title">Permanent Dispatch Note</span>
+                    <span class="dispatch-help">?</span>
+                  </div>
+                  <div class="dispatch-content">No dispatch note found.</div>
+                </div>
+              </div>
+
+              </div><!-- end AuthorizedDealer view -->
+
+            </div>
+          </section>
+        </main>
+
+        <!-- Temporary Dispatch Note Modal -->
+        <div class="dispatch-modal-overlay" id="temp-dispatch-modal" data-testid="temp-dispatch-modal">
+          <div class="dispatch-modal" data-testid="temp-dispatch-modal-content">
+            <div class="dispatch-modal-header" data-testid="temp-dispatch-modal-header">
+              <h2 data-testid="temp-dispatch-modal-title">Add Temporary Dispatch Note</h2>
+              <button class="dispatch-modal-close" type="button" aria-label="Close" data-testid="temp-dispatch-modal-close-btn">&times;</button>
+            </div>
+
+            <div class="dispatch-form-grid" data-testid="temp-dispatch-modal-form">
+              <div class="dispatch-field-group" data-testid="temp-dispatch-effective-date-field">
+                <label>Effective Date: *</label>
+                <div class="dispatch-date-input">
+                  <input type="text" value="01/27/26" data-testid="temp-dispatch-effective-date" />
+                  <span class="dispatch-calendar-icon"></span>
+                </div>
+              </div>
+              <div class="dispatch-field-group" data-testid="temp-dispatch-effective-time-field">
+                <label>Effective Time: *</label>
+                <input type="text" value="12:00" data-testid="temp-dispatch-effective-time" />
+              </div>
+
+              <div class="dispatch-field-group" data-testid="temp-dispatch-expire-date-field">
+                <label>Expire Date: *</label>
+                <div class="dispatch-date-input">
+                  <input type="text" value="01/28/26" data-testid="temp-dispatch-expire-date" />
+                  <span class="dispatch-calendar-icon"></span>
+                </div>
+              </div>
+              <div class="dispatch-field-group" data-testid="temp-dispatch-expire-time-field">
+                <label>Expire Time: *</label>
+                <input type="text" value="12:00" data-testid="temp-dispatch-expire-time" />
+              </div>
+
+              <div class="dispatch-field-group dispatch-full-width" data-testid="temp-dispatch-instructions-field">
+                <label>Dispatch Instructions:</label>
+                <textarea data-testid="temp-dispatch-instructions">This is Dispatch Notes</textarea>
+              </div>
+            </div>
+
+            <p class="dispatch-footer-note" data-testid="temp-dispatch-modal-footer-note">All * fields are required.</p>
+            <button class="dispatch-create-btn" type="button" data-testid="temp-dispatch-create-btn">Create Note</button>
+          </div>
+        </div>
+      </div>
+    </section>

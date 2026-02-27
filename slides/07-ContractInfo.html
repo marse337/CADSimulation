@@ -1,0 +1,270 @@
+    <!-- Slide 7 (ContractInfo) -->
+    <section class="slide" data-title="ContractInfo" data-testid="contract-info-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="contract-info-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="contract-info-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="contract-info-main">
+          <section class="panel" data-testid="contract-info-panel">
+            <div class="content" data-customer-view-hide="Cancelled,AuthorizedDealer">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="1"
+                   data-testid="contract-info-tabs"></div>
+
+              <!-- Current Contract Details -->
+              <h2 class="section-title" data-testid="contract-details-title">Current Contract Details</h2>
+              <div class="contract-details" data-testid="contract-details">
+                <div class="detail-item" data-testid="contract-detail-start-date">
+                  <div class="detail-label" data-automation-id="CCSDLabel">Start Date</div>
+                  <div class="detail-value" data-testid="contract-detail-start-date-value" data-automation-id="CCStartDate">10/07/2021</div>
+                </div>
+                <div class="detail-item" data-testid="contract-detail-end-date">
+                  <div class="detail-label" data-automation-id="CCEDLabel">End Date</div>
+                  <div class="detail-value" data-testid="contract-detail-end-date-value" data-automation-id="CCEndDate">10/07/2026</div>
+                </div>
+                <div class="detail-item" data-testid="contract-detail-months-remaining">
+                  <div class="detail-label" data-automation-id="CCMRLabel">Months Remaining</div>
+                  <div class="detail-value" data-testid="contract-detail-months-remaining-value" data-automation-id="CurrentMonthsRemaining">9 Months</div>
+                </div>
+                <div class="detail-item" data-testid="contract-detail-rmr">
+                  <div class="detail-label" data-automation-id="CCRMRLabel">RMR</div>
+                  <div class="detail-value" data-testid="contract-detail-rmr-value" data-automation-id="CurrentRMR">$39.38/mo</div>
+                </div>
+                <div class="detail-item" data-testid="contract-detail-status">
+                  <div class="detail-label" data-automation-id="CCStausLabel">Contract Status</div>
+                  <div class="status-pill" data-testid="contract-detail-status-value" data-automation-id="CCSLabel">In Contract</div>
+                </div>
+              </div>
+
+              <!-- Contract History -->
+              <h2 class="section-title" data-testid="contract-history-title" data-automation-id="CHHeadingLabel">Contract History</h2>
+              <div class="history-table" data-testid="contract-history-table">
+                <div class="history-head" data-testid="contract-history-header">
+                  <div data-testid="contract-history-col-type" data-automation-id="CHTypeLabel">Contract Type</div>
+                  <div data-testid="contract-history-col-start" data-automation-id="CHSDLabel">Start Date</div>
+                  <div data-testid="contract-history-col-end" data-automation-id="CHEDLabel">End Date</div>
+                  <div data-testid="contract-history-col-term" data-automation-id="CHTermLabel">Contract Term</div>
+                  <div data-testid="contract-history-col-actions" data-automation-id="CHActionsLabel">Actions</div>
+                </div>
+                <div class="history-row" data-testid="contract-history-row-1">
+                  <div data-testid="contract-history-row-1-type" data-automation-id="CStatus">Extension</div>
+                  <div data-testid="contract-history-row-1-start" data-automation-id="CStartDate">10/07/2021</div>
+                  <div data-testid="contract-history-row-1-end" data-automation-id="CEndDate">10/07/2026</div>
+                  <div data-testid="contract-history-row-1-term" data-automation-id="CTerm">60</div>
+                  <div><button class="send-btn" type="button" data-modal="extension-contract" data-testid="contract-history-row-1-send-btn" data-automation-id="SendCopyBtn">Send Copy</button></div>
+                </div>
+                <div class="history-row" data-testid="contract-history-row-2">
+                  <div data-testid="contract-history-row-2-type">Initial term</div>
+                  <div data-testid="contract-history-row-2-start">05/30/1997</div>
+                  <div data-testid="contract-history-row-2-end">05/29/2000</div>
+                  <div data-testid="contract-history-row-2-term">36</div>
+                  <div><button class="send-btn" type="button" data-modal="initial-contract" data-testid="contract-history-row-2-send-btn">Send Copy</button></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Cancelled customer view -->
+            <div class="content" data-customer-view="Cancelled" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="1"></div>
+
+              <!-- Current Contract Details -->
+              <h2 class="section-title">Current Contract Details</h2>
+              <div class="contract-details">
+                <div class="detail-item">
+                  <div class="detail-label">Start Date</div>
+                  <div class="detail-value">10/17/2014</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">End Date</div>
+                  <div class="detail-value">10/16/2021</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Months Remaining</div>
+                  <div class="detail-value">-</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">RMR</div>
+                  <div class="detail-value">-</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Contract Status</div>
+                  <div class="status-pill cancelled">Cancelled</div>
+                </div>
+              </div>
+
+              <!-- Contract History -->
+              <h2 class="section-title">Contract History</h2>
+              <div class="history-table">
+                <div class="history-head">
+                  <div>Contract Type</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Contract Term</div>
+                  <div>Actions</div>
+                </div>
+                <div class="history-row">
+                  <div>Cancelled</div>
+                  <div>10/16/2021</div>
+                  <div>10/16/2021</div>
+                  <div>36</div>
+                  <div><button class="send-btn disabled" type="button" disabled>Send Copy</button></div>
+                </div>
+                <div class="history-row">
+                  <div>Extension</div>
+                  <div>07/12/2018</div>
+                  <div>10/16/2021</div>
+                  <div>36</div>
+                  <div><button class="send-btn" type="button" data-modal="extension-contract">Send Copy</button></div>
+                </div>
+                <div class="history-row">
+                  <div>Initial term</div>
+                  <div>10/17/2014</div>
+                  <div>10/16/2019</div>
+                  <div>36</div>
+                  <div><button class="send-btn" type="button" data-modal="initial-contract">Send Copy</button></div>
+                </div>
+                <div class="history-row">
+                  <div>Extension</div>
+                  <div>08/19/2016</div>
+                  <div>10/16/2018</div>
+                  <div>36</div>
+                  <div><button class="send-btn" type="button" data-modal="extension-contract">Send Copy</button></div>
+                </div>
+                <div class="history-row">
+                  <div>Initial term</div>
+                  <div>10/17/2014</div>
+                  <div>01/01/2079</div>
+                  <div>0</div>
+                  <div><button class="send-btn" type="button" data-modal="initial-contract">Send Copy</button></div>
+                </div>
+                <div class="history-row">
+                  <div>Initial term</div>
+                  <div>10/17/2014</div>
+                  <div>10/16/2017</div>
+                  <div>36</div>
+                  <div><button class="send-btn" type="button" data-modal="initial-contract">Send Copy</button></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- AuthorizedDealer customer view -->
+            <div class="content" data-customer-view="AuthorizedDealer" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="1"></div>
+
+              <div class="dealer-banner">
+                <strong>This is an Authorized Dealer account.</strong>
+                <span>Apex Shield Security, Inc.</span>
+                <span>(555) 867-5309</span>
+              </div>
+
+              <!-- Current Contract Details -->
+              <h2 class="section-title">Current Contract Details</h2>
+              <div class="contract-details">
+                <div class="detail-item">
+                  <div class="detail-label">Start Date</div>
+                  <div class="detail-value">09/01/2017</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">End Date</div>
+                  <div class="detail-value">01/01/2079</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Months Remaining</div>
+                  <div class="detail-value">-</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">RMR</div>
+                  <div class="detail-value">-</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Contract Status</div>
+                  <div class="status-pill">Out of Contract</div>
+                </div>
+              </div>
+
+              <!-- Contract History -->
+              <h2 class="section-title">Contract History</h2>
+              <div class="history-table">
+                <div class="history-head">
+                  <div>Contract Type</div>
+                  <div>Start Date</div>
+                  <div>End Date</div>
+                  <div>Contract Term</div>
+                  <div>Actions</div>
+                </div>
+                <div class="history-row">
+                  <div>Initial term</div>
+                  <div>09/01/2017</div>
+                  <div>01/01/2079</div>
+                  <div>0</div>
+                  <div><button class="send-btn" type="button" data-modal="initial-contract">Send Copy</button></div>
+                </div>
+              </div>
+
+            </div>
+
+          </section>
+        </main>
+
+        <!-- Extension Contract Modal -->
+        <div class="contract-modal-overlay" id="extension-contract-modal" data-testid="extension-contract-modal">
+          <div class="contract-modal" data-testid="extension-contract-modal-content">
+            <div class="contract-modal-header" data-testid="extension-contract-modal-header">Send to Customer</div>
+            <button class="contract-modal-close" type="button" aria-label="Close" data-testid="extension-contract-modal-close-btn">&times;</button>
+            <div class="contract-modal-warning" data-testid="extension-contract-modal-warning">
+              <div class="contract-modal-warning-title">Important!</div>
+              <div>Inform the customer that it may take 1–2 business days for the extension letter to be sent via email.</div>
+            </div>
+            <label class="contract-modal-label" data-testid="extension-contract-modal-email-label">Email Address</label>
+            <input type="email" class="contract-modal-input" value="rvrtrinc@comcast.net" data-testid="extension-contract-modal-email-input" />
+            <button class="contract-modal-send" type="button" data-testid="extension-contract-modal-send-btn">Send Email</button>
+          </div>
+        </div>
+
+        <!-- Initial Contract Modal -->
+        <div class="contract-modal-overlay" id="initial-contract-modal" data-testid="initial-contract-modal">
+          <div class="contract-modal" data-testid="initial-contract-modal-content">
+            <div class="contract-modal-header" data-testid="initial-contract-modal-header">Send to Customer</div>
+            <button class="contract-modal-close" type="button" aria-label="Close" data-testid="initial-contract-modal-close-btn">&times;</button>
+            <div class="contract-modal-warning" data-testid="initial-contract-modal-warning">
+              <div class="contract-modal-warning-title">Important!</div>
+              <div>Inform the customer that it may take up to 7 business days for the contract email to be sent.</div>
+            </div>
+            <label class="contract-modal-label" data-testid="initial-contract-modal-email-label">Email Address</label>
+            <input type="email" class="contract-modal-input" value="rvrtrinc@comcast.net" data-testid="initial-contract-modal-email-input" />
+            <button class="contract-modal-send" type="button" data-testid="initial-contract-modal-send-btn">Send Email</button>
+          </div>
+        </div>
+      </div>
+    </section>

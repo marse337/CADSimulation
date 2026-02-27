@@ -1,0 +1,86 @@
+    <!-- Slide 34 (JobManagementCRSE) -->
+    <section class="slide" data-title="JobManagementCRSE" data-testid="job-management-crse-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="job-management-crse-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="Rachel Roth"
+             data-contract-signer="ALICE A ROBB"
+             data-site-status="Cancelled"
+             data-customer-time="10:34 PM EST"
+             data-site-number="601197523"
+             data-customer-since="10/17/2014"
+             data-customer-email="rachelgardner1..."
+             data-market-type="--"
+             data-testid="job-management-crse-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="job-management-crse-main">
+          <section class="panel" data-testid="job-management-crse-panel">
+            <div class="content">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="5"
+                   data-testid="job-management-crse-tabs"></div>
+
+              <!-- Search section -->
+              <div class="search-section" data-testid="job-management-crse-search-section">
+                <div class="search-label" data-testid="job-management-crse-search-label">Search by job number</div>
+                <div class="search-row" data-testid="job-management-crse-search-row">
+                  <input class="search-input" type="text" placeholder="Search by job number ..." data-testid="job-management-crse-search-input" />
+                  <button class="search-btn" type="button" data-testid="job-management-crse-search-btn">Search</button>
+                  <div class="search-actions" data-testid="job-management-crse-search-actions">
+                    <div class="create-tooltip-wrap">
+                      <div class="create-tooltip" role="tooltip">Job creation is not allowed for this account due to one or more ineligible conditions. Please review site status, customer status, customer type, RMR line status, and system information.</div>
+                      <button class="create-btn-disabled" type="button" disabled data-testid="create-new-job-btn-disabled">Create New Job</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jobs table -->
+              <div class="jobs-table" data-testid="job-management-crse-jobs-table">
+                <div class="jobs-head" data-testid="job-management-crse-jobs-header">
+                  <div>Date</div>
+                  <div class="sortable">Status </div>
+                  <div>Job Number</div>
+                  <div class="sortable">Job Type </div>
+                  <div>Comment</div>
+                  <div>Actions</div>
+                </div>
+
+                <!-- Job Row 1 -->
+                <div class="job-row" data-testid="job-management-crse-job-row-1">
+                  <div>Wed, 06/07/2017 17:00:39</div>
+                  <div><span class="status-pill closed">Closed</span></div>
+                  <div>600681152</div>
+                  <div>SYS</div>
+                  <div class="job-comment">Contact#: 3219603167,3219603167,none@none.com,</div>
+                  <div class="actions-cell">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-management-crse-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-management-crse-action-menu">
+                      <div>Edit</div>
+                      <div>Reschedule</div>
+                      <div>Return Trip</div>
+                      <div>Cancel</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>

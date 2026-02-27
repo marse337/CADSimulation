@@ -1,0 +1,25 @@
+/* =========================================================
+   SLIDE 5 (LoggedInFilled) TWEAKS
+   ========================================================= */
+.slide[data-title="LoggedInFilled"] .actions .btn{
+  border: none;
+  border-radius: 8px;
+  height: 44px;
+  min-width: 220px;
+}
+
+.slide[data-title="LoggedInFilled"] .actions .btn.primary{
+  background: #1f5b6b;
+  color: #ffffff;
+}
+
+.slide[data-title="LoggedInFilled"] .actions .btn.dark{
+  background: #6b6b6b;
+  color: #ffffff;
+  border: none;
+}
+
+.slide[data-title="LoggedInFilled"] .input.is-focus{
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}

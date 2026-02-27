@@ -1,0 +1,410 @@
+/* =========================================================
+   EQUIPMENT FINANCING COMPONENT
+   Used in Job Creation Tool slides
+   ========================================================= */
+
+/* Equipment Financing Section */
+.jct-section.equipment-financing {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.jct-ef-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+}
+
+.jct-ef-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.jct-ef-label .info-icon {
+  color: #9ca3af;
+  font-size: 12px;
+  cursor: help;
+}
+
+/* Start State - Eligibility */
+.jct-ef-start {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.jct-ef-eligible {
+  font-size: 14px;
+  font-weight: 700;
+  color: #15803d;
+}
+
+.jct-ef-btn-start {
+  background: #15803d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.jct-ef-btn-start:hover {
+  background: #16a34a;
+}
+
+.jct-ef-btn-start:active {
+  transform: translateY(1px);
+}
+
+/* Progress Tracker */
+.jct-ef-tracker {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.jct-ef-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Progress line background */
+.jct-ef-steps::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e5e7eb;
+  z-index: 0;
+}
+
+/* Progress line fill */
+.jct-ef-progress-line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 2px;
+  background: #15803d;
+  z-index: 1;
+  transition: width 0.5s ease;
+}
+
+.jct-ef-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 0 8px;
+}
+
+.jct-ef-step-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #ffffff;
+  background: #d1d5db;
+  transition: background 0.3s;
+}
+
+.jct-ef-step-icon.complete {
+  background: #15803d;
+}
+
+.jct-ef-step-icon.clickable {
+  cursor: pointer;
+}
+
+.jct-ef-step-icon.clickable:hover {
+  background: #9ca3af;
+}
+
+.jct-ef-step-icon.complete.clickable:hover {
+  background: #16a34a;
+}
+
+.jct-ef-step-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #374151;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+/* Success Message */
+.jct-ef-success {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-top: 16px;
+}
+
+.jct-ef-success-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #15803d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #15803d;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+.jct-ef-success-text h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #166534;
+}
+
+.jct-ef-success-text p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #15803d;
+}
+
+/* Terms and Actions Bar */
+.jct-ef-actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-top: 16px;
+}
+
+.jct-ef-terms {
+  font-size: 13px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.jct-ef-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.jct-ef-btn-resend {
+  background: #0d9488;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.jct-ef-btn-resend:hover {
+  background: #0f766e;
+}
+
+.jct-ef-btn-cancel {
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.jct-ef-btn-cancel:hover {
+  background: #b91c1c;
+}
+
+.jct-ef-btn-resend:active,
+.jct-ef-btn-cancel:active {
+  transform: translateY(1px);
+}
+
+/* Hidden state */
+.jct-ef-hidden {
+  display: none !important;
+}
+
+/* =========================================================
+   EQUIPMENT FINANCING MODALS
+   ========================================================= */
+
+/* Modal Overlay */
+.jct-ef-modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+}
+
+.jct-ef-modal-overlay.active {
+  display: flex;
+}
+
+/* Modal Container */
+.jct-ef-modal {
+  background: #0f212b;
+  color: #ffffff;
+  width: 450px;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* Modal Header */
+.jct-ef-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.jct-ef-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jct-ef-modal-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  opacity: 0.8;
+  padding: 0;
+  line-height: 1;
+}
+
+.jct-ef-modal-close:hover {
+  opacity: 1;
+}
+
+/* Modal Body */
+.jct-ef-modal-body p {
+  font-size: 14px;
+  color: #cbd5e1;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+/* Modal Form */
+.jct-ef-modal-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.jct-ef-modal-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  color: #111827;
+  outline: none;
+  box-sizing: border-box;
+  margin-bottom: 24px;
+}
+
+.jct-ef-modal-input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.1);
+}
+
+/* Modal Buttons */
+.jct-ef-modal-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.jct-ef-modal-btn:active {
+  transform: translateY(1px);
+}
+
+.jct-ef-modal-btn.primary {
+  background: #15803d;
+  color: #ffffff;
+}
+
+.jct-ef-modal-btn.primary:hover {
+  background: #16a34a;
+}
+
+/* Cancel Modal Specific */
+.jct-ef-modal-warning {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.jct-ef-modal-warning strong {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 16px;
+}
+
+.jct-ef-modal-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.jct-ef-modal-buttons .jct-ef-modal-btn {
+  flex: 1;
+}
+
+.jct-ef-modal-btn.secondary {
+  background: #0d9488;
+  color: #ffffff;
+}
+
+.jct-ef-modal-btn.secondary:hover {
+  background: #0f766e;
+}

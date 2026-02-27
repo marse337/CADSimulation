@@ -1,0 +1,89 @@
+    <!-- Slide 14 (MoveCustomerFilled) - CR Only -->
+    <section class="slide" data-title="MoveCustomerFilled">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="move"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-nav-goto='{"lookup":"6","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-back-goto="6"></div>
+
+        <!-- Main -->
+        <main class="main">
+          <section class="panel">
+            <div class="content">
+
+              <!-- Site Details Header -->
+              <div class="site-details-header">
+                <span class="site-details-title">Site Details</span>
+                <span class="info-icon">!</span>
+              </div>
+
+              <!-- Site to Deactivate -->
+              <div class="form-section">
+                <label class="form-label">Site to Deactivate:</label>
+                <input class="form-input readonly" type="text" value="1234 Oak Street SPRINGFIELD IL 627018383" readonly />
+              </div>
+
+              <!-- Site to Activate -->
+              <div class="form-section">
+                <label class="form-label">Site to Activate:</label>
+                
+                <div class="form-row">
+                  <div class="form-field half">
+                    <label class="form-label">Street Address Line 1</label>
+                    <input class="form-input" type="text" value="111" />
+                  </div>
+                  <div class="form-field half">
+                    <label class="form-label">Street Address Line 2</label>
+                    <input class="form-input" type="text" value="1111" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field small">
+                    <label class="form-label">Zip Code</label>
+                    <input class="form-input" type="text" value="70301" />
+                  </div>
+                  <div class="form-field small">
+                    <label class="form-label">City</label>
+                    <select class="form-input">
+                      <option selected>RIVERSIDE</option>
+                    </select>
+                  </div>
+                  <div class="form-field small">
+                    <label class="form-label">County</label>
+                    <select class="form-input">
+                      <option selected>LAFOURCHE</option>
+                    </select>
+                  </div>
+                  <div class="form-field tiny">
+                    <label class="form-label">State</label>
+                    <input class="form-input" type="text" value="LA" />
+                  </div>
+                </div>
+		   <!-- NEW: parent "hot zone" wrapper -->
+          <div class="goto-zone" data-goto-on-click="15">
+                <button class="confirm-btn" type="button">Confirm</button>
+				</div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>

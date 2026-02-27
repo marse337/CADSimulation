@@ -1,0 +1,512 @@
+    <!-- Slide 9 (AccountManagement) -->
+    <section class="slide" data-title="AccountManagement" data-testid="account-management-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="account-management-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="account-management-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="account-management-main">
+          <section class="panel" data-testid="account-management-panel">
+            <div class="content" data-customer-view-hide="AuthorizedDealer">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="3"
+                   data-testid="account-management-tabs"></div>
+
+              <!-- Account Information -->
+              <h2 class="section-title" data-testid="account-info-title" data-automation-id="AccountInformationLabel">Account Information</h2>
+              <div class="info-cards" data-testid="account-info-cards">
+                <div class="info-card" data-testid="billing-mailing-card">
+                  <div class="info-card-header" data-testid="billing-mailing-header" data-automation-id="AMBillingAndMailingLabel">
+                    Billing &amp; Mailing
+                    <span class="info-icon" data-testid="billing-mailing-help" data-automation-id="AMBillingAndMailing_InfoLabelImage">?</span>
+                    <button class="edit-icon" type="button" data-modal="billing-mailing" aria-label="Edit" data-testid="billing-mailing-edit-btn" data-automation-id="AMBillingAndMailing_EditLabelImage">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body" data-testid="billing-mailing-body"><span data-automation-id="AIBillingAddressLine1">123 Maple Ln</span><br><span data-automation-id="AIBillingAddressLine2">SPRINGFIELD, IL 62704</span></div>
+                </div>
+                <div class="info-card" data-testid="orders-shipped-card">
+                  <div class="info-card-header" data-testid="orders-shipped-header" data-automation-id="AMOrderShipmentLabel">
+                    Orders Shipped To
+                    <span class="info-icon" data-testid="orders-shipped-help" data-automation-id="AMOrderShipment_InfoLabelImage">?</span>
+                    <button class="edit-icon" type="button" data-modal="orders-shipped" aria-label="Edit" data-testid="orders-shipped-edit-btn" data-automation-id="AMOrderShipment_EditLabelImage">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body" data-testid="orders-shipped-body"><span data-automation-id="AIShippingAddressLine1">789 Oak Ridge Dr</span><br><span data-automation-id="AIShippingAddressLine2">Riverside, CA 92501</span></div>
+                </div>
+                <div class="info-card" data-testid="monitored-site-card">
+                  <div class="info-card-header" data-testid="monitored-site-header" data-automation-id="AMMonitoringAddressLabel">
+                    Monitored Site
+                    <span class="info-icon" data-testid="monitored-site-help" data-automation-id="AMMonitoringAddress_InfoLabelImage">?</span>
+                    <button class="edit-icon" type="button" data-modal="monitored-site" aria-label="Edit" data-testid="monitored-site-edit-btn" data-automation-id="AMMonitoringAddress_EditLabelImage">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body" data-testid="monitored-site-body"><span data-automation-id="AIMonitoredAddressLine1">123 Maple Ln</span><br><span data-automation-id="AIMonitoredAddressLine2">SPRINGFIELD, IL 62704</span></div>
+                </div>
+                <div class="info-card" data-testid="site-phone-card">
+                  <div class="info-card-header" data-testid="site-phone-header" data-automation-id="AMSitePhoneNumberLabel">
+                    Site Phone Number
+                    <span class="info-icon" data-testid="site-phone-help" data-automation-id="AMSitePhoneNumber_InfoLabelImage">?</span>
+                    <button class="edit-icon" type="button" data-modal="site-phone" aria-label="Edit" data-testid="site-phone-edit-btn" data-automation-id="AMSitePhoneNumber_EditLabelImage">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body" data-testid="site-phone-body"><span data-automation-id="AISitePhoneNumber">(111) 111-1111</span> ext. <span data-automation-id="AIExtension1">1A2b3c4d5e</span></div>
+                </div>
+              </div>
+
+              <!-- Main content grid -->
+              <div class="main-grid" data-testid="account-management-grid">
+                <!-- Manage Contacts -->
+                <div class="contacts-section" data-testid="contacts-section">
+                  <div class="contacts-header" data-testid="contacts-header">
+                    <span class="contacts-title" data-testid="contacts-title" data-automation-id="AMManageContactsLabel">Manage Contacts</span>
+                    <button class="add-contact-btn" type="button" data-modal="setup-contact" data-testid="add-contact-btn" data-automation-id="AMAddContactButton">Add Contact</button>
+                  </div>
+
+                  <div class="contacts-group-title" data-testid="primary-contacts-title" data-automation-id="AMPrimaryContactsLabel">Primary Contacts</div>
+                  <div id="primary-contacts-list" class="contact-list" data-testid="primary-contacts-list" data-automation-id="AMPrimaryContactsCollection">
+                    <div class="contact-row" data-id="1" data-testid="primary-contact-row-1">
+                      <span class="drag-handle" data-testid="primary-contact-row-1-drag" data-automation-id="PrimaryListAMBurgerIcon">☰</span>
+                      <span class="contact-info" data-testid="primary-contact-row-1-info" data-automation-id="PrimaryContactInfoLabel"><span class="name" data-testid="primary-contact-row-1-name">SARAH MILLER</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="primary-contact-row-1-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="primary-contact-row-1-edit-btn" data-automation-id="EditIconEmergencyContactBtn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="primary-contact-row-1-delete-btn" data-automation-id="DeleteIconEmergencyContactBtn">🗑</button>
+                      </div>
+                    </div>
+                    <div class="contact-row" data-id="2" data-testid="primary-contact-row-2">
+                      <span class="drag-handle" data-testid="primary-contact-row-2-drag">☰</span>
+                      <span class="contact-info" data-testid="primary-contact-row-2-info"><span class="name" data-testid="primary-contact-row-2-name">Emma Wilson</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="primary-contact-row-2-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="primary-contact-row-2-edit-btn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="primary-contact-row-2-delete-btn">🗑</button>
+                      </div>
+                    </div>
+                    <div class="contact-row" data-id="3" data-testid="primary-contact-row-3">
+                      <span class="drag-handle" data-testid="primary-contact-row-3-drag">☰</span>
+                      <span class="contact-info" data-testid="primary-contact-row-3-info"><span class="name" data-testid="primary-contact-row-3-name">Olivia Martinez</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="primary-contact-row-3-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="primary-contact-row-3-edit-btn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="primary-contact-row-3-delete-btn">🗑</button>
+                      </div>
+                    </div>
+                    <div class="contact-row" data-id="4" data-testid="primary-contact-row-4">
+                      <span class="drag-handle" data-testid="primary-contact-row-4-drag">☰</span>
+                      <span class="contact-info" data-testid="primary-contact-row-4-info"><span class="name" data-testid="primary-contact-row-4-name">DAVID MILLER</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="primary-contact-row-4-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="primary-contact-row-4-edit-btn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="primary-contact-row-4-delete-btn">🗑</button>
+                      </div>
+                    </div>
+                    <div class="contact-row" data-id="5" data-testid="primary-contact-row-5">
+                      <span class="drag-handle" data-testid="primary-contact-row-5-drag">☰</span>
+                      <span class="contact-info" data-testid="primary-contact-row-5-info"><span class="name" data-testid="primary-contact-row-5-name">LINDA CHEN</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="primary-contact-row-5-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="primary-contact-row-5-edit-btn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="primary-contact-row-5-delete-btn">🗑</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contacts-group-title" data-testid="secondary-contacts-title" data-automation-id="AMSecondaryContactsLabel">Secondary Contacts</div>
+                  <div id="secondary-contacts-list" class="contact-list" data-testid="secondary-contacts-list" data-automation-id="AMSecondaryContactsCollection">
+                    <div class="contact-row" data-id="6" data-testid="secondary-contact-row-1">
+                      <span class="drag-handle" data-testid="secondary-contact-row-1-drag" data-automation-id="SecondaryContactBurgerIcon">☰</span>
+                      <span class="contact-info" data-testid="secondary-contact-row-1-info" data-automation-id="SecondaryContactInfoLabel"><span class="name" data-testid="secondary-contact-row-1-name">ROBERT/JENNIFER TAYLOR</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="secondary-contact-row-1-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="secondary-contact-row-1-edit-btn" data-automation-id="SecondaryContactEditBtn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="secondary-contact-row-1-delete-btn" data-automation-id="SecondaryContactDeleteBtn">🗑</button>
+                      </div>
+                    </div>
+                    <div class="contact-row" data-id="7" data-testid="secondary-contact-row-2">
+                      <span class="drag-handle" data-testid="secondary-contact-row-2-drag">☰</span>
+                      <span class="contact-info" data-testid="secondary-contact-row-2-info"><span class="name" data-testid="secondary-contact-row-2-name">JAMES/MARY THOMPSON</span> (111) 111-1111</span>
+                      <div class="contact-actions" data-testid="secondary-contact-row-2-actions">
+                        <button class="action-icon edit-contact-btn" type="button" data-modal="edit-contact" aria-label="Edit" data-testid="secondary-contact-row-2-edit-btn">✎</button>
+                        <button class="action-icon delete-contact-btn" type="button" aria-label="Delete" data-testid="secondary-contact-row-2-delete-btn">🗑</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Manage Codewords -->
+                <div class="codewords-section" data-testid="codewords-section">
+                  <div class="codewords-title" data-testid="codewords-title">Manage Codewords</div>
+                  <div class="codeword-field" data-testid="codeword-1-field">
+                    <div class="codeword-label" data-testid="codeword-1-label" data-automation-id="AMCodeword1Label">Codeword 1</div>
+                    <input class="codeword-input" type="text" value="CODEWORD" readonly data-testid="codeword-1-input" data-automation-id="AMCodeword1Entry" />
+                  </div>
+                  <div class="codeword-field" data-testid="codeword-2-field">
+                    <div class="codeword-label" data-testid="codeword-2-label" data-automation-id="AMCodeword2Label">Codeword 2</div>
+                    <input class="codeword-input" type="text" value="CODEWORD2" readonly data-testid="codeword-2-input" data-automation-id="AMCodeword2Entry" />
+                  </div>
+                  <button class="update-codeword-btn" type="button" disabled data-testid="update-codeword-btn" data-automation-id="AMUpdateCodewordButton">Update Codeword</button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- AuthorizedDealer customer view -->
+            <div class="content" data-customer-view="AuthorizedDealer" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="3"></div>
+
+              <div class="dealer-banner">
+                <strong>This is an Authorized Dealer account.</strong>
+                <span>Apex Shield Security, Inc.</span>
+                <span>(555) 867-5309</span>
+              </div>
+
+              <!-- Account Information -->
+              <h2 class="section-title">Account Information</h2>
+              <div class="info-cards">
+                <div class="info-card">
+                  <div class="info-card-header">
+                    Billing &amp; Mailing
+                    <span class="info-icon">?</span>
+                    <button class="edit-icon" type="button" aria-label="Edit">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body">742 Evergreen Terrace<br>Springfield, IL 62704</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-card-header">
+                    Orders Shipped To
+                    <span class="info-icon">?</span>
+                    <button class="edit-icon" type="button" aria-label="Edit">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body">742 EVERGREEN TERRACE<br>SPRINGFIELD, IL 62704</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-card-header">
+                    Monitored Site
+                    <span class="info-icon">?</span>
+                    <button class="edit-icon" type="button" aria-label="Edit">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body">742 EVERGREEN TERRACE<br>SPRINGFIELD, IL 62704</div>
+                </div>
+                <div class="info-card">
+                  <div class="info-card-header">
+                    Site Phone Number
+                    <span class="info-icon">?</span>
+                    <button class="edit-icon" type="button" aria-label="Edit">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="info-card-body">(555) 867-5309</div>
+                </div>
+              </div>
+
+              <!-- Main content grid -->
+              <div class="main-grid">
+                <!-- Manage Contacts -->
+                <div class="contacts-section">
+                  <div class="contacts-header">
+                    <span class="contacts-title">Manage Contacts</span>
+                    <button class="add-contact-btn" type="button">Add Contact</button>
+                  </div>
+                  <div class="contacts-group-title">Primary Contacts</div>
+                  <div class="contacts-group-title">Secondary Contacts</div>
+                </div>
+
+                <!-- Manage Codewords -->
+                <div class="codewords-section">
+                  <div class="codewords-title">Manage Codewords</div>
+                  <div class="codeword-field">
+                    <div class="codeword-label">Codeword 1</div>
+                    <input class="codeword-input" type="text" value="CODEWORD" readonly />
+                  </div>
+                  <div class="codeword-field">
+                    <div class="codeword-label">Codeword 2</div>
+                    <input class="codeword-input" type="text" value="CODEWORD2" readonly />
+                  </div>
+                  <button class="update-codeword-btn" type="button" disabled>Update Codeword</button>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+
+        <!-- Billing & Mailing Modal -->
+        <div class="acct-modal-overlay" id="billing-mailing-modal" data-testid="billing-mailing-modal">
+          <div class="acct-modal" data-testid="billing-mailing-modal-content">
+            <div class="acct-modal-header" data-testid="billing-mailing-modal-header">
+              <h2 data-testid="billing-mailing-modal-title">Edit Billing & Mailing Address</h2>
+              <button class="acct-modal-close" type="button" aria-label="Close" data-testid="billing-mailing-modal-close-btn">&times;</button>
+            </div>
+            <div class="acct-field-group" data-testid="billing-mailing-street1-field">
+              <label>Street Address 1</label>
+              <input type="text" value="123 Maple Ln" data-testid="billing-mailing-street1-input" />
+            </div>
+            <div class="acct-field-group" data-testid="billing-mailing-street2-field">
+              <label>Street Address 2</label>
+              <input type="text" placeholder="Apt A" data-testid="billing-mailing-street2-input" />
+            </div>
+            <div class="acct-address-grid" data-testid="billing-mailing-address-grid">
+              <div class="acct-field-group" data-testid="billing-mailing-city-field">
+                <label>City</label>
+                <input type="text" value="SPRINGFIELD" data-testid="billing-mailing-city-input" />
+              </div>
+              <div class="acct-field-group" data-testid="billing-mailing-state-field">
+                <label>State</label>
+                <select data-testid="billing-mailing-state-select"><option>IL</option><option>CA</option><option>TX</option></select>
+              </div>
+              <div class="acct-field-group" data-testid="billing-mailing-zip-field">
+                <label>Zip Code</label>
+                <input type="text" value="62704" data-testid="billing-mailing-zip-input" />
+              </div>
+            </div>
+            <button class="acct-modal-btn grey" type="button" data-testid="billing-mailing-modal-update-btn">Update</button>
+          </div>
+        </div>
+
+        <!-- Orders Shipped To Modal -->
+        <div class="acct-modal-overlay" id="orders-shipped-modal" data-testid="orders-shipped-modal">
+          <div class="acct-modal" data-testid="orders-shipped-modal-content">
+            <div class="acct-modal-header" data-testid="orders-shipped-modal-header">
+              <h2 data-testid="orders-shipped-modal-title">Edit Orders Shipped To Address</h2>
+              <button class="acct-modal-close" type="button" aria-label="Close" data-testid="orders-shipped-modal-close-btn">&times;</button>
+            </div>
+            <div class="acct-warning-text" data-testid="orders-shipped-modal-warning">
+              <span class="acct-warning-icon">i</span>
+              P.O. Box addresses not allowed.
+            </div>
+            <div class="acct-field-group" data-testid="orders-shipped-street1-field">
+              <label>Street Address 1</label>
+              <input type="text" value="789 Oak Ridge Dr" data-testid="orders-shipped-street1-input" />
+            </div>
+            <div class="acct-field-group" data-testid="orders-shipped-street2-field">
+              <label>Street Address 2</label>
+              <input type="text" placeholder="Apt A" data-testid="orders-shipped-street2-input" />
+            </div>
+            <div class="acct-address-grid" data-testid="orders-shipped-address-grid">
+              <div class="acct-field-group" data-testid="orders-shipped-city-field">
+                <label>City</label>
+                <input type="text" value="Riverside" data-testid="orders-shipped-city-input" />
+              </div>
+              <div class="acct-field-group" data-testid="orders-shipped-state-field">
+                <label>State</label>
+                <select data-testid="orders-shipped-state-select"><option>CA</option><option>IL</option><option>TX</option></select>
+              </div>
+              <div class="acct-field-group" data-testid="orders-shipped-zip-field">
+                <label>Zip Code</label>
+                <input type="text" value="92501" data-testid="orders-shipped-zip-input" />
+              </div>
+            </div>
+            <button class="acct-modal-btn grey" type="button" data-testid="orders-shipped-modal-update-btn">Update</button>
+          </div>
+        </div>
+
+        <!-- Monitored Site Modal -->
+        <div class="acct-modal-overlay" id="monitored-site-modal" data-testid="monitored-site-modal">
+          <div class="acct-modal" data-testid="monitored-site-modal-content">
+            <div class="acct-modal-header" data-testid="monitored-site-modal-header">
+              <h2 data-testid="monitored-site-modal-title">Edit Monitored Site Address</h2>
+              <button class="acct-modal-close" type="button" aria-label="Close" data-testid="monitored-site-modal-close-btn">&times;</button>
+            </div>
+            <div class="acct-info-header" data-testid="monitored-site-modal-reason">
+              <span>Reason</span>
+              <span data-testid="monitored-site-modal-reason-value">Address Correction Needed</span>
+            </div>
+            <div class="acct-field-group" data-testid="monitored-site-street1-field">
+              <label>Street Address 1</label>
+              <input type="text" value="124 Maple Ln" data-testid="monitored-site-street1-input" />
+            </div>
+            <div class="acct-field-group" data-testid="monitored-site-street2-field">
+              <label>Street Address 2</label>
+              <input type="text" placeholder="Apt A" data-testid="monitored-site-street2-input" />
+            </div>
+            <div class="acct-address-grid" data-testid="monitored-site-address-grid">
+              <div class="acct-field-group" data-testid="monitored-site-city-field">
+                <label>City</label>
+                <input type="text" value="SPRINGFIELD" class="disabled-field" readonly data-testid="monitored-site-city-input" />
+              </div>
+              <div class="acct-field-group" data-testid="monitored-site-state-field">
+                <label>State</label>
+                <input type="text" value="IL" class="disabled-field" readonly data-testid="monitored-site-state-input" />
+              </div>
+              <div class="acct-field-group" data-testid="monitored-site-zip-field">
+                <label>Zip Code</label>
+                <input type="text" value="62704" class="disabled-field" readonly data-testid="monitored-site-zip-input" />
+              </div>
+            </div>
+            <button class="acct-modal-btn teal" type="button" data-testid="monitored-site-modal-update-btn">Update</button>
+          </div>
+        </div>
+
+        <!-- Site Phone Number Modal -->
+        <div class="acct-modal-overlay" id="site-phone-modal" data-testid="site-phone-modal">
+          <div class="acct-modal" data-testid="site-phone-modal-content">
+            <div class="acct-modal-header" data-testid="site-phone-modal-header">
+              <h2 data-testid="site-phone-modal-title">Update Site Phone Number</h2>
+              <button class="acct-modal-close" type="button" aria-label="Close" data-testid="site-phone-modal-close-btn">&times;</button>
+            </div>
+            <div class="acct-field-group" data-testid="site-phone-number-field">
+              <label>Site Phone Number</label>
+              <input type="text" value="(111) 111-1112" data-testid="site-phone-number-input" />
+            </div>
+            <div class="acct-field-group" data-testid="site-phone-extension-field">
+              <label>Phone Extension</label>
+              <input type="text" value="1A2b3c4d5e" data-testid="site-phone-extension-input" />
+            </div>
+            <div class="acct-checkbox-group" data-testid="site-phone-ack-field">
+              <input type="checkbox" id="phone-ack" checked data-testid="site-phone-ack-checkbox" />
+              <label for="phone-ack" data-testid="site-phone-ack-label">Phone number acknowledged by customer</label>
+            </div>
+            <button class="acct-modal-btn teal" type="button" data-testid="site-phone-modal-update-btn">Update</button>
+          </div>
+        </div>
+
+        <!-- Setup Contact Modal (Add New Contact) -->
+        <div class="contact-modal-overlay" id="setup-contact-modal" data-testid="setup-contact-modal">
+          <div class="contact-modal" data-testid="setup-contact-modal-content">
+            <div class="contact-modal-header" data-testid="setup-contact-modal-header">
+              <h2 data-testid="setup-contact-modal-title">Setup Contact</h2>
+              <button class="contact-modal-close" type="button" aria-label="Close" data-testid="setup-contact-modal-close-btn">X</button>
+            </div>
+            <div class="contact-form-grid" data-testid="setup-contact-form">
+              <div class="contact-field-group" data-testid="setup-contact-firstname-field">
+                <label>First Name*</label>
+                <input type="text" placeholder="John" data-testid="setup-contact-firstname-input" />
+              </div>
+              <div class="contact-field-group" data-testid="setup-contact-lastname-field">
+                <label>Last Name*</label>
+                <input type="text" placeholder="Doe" data-testid="setup-contact-lastname-input" />
+              </div>
+              <div class="contact-field-group" data-testid="setup-contact-phone-field">
+                <label>Phone Number*</label>
+                <input type="text" placeholder="(000) 000-0000" data-testid="setup-contact-phone-input" />
+              </div>
+              <div class="contact-field-group" data-testid="setup-contact-extension-field">
+                <label>Extension</label>
+                <input type="text" placeholder="1234" data-testid="setup-contact-extension-input" />
+              </div>
+              <div class="contact-field-group contact-full-width" data-testid="setup-contact-email-field">
+                <label>Email</label>
+                <input type="email" placeholder="johndoe007@hotmail.com" data-testid="setup-contact-email-input" />
+              </div>
+              <div class="contact-field-group" data-testid="setup-contact-type-field">
+                <label>Contact Type*</label>
+                <select data-testid="setup-contact-type-select">
+                  <option>Select Contact Type</option>
+                  <option value="Primary">Primary</option>
+                  <option value="Secondary">Secondary</option>
+                </select>
+              </div>
+              <div class="contact-field-group" data-testid="setup-contact-haskey-field">
+                <label>Has Key to House?*</label>
+                <select data-testid="setup-contact-haskey-select">
+                  <option>Select Answer</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+            <button class="contact-modal-btn" type="button" data-testid="setup-contact-save-btn">Save New Contact</button>
+          </div>
+        </div>
+
+        <!-- Edit Contact Modal -->
+        <div class="contact-modal-overlay" id="edit-contact-modal" data-testid="edit-contact-modal">
+          <div class="contact-modal" data-testid="edit-contact-modal-content">
+            <div class="contact-modal-header" data-testid="edit-contact-modal-header">
+              <h2 data-testid="edit-contact-modal-title">Edit Contact</h2>
+              <button class="contact-modal-close" type="button" aria-label="Close" data-testid="edit-contact-modal-close-btn">X</button>
+            </div>
+            <div class="contact-form-grid" data-testid="edit-contact-form">
+              <div class="contact-field-group" data-testid="edit-contact-firstname-field">
+                <label>First Name*</label>
+                <input type="text" value="SARAH" data-testid="edit-contact-firstname-input" />
+              </div>
+              <div class="contact-field-group" data-testid="edit-contact-lastname-field">
+                <label>Last Name*</label>
+                <input type="text" value="MILLER" data-testid="edit-contact-lastname-input" />
+              </div>
+              <div class="contact-field-group" data-testid="edit-contact-phone-field">
+                <label>Phone Number*</label>
+                <input type="text" value="(111) 111-1111" data-testid="edit-contact-phone-input" />
+              </div>
+              <div class="contact-field-group" data-testid="edit-contact-extension-field">
+                <label>Extension</label>
+                <input type="text" value="1234" data-testid="edit-contact-extension-input" />
+              </div>
+              <div class="contact-field-group contact-full-width" data-testid="edit-contact-email-field">
+                <label>Email</label>
+                <input type="email" value="test@test.tst" data-testid="edit-contact-email-input" />
+              </div>
+              <div class="contact-field-group" data-testid="edit-contact-type-field">
+                <label>Contact Type*</label>
+                <select data-testid="edit-contact-type-select">
+                  <option value="Primary" selected>Primary</option>
+                  <option value="Secondary">Secondary</option>
+                </select>
+              </div>
+              <div class="contact-field-group" data-testid="edit-contact-haskey-field">
+                <label>Has Key to House?*</label>
+                <select data-testid="edit-contact-haskey-select">
+                  <option selected>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+            <button class="contact-modal-btn" type="button" data-testid="edit-contact-update-btn">Update Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>

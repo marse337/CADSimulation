@@ -1,0 +1,621 @@
+/* =========================================================
+   SLIDE 13 (PaymentBilling)
+   ========================================================= */
+.slide[data-title="PaymentBilling"]{
+  padding:0;
+  --app-bg:#f3f4f6;
+  --panel-bg:#ffffff;
+  --topbar:#7a7a7a;
+  --sidebar:#74797c;
+  --text:#111827;
+  --muted:#6b7280;
+  --line:#d1d5db;
+}
+
+.slide[data-title="PaymentBilling"] .app{
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 86px 1fr;
+  background:var(--app-bg);
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+  color:var(--text);
+}
+
+.slide[data-title="PaymentBilling"] .topbar{
+  grid-column:2 / 3;
+  grid-row:1 / 2;
+  background:var(--topbar);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  padding:14px 18px;
+  gap:14px;
+}
+.slide[data-title="PaymentBilling"] .topbar-back{
+  width:28px;
+  height:28px;
+  border-radius:6px;
+  background:rgba(255,255,255,.15);
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:600;
+  flex-shrink:0;
+}
+.slide[data-title="PaymentBilling"] .topbar-grid{
+  display:grid;
+  grid-template-columns: repeat(8, minmax(90px, 1fr));
+  gap:18px;
+  flex:1;
+}
+.slide[data-title="PaymentBilling"] .topbar-item{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
+.slide[data-title="PaymentBilling"] .topbar-item .label{
+  font-size:13px;
+  font-weight:600;
+}
+.slide[data-title="PaymentBilling"] .topbar-item .value{
+  font-size:12px;
+  opacity:.85;
+  margin-top:6px;
+}
+
+.slide[data-title="PaymentBilling"] .sidebar{
+  grid-column:1 / 2;
+  grid-row:1 / 3;
+  background:var(--sidebar);
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+}
+.slide[data-title="PaymentBilling"] .sidebar-head{
+  padding:18px 16px 14px;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.slide[data-title="PaymentBilling"] .sidebar-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.slide[data-title="PaymentBilling"] .back-btn{
+  width:28px;height:28px;border-radius:6px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.10);
+}
+.slide[data-title="PaymentBilling"] .app-title{
+  font-weight:600;
+  font-size:14px;
+  opacity:.95;
+}
+.slide[data-title="PaymentBilling"] .brand{
+  display:grid;
+  place-items:center;
+  height:86px;
+  margin-top:6px;
+}
+.slide[data-title="PaymentBilling"] .brand-badge{
+  width:52px;height:52px;border-radius:14px;
+  border:2px solid rgba(255,255,255,.35);
+  display:grid;place-items:center;
+  font-weight:800;
+}
+.slide[data-title="PaymentBilling"] .userbox{
+  padding:0 16px 14px;
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.slide[data-title="PaymentBilling"] .userbox .email{font-size:13px; opacity:.95}
+.slide[data-title="PaymentBilling"] .userbox .signout{
+  font-size:12px;
+  opacity:.85;
+  text-decoration:underline;
+  cursor:pointer;
+  margin-top:4px;
+}
+
+.slide[data-title="PaymentBilling"] .nav{
+  padding:10px 0;
+  flex:1;
+}
+.slide[data-title="PaymentBilling"] .nav-item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px 16px;
+  color:#fff;
+  opacity:.9;
+  cursor:pointer;
+}
+.slide[data-title="PaymentBilling"] .nav-item.active{
+  background:rgba(0,0,0,.12);
+  opacity:1;
+}
+.slide[data-title="PaymentBilling"] .nav-ico{
+  width:22px;height:22px;
+  display:grid;
+  place-items:center;
+  opacity:.95;
+}
+.slide[data-title="PaymentBilling"] .nav-text{
+  font-size:14px;
+  font-weight:600;
+}
+.slide[data-title="PaymentBilling"] .nav-item .ext{
+  margin-left:auto;
+  opacity:.8;
+}
+.slide[data-title="PaymentBilling"] .nav-item .dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  margin-right:4px;
+}
+.slide[data-title="PaymentBilling"] .nav-item .dot.orange{ background:#f97316; }
+.slide[data-title="PaymentBilling"] .nav-item .dot.yellow{ background:#facc15; }
+
+.slide[data-title="PaymentBilling"] .sidebar-foot{
+  padding:12px 16px;
+  border-top:1px solid rgba(255,255,255,.12);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  opacity:.9;
+}
+.slide[data-title="PaymentBilling"] .version{
+  font-size:12px;
+  opacity:.9;
+}
+
+.slide[data-title="PaymentBilling"] .main{
+  grid-column:2 / 3;
+  grid-row:2 / 3;
+  padding:12px 16px;
+  overflow:hidden;
+}
+.slide[data-title="PaymentBilling"] .panel{
+  background:var(--panel-bg);
+  border: none;
+  height:100%;
+  overflow-y:auto;
+  position: relative;
+}
+
+/* Custom scrollbar styling */
+.slide[data-title="PaymentBilling"] .panel::-webkit-scrollbar{
+  width: 8px;
+}
+.slide[data-title="PaymentBilling"] .panel::-webkit-scrollbar-track{
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.slide[data-title="PaymentBilling"] .panel::-webkit-scrollbar-thumb{
+  background: rgba(15,42,51,0.3);
+  border-radius: 4px;
+}
+.slide[data-title="PaymentBilling"] .panel::-webkit-scrollbar-thumb:hover{
+  background: rgba(15,42,51,0.5);
+}
+.slide[data-title="PaymentBilling"] .content{
+  padding:10px 14px 14px;
+}
+
+/* Tabs */
+.slide[data-title="PaymentBilling"] .tabs{
+  display:flex;
+  gap:0;
+  padding: 6px 4px 0;
+  align-items:flex-end;
+  border-bottom: 1px solid #d1d5db;
+}
+.slide[data-title="PaymentBilling"] .tab{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding: 8px 12px;
+  border-radius: 6px 6px 0 0;
+  background:#d6d6d6;
+  color:#111827;
+  font-size: 11px;
+  font-weight: 650;
+  border: 1px solid #cfcfcf;
+  border-bottom: none;
+  cursor: default;
+  position: relative;
+  top: 1px;
+}
+.slide[data-title="PaymentBilling"] .tab.active{
+  background:#ffffff;
+  border-color:#d1d5db;
+  border-bottom: 1px solid #ffffff;
+}
+.slide[data-title="PaymentBilling"] .tab .ext{
+  display:inline-flex;
+  font-size: 9px;
+  opacity:.7;
+}
+
+/* Paperless billing toggle row */
+.slide[data-title="PaymentBilling"] .paperless-row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 0;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-label{
+  font-size:15px;
+  font-weight:700;
+  color:#111827;
+}
+
+.slide[data-title="PaymentBilling"] .toggle{
+  width:44px;
+  height:24px;
+  border-radius:12px;
+  background:#d1d5db;
+  position:relative;
+  cursor:pointer;
+}
+.slide[data-title="PaymentBilling"] .toggle::after{
+  content:'';
+  position:absolute;
+  top:2px;
+  left:2px;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 1px 3px rgba(0,0,0,.2);
+  transition:transform 0.15s ease;
+}
+
+/* Action cards grid */
+.slide[data-title="PaymentBilling"] .cards-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:16px;
+}
+
+.slide[data-title="PaymentBilling"] .action-card{
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  padding:16px;
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  min-height:120px;
+  cursor:pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.slide[data-title="PaymentBilling"] .action-card:hover{
+  border-color:#0d9488;
+  box-shadow: 0 2px 8px rgba(13,148,136,0.1);
+}
+
+.slide[data-title="PaymentBilling"] .card-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+
+.slide[data-title="PaymentBilling"] .card-title{
+  font-size:13px;
+  font-weight:700;
+  color:#111827;
+  text-transform:uppercase;
+  letter-spacing:0.3px;
+}
+
+.slide[data-title="PaymentBilling"] .card-ext{
+  color:#0d9488;
+  font-size:14px;
+}
+
+.slide[data-title="PaymentBilling"] .card-divider{
+  width:60px;
+  height:2px;
+  background:#0d9488;
+}
+
+.slide[data-title="PaymentBilling"] .card-desc{
+  font-size:12px;
+  color:#374151;
+  line-height:1.5;
+}
+
+.slide[data-title="PaymentBilling"] .slide-controls{
+  z-index: 40;
+}
+
+/* Environment theme support */
+.canvas[data-env="training"] .slide[data-title="PaymentBilling"] .sidebar {
+  background: var(--env-sidebar);
+}
+.canvas[data-env="training"] .slide[data-title="PaymentBilling"] .topbar {
+  background: var(--env-topbar);
+}
+.canvas[data-env="production"] .slide[data-title="PaymentBilling"] .sidebar {
+  background: var(--env-sidebar);
+}
+.canvas[data-env="production"] .slide[data-title="PaymentBilling"] .topbar {
+  background: var(--env-topbar);
+}
+
+/* =========================================================
+   PAPERLESS BILLING COMPONENTS
+   ========================================================= */
+
+/* Paperless header with toggle and contact info */
+.slide[data-title="PaymentBilling"] .paperless-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Toggle switch */
+.slide[data-title="PaymentBilling"] .paperless-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-switch input:checked + .paperless-slider {
+  background-color: #0d9488;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-switch input:checked + .paperless-slider::before {
+  transform: translateX(26px);
+}
+
+/* Contact info display (hidden by default) */
+.slide[data-title="PaymentBilling"] .paperless-contact-info {
+  display: none;
+  align-items: center;
+  gap: 20px;
+  font-size: 13px;
+  color: #374151;
+}
+
+.slide[data-title="PaymentBilling"] .paperless-contact-info.visible {
+  display: flex;
+}
+
+.slide[data-title="PaymentBilling"] .contact-display-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.slide[data-title="PaymentBilling"] .contact-display-item strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.slide[data-title="PaymentBilling"] .edit-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #0d9488;
+  padding: 2px 4px;
+}
+
+.slide[data-title="PaymentBilling"] .edit-icon-btn:hover {
+  color: #0f766e;
+}
+
+/* =========================================================
+   PAPERLESS BILLING MODALS
+   ========================================================= */
+
+.slide[data-title="PaymentBilling"] .pb-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal-overlay.visible {
+  display: flex;
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal {
+  background: #0f212b;
+  color: white;
+  border-radius: 12px;
+  width: 420px;
+  padding: 28px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal h2 {
+  text-align: center;
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal-subtitle {
+  text-align: center;
+  font-size: 13px;
+  margin: 0 0 20px;
+  opacity: 0.9;
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal-close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.slide[data-title="PaymentBilling"] .pb-modal-close:hover {
+  opacity: 1;
+}
+
+/* Form elements */
+.slide[data-title="PaymentBilling"] .pb-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.slide[data-title="PaymentBilling"] .pb-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slide[data-title="PaymentBilling"] .pb-form-group label {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.slide[data-title="PaymentBilling"] .pb-form-group input,
+.slide[data-title="PaymentBilling"] .pb-form-group select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+  background: #fff;
+  color: #111827;
+  outline: none;
+}
+
+.slide[data-title="PaymentBilling"] .pb-form-group input:focus,
+.slide[data-title="PaymentBilling"] .pb-form-group select:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+.slide[data-title="PaymentBilling"] .pb-form-group select {
+  cursor: pointer;
+}
+
+.slide[data-title="PaymentBilling"] .pb-full-width {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.slide[data-title="PaymentBilling"] .pb-modal-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn {
+  padding: 12px 24px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn:active {
+  transform: translateY(1px);
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn-teal {
+  background: #15803d;
+  color: white;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn-teal:hover {
+  background: #16a34a;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn-light {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #d1d5db;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn-light:hover:not(:disabled) {
+  background: #f9fafb;
+}
+
+.slide[data-title="PaymentBilling"] .pb-btn-light:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Warning modal specific styles */
+.slide[data-title="PaymentBilling"] .pb-modal-warning {
+  text-align: center;
+}
+
+.slide[data-title="PaymentBilling"] .pb-warning-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 25px;
+  color: #ffffff;
+}
+
+.slide[data-title="PaymentBilling"] .pb-warning-text strong {
+  font-weight: 700;
+}

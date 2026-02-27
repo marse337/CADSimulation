@@ -1,0 +1,270 @@
+/* =========================================================
+   ENVIRONMENT THEME COLORS
+   ========================================================= */
+
+/* Stage Theme (Default - Gray) */
+.canvas[data-env="stage"],
+.canvas:not([data-env]) {
+  --env-sidebar: #74797c;
+  --env-topbar: #7a7a7a;
+  --env-accent: #74797c;
+  --env-name: "Stage";
+}
+
+/* Training Theme (Green) */
+.canvas[data-env="training"] {
+  --env-sidebar: #2d6a4f;
+  --env-topbar: #2d6a4f;
+  --env-accent: #40916c;
+  --env-name: "Training";
+}
+
+/* Production Theme (Dark Teal) */
+.canvas[data-env="production"] {
+  --env-sidebar: #1e3a4c;
+  --env-topbar: #1e3a4c;
+  --env-accent: #2d5a6b;
+  --env-name: "Production";
+}
+
+/* Apply theme colors to sidebar - Training */
+.canvas[data-env="training"] .slide[data-title^="LoggedIn"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="VerifyAccount"] .sidebar,
+.canvas[data-env="training"] .slide[data-title^="AccountActivity"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="ContractInfo"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="EventHistory"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="AccountManagement"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="PaymentBilling"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="JobManagement"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="SystemManagement"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomer"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerFilled"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerModal"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerFull"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerComplete"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerJobCreated"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="TruckRollJobCreation"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="TruckRollMarketTruckRoll"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechJobCreation"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechMarketRemoteTech"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechMarketDropship"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketJobOpened"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketDropship"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketRemoteTech"] .sidebar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketTruckRoll"] .sidebar {
+  background: var(--env-sidebar);
+}
+
+/* Apply theme colors to sidebar - Production */
+.canvas[data-env="production"] .slide[data-title^="LoggedIn"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="VerifyAccount"] .sidebar,
+.canvas[data-env="production"] .slide[data-title^="AccountActivity"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="ContractInfo"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="EventHistory"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="AccountManagement"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="PaymentBilling"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="JobManagement"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="SystemManagement"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomer"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerFilled"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerModal"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerFull"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerComplete"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerJobCreated"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="TruckRollJobCreation"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="TruckRollMarketTruckRoll"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechJobCreation"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechMarketRemoteTech"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechMarketDropship"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketJobOpened"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketDropship"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketRemoteTech"] .sidebar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketTruckRoll"] .sidebar {
+  background: var(--env-sidebar);
+}
+
+/* Apply theme colors to topbar - Training */
+.canvas[data-env="training"] .slide[data-title^="LoggedIn"] .topbar,
+.canvas[data-env="training"] .slide[data-title="VerifyAccount"] .topbar,
+.canvas[data-env="training"] .slide[data-title^="AccountActivity"] .topbar,
+.canvas[data-env="training"] .slide[data-title="ContractInfo"] .topbar,
+.canvas[data-env="training"] .slide[data-title="EventHistory"] .topbar,
+.canvas[data-env="training"] .slide[data-title="AccountManagement"] .topbar,
+.canvas[data-env="training"] .slide[data-title="PaymentBilling"] .topbar,
+.canvas[data-env="training"] .slide[data-title="JobManagement"] .topbar,
+.canvas[data-env="training"] .slide[data-title="SystemManagement"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomer"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerFilled"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerModal"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerFull"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerComplete"] .topbar,
+.canvas[data-env="training"] .slide[data-title="MoveCustomerJobCreated"] .topbar,
+.canvas[data-env="training"] .slide[data-title="TruckRollJobCreation"] .topbar,
+.canvas[data-env="training"] .slide[data-title="TruckRollMarketTruckRoll"] .topbar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechJobCreation"] .topbar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechMarketRemoteTech"] .topbar,
+.canvas[data-env="training"] .slide[data-title="RemoteTechMarketDropship"] .topbar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketJobOpened"] .topbar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketDropship"] .topbar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketRemoteTech"] .topbar,
+.canvas[data-env="training"] .slide[data-title="EitherMarketTruckRoll"] .topbar {
+  background: var(--env-topbar);
+}
+
+/* Apply theme colors to topbar - Production */
+.canvas[data-env="production"] .slide[data-title^="LoggedIn"] .topbar,
+.canvas[data-env="production"] .slide[data-title="VerifyAccount"] .topbar,
+.canvas[data-env="production"] .slide[data-title^="AccountActivity"] .topbar,
+.canvas[data-env="production"] .slide[data-title="ContractInfo"] .topbar,
+.canvas[data-env="production"] .slide[data-title="EventHistory"] .topbar,
+.canvas[data-env="production"] .slide[data-title="AccountManagement"] .topbar,
+.canvas[data-env="production"] .slide[data-title="PaymentBilling"] .topbar,
+.canvas[data-env="production"] .slide[data-title="JobManagement"] .topbar,
+.canvas[data-env="production"] .slide[data-title="SystemManagement"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomer"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerFilled"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerModal"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerFull"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerComplete"] .topbar,
+.canvas[data-env="production"] .slide[data-title="MoveCustomerJobCreated"] .topbar,
+.canvas[data-env="production"] .slide[data-title="TruckRollJobCreation"] .topbar,
+.canvas[data-env="production"] .slide[data-title="TruckRollMarketTruckRoll"] .topbar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechJobCreation"] .topbar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechMarketRemoteTech"] .topbar,
+.canvas[data-env="production"] .slide[data-title="RemoteTechMarketDropship"] .topbar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketJobOpened"] .topbar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketDropship"] .topbar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketRemoteTech"] .topbar,
+.canvas[data-env="production"] .slide[data-title="EitherMarketTruckRoll"] .topbar {
+  background: var(--env-topbar);
+}
+
+/* Environment Switcher UI */
+.env-switcher {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 9999;
+  display: flex;
+  gap: 4px;
+  background: rgba(0,0,0,0.7);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.env-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.env-btn:hover {
+  opacity: 0.85;
+}
+
+.env-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+}
+
+.env-btn[data-env="stage"] {
+  background: #74797c;
+}
+
+.env-btn[data-env="training"] {
+  background: #2d6a4f;
+}
+
+.env-btn[data-env="production"] {
+  background: #1e3a4c;
+}
+
+/* Update app-title based on environment */
+.canvas[data-env="training"] .app-title::after {
+  content: " - Training";
+}
+.canvas[data-env="production"] .app-title::after {
+  content: " - Production";
+}
+.canvas[data-env="stage"] .app-title::after,
+.canvas:not([data-env]) .app-title::after {
+  content: " - Stage";
+}
+
+/* Hide the default " - Stage" text since we're adding it dynamically */
+.app-title {
+  font-weight: 600;
+  font-size: 14px;
+  opacity: .95;
+}
+
+/* Sign Out link styling by environment */
+.canvas[data-env="training"] .userbox .signout {
+  color: #4ade80;
+}
+.canvas[data-env="production"] .userbox .signout {
+  color: #60a5fa;
+}
+
+/* Department Switcher */
+.dept-switcher {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  display: flex;
+  gap: 4px;
+  background: rgba(0,0,0,0.7);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dept-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #fff;
+  opacity: 0.6;
+  background: #4b5563;
+}
+
+.dept-btn:hover {
+  opacity: 0.85;
+}
+
+.dept-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+}
+
+.dept-btn[data-dept="crse"] {
+  background: #9333ea;
+}
+
+.dept-btn[data-dept="cr"] {
+  background: #7c3aed;
+}
+
+.dept-btn[data-dept="cs"] {
+  background: #0891b2;
+}
+
+/* Department visibility rules */
+.canvas[data-dept="cs"] .cr-only {
+  display: none !important;
+}
+.canvas[data-dept="cr"] .cs-only {
+  display: none !important;
+}

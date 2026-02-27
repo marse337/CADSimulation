@@ -1,0 +1,136 @@
+/* =========================================================
+   DEALER BANNER
+   ========================================================= */
+.dealer-banner {
+  background: #dce8f0;
+  padding: 10px 24px;
+  font-size: 13px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #c5d5e0;
+}
+.dealer-banner strong { font-weight: 600; }
+
+/* =========================================================
+   FORM GRID & FIELDS
+   ========================================================= */
+
+/* Form grid base */
+.slide[data-title^="LoggedIn"] .form-grid,
+.slide[data-title="VerifyAccount"] .form-grid{
+  display:grid;
+  grid-template-columns: 1.2fr 1.4fr .8fr .9fr;
+  gap:14px;
+  align-items:end;
+}
+.slide[data-title^="LoggedIn"] .form-grid.row2,
+.slide[data-title="VerifyAccount"] .form-grid.row2{
+  margin-top:14px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.slide[data-title^="LoggedIn"] .form-grid.row3,
+.slide[data-title="VerifyAccount"] .form-grid.row3{
+  margin-top:14px;
+  grid-template-columns: .55fr 1.3fr 1.2fr .55fr .6fr;
+}
+
+.slide[data-title^="LoggedIn"] .field,
+.slide[data-title="VerifyAccount"] .field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.slide[data-title^="LoggedIn"] .field label,
+.slide[data-title="VerifyAccount"] .field label{
+  font-size:12px;
+  font-weight:650;
+  color:#111827;
+}
+
+.slide[data-title^="LoggedIn"] .input,
+.slide[data-title^="LoggedIn"] .select,
+.slide[data-title="VerifyAccount"] .input,
+.slide[data-title="VerifyAccount"] .select{
+  height:36px;
+  border:1px solid var(--field-border);
+  background:var(--field);
+  border-radius:4px;
+  padding:8px 10px;
+  outline:none;
+}
+
+.slide[data-title^="LoggedIn"] .select-wrap,
+.slide[data-title="VerifyAccount"] .select-wrap{ position:relative; }
+.slide[data-title^="LoggedIn"] .select-wrap:after,
+.slide[data-title="VerifyAccount"] .select-wrap:after{
+  content:"▾";
+  position:absolute;
+  right:10px;
+  top:50%;
+  transform:translateY(-50%);
+  color:#6b7280;
+  pointer-events:none;
+}
+
+/* Buttons row base */
+.slide[data-title^="LoggedIn"] .actions,
+.slide[data-title="VerifyAccount"] .actions{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  padding:16px 0 10px;
+}
+.slide[data-title^="LoggedIn"] .actions .btn,
+.slide[data-title="VerifyAccount"] .actions .btn{
+  min-width:220px;
+  height:40px;
+  border-radius:6px;
+  border:1px solid #c7c7c7;
+  background:var(--btn);
+  font-weight:650;
+  color:#333;
+  cursor:pointer;
+}
+.slide[data-title^="LoggedIn"] .actions .btn.dark,
+.slide[data-title="VerifyAccount"] .actions .btn.dark{
+  background:var(--btn-dark);
+  color:#fff;
+  border-color:#666;
+}
+
+.slide[data-title^="LoggedIn"] .divider,
+.slide[data-title="VerifyAccount"] .divider{
+  border-top:1px solid var(--line);
+  margin:10px 0 0;
+}
+
+.slide[data-title^="LoggedIn"] .results-head,
+.slide[data-title="VerifyAccount"] .results-head{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:10px;
+  padding:12px 18px 8px;
+  font-size:12px;
+  color:#111827;
+}
+
+.slide[data-title^="LoggedIn"] .toggle,
+.slide[data-title="VerifyAccount"] .toggle{
+  position:relative;
+  width:44px;height:22px;
+  border-radius:999px;
+  background:var(--green);
+  border:1px solid rgba(0,0,0,.10);
+}
+.slide[data-title^="LoggedIn"] .toggle:before,
+.slide[data-title="VerifyAccount"] .toggle:before{
+  content:"";
+  position:absolute;
+  top:2px; left:24px;
+  width:18px;height:18px;border-radius:50%;
+  background:#fff;
+  box-shadow:0 1px 2px rgba(0,0,0,.25);
+}

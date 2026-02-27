@@ -1,0 +1,522 @@
+    <!-- Slide 11 (JobManagement) -->
+    <section class="slide" data-title="JobManagement" data-testid="job-management-slide">
+      <div class="app">
+        <!-- Sidebar -->
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="true"
+             data-show-status="true"
+             data-testid="job-management-sidebar"
+             data-nav-goto='{"move":"13","alarm":"28","voziq":"29","support":"30","myaccount":"31"}'></div>
+
+        <!-- Top bar -->
+        <div data-component="topbar"
+             data-contact-name="SARAH MILLER"
+             data-contract-signer="Michael R Smith"
+             data-site-status="Stage 2"
+             data-customer-time="12:24 PM CST"
+             data-site-number="78432"
+             data-customer-since="05/30/1997"
+             data-customer-email="jsmith123@email..."
+             data-market-type="Unavailable"
+             data-market-type-dropdown="true"
+             data-testid="job-management-topbar"
+             data-back-goto="1"></div>
+
+        <!-- Main -->
+        <main class="main" data-testid="job-management-main">
+          <section class="panel" data-testid="job-management-panel">
+            <div class="content" data-customer-view-hide="AuthorizedDealer">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="5"
+                   data-testid="job-management-tabs"></div>
+
+              <!-- Search section -->
+              <div class="search-section" data-testid="job-search-section">
+                <div class="search-label" data-testid="job-search-label" data-automation-id="JMSearchByJobNumberLabel">Search by job number</div>
+                <div class="search-row" data-testid="job-search-row">
+                  <input class="search-input" type="text" placeholder="Search by job number ..." data-testid="job-search-input" data-automation-id="JMSearchByJobNumberEntry" />
+                  <button class="search-btn" type="button" data-testid="job-search-btn" data-automation-id="JMSearchByJobNumberSearchBtn">Search</button>
+                  <button class="refresh-jm-btn" type="button" data-automation-id="RefreshJM">&#8635;</button>
+                  <div class="search-actions" data-testid="job-search-actions">
+                    <button class="create-btn" type="button" data-goto-market-map='{"Truck Roll Only":"19","Remote Tech Only":"21","Either Market":"24"}' data-testid="create-new-job-btn" data-automation-id="JMCreateNewJobBtn">Create New Job</button>
+                                      </div>
+                </div>
+              </div>
+
+              <!-- Jobs table -->
+              <div class="jobs-table" data-testid="jobs-table">
+                <div class="jobs-head" data-testid="jobs-table-header">
+                  <div data-testid="jobs-col-date" data-automation-id="JMDateLabel">Date</div>
+                  <div class="sortable" data-testid="jobs-col-status" data-automation-id="JMStatusLabelTH">Status <span class="caret" data-automation-id="JMArrowDDStatusTH">&#9660;</span></div>
+                  <div data-testid="jobs-col-number" data-automation-id="JMJobNumberLabel">Job Number</div>
+                  <div class="sortable" data-testid="jobs-col-type" data-automation-id="JMJobTypeLabelTH">Job Type <span class="caret" data-automation-id="JMArrowDDJobTypeTH">&#9660;</span></div>
+                  <div data-testid="jobs-col-comment" data-automation-id="JMCommentLabel">Comment</div>
+                  <div data-testid="jobs-col-actions" data-automation-id="JMActionsLabel">Actions</div>
+                </div>
+
+                <!-- Job Row 1 -->
+                <div class="job-row clickable-row" data-job-id="1" data-testid="job-row-1">
+                  <div data-testid="job-row-1-date" data-automation-id="JMCreateDateValLabelTD">Mon, 08/21/2023 20:30:46</div>
+                  <div data-testid="job-row-1-status"><span class="status-pill closed" data-testid="job-row-1-status-pill" data-automation-id="JMStatusValLabelTD">Closed</span></div>
+                  <div data-testid="job-row-1-number" data-automation-id="JMJobNumberValLabelTD">801234567</div>
+                  <div data-testid="job-row-1-type" data-automation-id="JMJobTypeValLabelTD">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-1-comment" data-automation-id="JMCommentValLabelTD">Send technician for fixing panel - Created by CX Automa...</div>
+                  <div class="actions-cell" data-testid="job-row-1-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-1-actions-btn" data-automation-id="JMActionThreeDotsBtn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-1-action-menu">
+                      <div data-testid="job-row-1-action-edit">Edit</div>
+                      <div data-testid="job-row-1-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-1-action-return">Return Trip</div>
+                      <div data-testid="job-row-1-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-1" data-testid="job-details-1">
+                  <div class="details-grid" data-testid="job-details-1-grid">
+                    <div class="details-column" data-testid="job-details-1-info">
+                      <h4 data-testid="job-details-1-info-title" data-automation-id="JMEVJobDetailsLabel">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-1-created-date"><span class="detail-label" data-automation-id="JMEVCreateDateLabel">Created Date:</span><span data-automation-id="JMEVJobCreateDateVal">August 21, 2023</span></div>
+                      <div class="detail-row" data-testid="job-details-1-created-by"><span class="detail-label" data-automation-id="JMEVCreatedByLabel">Created By:</span><span data-automation-id="JMEVJobCreatedByVal">Jeffery Baker</span></div>
+                      <div class="detail-row" data-testid="job-details-1-phone"><span class="detail-label" data-automation-id="JMEVPhoneNumberLabel">Phone Number:</span><span data-automation-id="JMEVJobPhoneNumberVal">316-617-6984</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-1-appointment">
+                      <h4 data-testid="job-details-1-appointment-title" data-automation-id="JMEVJobAppointmentDetails">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-1-appt-status"><span class="detail-label" data-automation-id="JMEVCurrentAppointmentStatus">Current Appointment Status:</span><span data-automation-id="JMEVJobStatusVal">Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-1-sooner-appt"><span class="detail-label" data-automation-id="JMEVSoonerApptRequestedLabel">Sooner Appointment Requested:</span><span data-automation-id="JMEVSoonerApptReq">No</span></div>
+                      <div class="detail-row" data-testid="job-details-1-tech-status"><span class="detail-label" data-automation-id="JMEVJobTechnicianStatusLabel">Tech Status:</span><span data-automation-id="JMEVJobTechStatusVal">Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-1-dropship"><span class="detail-label" data-automation-id="JMEVJobDropshipTrackingLabel">Dropship Tracking:</span><span data-automation-id="JMEVJobDropshipTrackingVal">N/A</span></div>
+                      <div class="detail-row" data-testid="job-details-1-completion-date"><span class="detail-label">Completion Date:</span><span>August 25, 2023</span></div>
+                    </div>
+                  </div>
+                  <div class="billing-section" data-testid="job-details-1-billing">
+                    <div class="billing-head" data-testid="job-details-1-billing-header">
+                      <div data-automation-id="JMEVItemBillingLabel">Item / Billing Code</div>
+                      <div data-automation-id="JMEVQtyLabel">Qty</div>
+                      <div data-automation-id="JMEVDispositionLabel">Disposition</div>
+                      <div data-automation-id="JMEVZoneLabel">Zone</div>
+                      <div data-automation-id="JMEVEqLocLabel">Eq Loc</div>
+                      <div data-automation-id="JMEVUnitPriceLabel">Unit Price</div>
+                      <div data-automation-id="JMEVDiscountLabel">Discount</div>
+                      <div data-automation-id="JMEVTotalLabel">Total</div>
+                      <div data-automation-id="JMEVWarrantyLabel">Warranty</div>
+                    </div>
+                    <div class="billing-row" data-testid="job-details-1-billing-row-1"><div>Service Call</div><div>1.00</div><div>Repair</div><div>-</div><div>-</div><div>$75.00</div><div>$0.00</div><div>$75.00</div><div>No</div></div>
+                    <div class="billing-row" data-testid="job-details-1-billing-row-2"><div>Panel Replacement</div><div>1.00</div><div>Replace</div><div>-</div><div>-</div><div>$0.00</div><div>$0.00</div><div>$0.00</div><div>Yes</div></div>
+                    <div class="billing-row subtotal" data-testid="job-details-1-billing-subtotal" data-automation-id="TotalLabelJMEV"><div>Subtotal</div><div data-automation-id="JobTotalQtyValJMEV">2.00</div><div></div><div></div><div></div><div data-automation-id="JobTotalUnitPriceValJMEV">$75.00</div><div data-automation-id="JobTotalDiscountValJMEV">$0.00</div><div data-automation-id="JobTotalValueJMEV">$75.00</div><div></div></div>
+                    <div class="billing-row tax" data-testid="job-details-1-billing-tax"><div data-automation-id="TaxLabelJMEV">Tax</div><div></div><div></div><div></div><div></div><div></div><div></div><div data-automation-id="TaxLabelValueJMEV">$0.00</div><div></div></div>
+                    <div class="billing-row balance-due" data-testid="job-details-1-billing-balance"><div data-automation-id="BalDueLabelJMEV">Balance Due</div><div></div><div></div><div></div><div></div><div></div><div></div><div data-automation-id="BalDueValueJMEV">$75.00</div><div></div></div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-1-activity">
+                    <h4 data-testid="job-details-1-activity-title" data-automation-id="JMJAActivityLabel">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-1-activity-filters">
+                      <span class="filter-show-label" data-automation-id="JMJAShowLabel">Show:</span>
+                      <button class="btn-filter active" type="button" data-testid="job-details-1-filter-all" data-automation-id="JMJAAllLabel">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-1-filter-comments" data-automation-id="JMJACommentsLabel">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-1-filter-history" data-automation-id="JMJAHistoryBtn">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-1-activity-list" data-automation-id="JMJADataCV">
+                      <div class="activity-item" data-testid="job-details-1-activity-item-1">
+                        <div class="activity-header"><span>Tech Completed Service</span><span class="activity-date">Aug 25, 2023 at 14:30</span></div>
+                        <div class="activity-body">Job Status was changed to Closed</div>
+                      </div>
+                      <div class="activity-item" data-testid="job-details-1-activity-item-2">
+                        <div class="activity-header"><span>Job Created</span><span class="activity-date">Aug 21, 2023 at 20:30</span></div>
+                        <div class="activity-body">Job was created by CX Automation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 2 -->
+                <div class="job-row clickable-row" data-job-id="2" data-testid="job-row-2">
+                  <div data-testid="job-row-2-date">Thu, 09/15/2022 11:41:05</div>
+                  <div data-testid="job-row-2-status"><span class="status-pill closed" data-testid="job-row-2-status-pill">Closed</span></div>
+                  <div data-testid="job-row-2-number">801234568</div>
+                  <div data-testid="job-row-2-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-2-comment">5551234567 best contact number cx panel which is the i...</div>
+                  <div class="actions-cell" data-testid="job-row-2-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-2-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-2-action-menu">
+                      <div data-testid="job-row-2-action-edit">Edit</div>
+                      <div data-testid="job-row-2-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-2-action-return">Return Trip</div>
+                      <div data-testid="job-row-2-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-2" data-testid="job-details-2">
+                  <div class="details-grid" data-testid="job-details-2-grid">
+                    <div class="details-column" data-testid="job-details-2-info">
+                      <h4 data-testid="job-details-2-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-2-created-date"><span class="detail-label">Created Date:</span><span>September 15, 2022</span></div>
+                      <div class="detail-row" data-testid="job-details-2-created-by"><span class="detail-label">Created By:</span><span>System Auto</span></div>
+                      <div class="detail-row" data-testid="job-details-2-phone"><span class="detail-label">Phone Number:</span><span>555-123-4567</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-2-appointment">
+                      <h4 data-testid="job-details-2-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-2-tech-status"><span class="detail-label">Tech Status:</span><span>Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-2-completion-date"><span class="detail-label">Completion Date:</span><span>September 20, 2022</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-2-activity">
+                    <h4 data-testid="job-details-2-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-2-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-2-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-2-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-2-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-2-activity-list">
+                      <div class="activity-item" data-testid="job-details-2-activity-item-1">
+                        <div class="activity-header"><span>Tech Completed Service</span><span class="activity-date">Sep 20, 2022 at 16:00</span></div>
+                        <div class="activity-body">Job Status was changed to Closed</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 3 -->
+                <div class="job-row clickable-row" data-job-id="3" data-testid="job-row-3">
+                  <div data-testid="job-row-3-date">Thu, 06/02/2022 16:06:18</div>
+                  <div data-testid="job-row-3-status"><span class="status-pill closed" data-testid="job-row-3-status-pill">Closed</span></div>
+                  <div data-testid="job-row-3-number">801234569</div>
+                  <div data-testid="job-row-3-type">ADDON</div>
+                  <div class="job-comment" data-testid="job-row-3-comment">Smoke detecters are expired and needs to be replaced (...</div>
+                  <div class="actions-cell" data-testid="job-row-3-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-3-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-3-action-menu">
+                      <div data-testid="job-row-3-action-edit">Edit</div>
+                      <div data-testid="job-row-3-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-3-action-return">Return Trip</div>
+                      <div data-testid="job-row-3-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-3" data-testid="job-details-3">
+                  <div class="details-grid" data-testid="job-details-3-grid">
+                    <div class="details-column" data-testid="job-details-3-info">
+                      <h4 data-testid="job-details-3-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-3-created-date"><span class="detail-label">Created Date:</span><span>June 2, 2022</span></div>
+                      <div class="detail-row" data-testid="job-details-3-created-by"><span class="detail-label">Created By:</span><span>Agent Smith</span></div>
+                      <div class="detail-row" data-testid="job-details-3-phone"><span class="detail-label">Phone Number:</span><span>555-987-6543</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-3-appointment">
+                      <h4 data-testid="job-details-3-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-3-tech-status"><span class="detail-label">Tech Status:</span><span>Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-3-completion-date"><span class="detail-label">Completion Date:</span><span>June 10, 2022</span></div>
+                    </div>
+                  </div>
+                  <div class="billing-section" data-testid="job-details-3-billing">
+                    <div class="billing-head" data-testid="job-details-3-billing-header">
+                      <div>Item / Billing Code</div>
+                      <div>Qty</div>
+                      <div>Disposition</div>
+                      <div>Unit Price</div>
+                      <div>Total</div>
+                    </div>
+                    <div class="billing-row" data-testid="job-details-3-billing-row-1"><div>Smoke Detector</div><div>4.00</div><div>Replace</div><div>$25.00</div><div>$100.00</div></div>
+                    <div class="billing-row" data-testid="job-details-3-billing-row-2"><div>Installation</div><div>1.00</div><div>Labor</div><div>$50.00</div><div>$50.00</div></div>
+                    <div class="billing-row subtotal" data-testid="job-details-3-billing-subtotal"><div>Subtotal</div><div></div><div></div><div></div><div>$150.00</div></div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-3-activity">
+                    <h4 data-testid="job-details-3-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-3-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-3-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-3-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-3-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-3-activity-list">
+                      <div class="activity-item" data-testid="job-details-3-activity-item-1">
+                        <div class="activity-header"><span>Tech Completed Service</span><span class="activity-date">Jun 10, 2022 at 11:00</span></div>
+                        <div class="activity-body">Job Status was changed to Closed</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 4 -->
+                <div class="job-row clickable-row" data-job-id="4" data-testid="job-row-4">
+                  <div data-testid="job-row-4-date">Thu, 10/07/2021 08:30:48</div>
+                  <div data-testid="job-row-4-status"><span class="status-pill closed" data-testid="job-row-4-status-pill">Closed</span></div>
+                  <div data-testid="job-row-4-number">801234570</div>
+                  <div data-testid="job-row-4-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-4-comment">please replace honeywell panel per warranty please rep...</div>
+                  <div class="actions-cell" data-testid="job-row-4-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-4-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-4-action-menu">
+                      <div data-testid="job-row-4-action-edit">Edit</div>
+                      <div data-testid="job-row-4-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-4-action-return">Return Trip</div>
+                      <div data-testid="job-row-4-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-4" data-testid="job-details-4">
+                  <div class="details-grid" data-testid="job-details-4-grid">
+                    <div class="details-column" data-testid="job-details-4-info">
+                      <h4 data-testid="job-details-4-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-4-created-date"><span class="detail-label">Created Date:</span><span>October 7, 2021</span></div>
+                      <div class="detail-row" data-testid="job-details-4-created-by"><span class="detail-label">Created By:</span><span>Warranty Dept</span></div>
+                      <div class="detail-row" data-testid="job-details-4-phone"><span class="detail-label">Phone Number:</span><span>555-111-2222</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-4-appointment">
+                      <h4 data-testid="job-details-4-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-4-tech-status"><span class="detail-label">Tech Status:</span><span>Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-4-completion-date"><span class="detail-label">Completion Date:</span><span>October 15, 2021</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-4-activity">
+                    <h4 data-testid="job-details-4-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-4-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-4-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-4-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-4-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-4-activity-list">
+                      <div class="activity-item" data-testid="job-details-4-activity-item-1">
+                        <div class="activity-header"><span>Panel Replaced</span><span class="activity-date">Oct 15, 2021 at 09:30</span></div>
+                        <div class="activity-body">Honeywell panel replaced under warranty</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 5 -->
+                <div class="job-row clickable-row" data-job-id="5" data-testid="job-row-5">
+                  <div data-testid="job-row-5-date">Wed, 10/28/2020 11:52:57</div>
+                  <div data-testid="job-row-5-status"><span class="status-pill canceled" data-testid="job-row-5-status-pill">Canceled</span></div>
+                  <div data-testid="job-row-5-number">801234571</div>
+                  <div data-testid="job-row-5-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-5-comment">555-123-4567(call/anytime) cus needs 4 smoke det repl...</div>
+                  <div class="actions-cell" data-testid="job-row-5-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-5-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-5-action-menu">
+                      <div data-testid="job-row-5-action-edit">Edit</div>
+                      <div data-testid="job-row-5-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-5-action-return">Return Trip</div>
+                      <div data-testid="job-row-5-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-5" data-testid="job-details-5">
+                  <div class="details-grid" data-testid="job-details-5-grid">
+                    <div class="details-column" data-testid="job-details-5-info">
+                      <h4 data-testid="job-details-5-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-5-created-date"><span class="detail-label">Created Date:</span><span>October 28, 2020</span></div>
+                      <div class="detail-row" data-testid="job-details-5-created-by"><span class="detail-label">Created By:</span><span>Call Center</span></div>
+                      <div class="detail-row" data-testid="job-details-5-phone"><span class="detail-label">Phone Number:</span><span>555-123-4567</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-5-appointment">
+                      <h4 data-testid="job-details-5-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-5-tech-status"><span class="detail-label">Tech Status:</span><span>-</span></div>
+                      <div class="detail-row" data-testid="job-details-5-cancel-reason"><span class="detail-label">Cancel Reason:</span><span>Customer Request</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-5-activity">
+                    <h4 data-testid="job-details-5-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-5-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-5-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-5-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-5-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-5-activity-list">
+                      <div class="activity-item" data-testid="job-details-5-activity-item-1">
+                        <div class="activity-header"><span>Job Canceled</span><span class="activity-date">Oct 30, 2020 at 14:00</span></div>
+                        <div class="activity-body">Job canceled per customer request</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 6 -->
+                <div class="job-row clickable-row" data-job-id="6" data-testid="job-row-6">
+                  <div data-testid="job-row-6-date">Fri, 06/07/2019 11:21:21</div>
+                  <div data-testid="job-row-6-status"><span class="status-pill closed" data-testid="job-row-6-status-pill">Closed</span></div>
+                  <div data-testid="job-row-6-number">801234572</div>
+                  <div data-testid="job-row-6-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-6-comment">Alt Phone # (555) 987-6543. 2 hardwired smoke detecto...</div>
+                  <div class="actions-cell" data-testid="job-row-6-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-6-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-6-action-menu">
+                      <div data-testid="job-row-6-action-edit">Edit</div>
+                      <div data-testid="job-row-6-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-6-action-return">Return Trip</div>
+                      <div data-testid="job-row-6-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-6" data-testid="job-details-6">
+                  <div class="details-grid" data-testid="job-details-6-grid">
+                    <div class="details-column" data-testid="job-details-6-info">
+                      <h4 data-testid="job-details-6-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-6-created-date"><span class="detail-label">Created Date:</span><span>June 7, 2019</span></div>
+                      <div class="detail-row" data-testid="job-details-6-created-by"><span class="detail-label">Created By:</span><span>Service Dept</span></div>
+                      <div class="detail-row" data-testid="job-details-6-phone"><span class="detail-label">Phone Number:</span><span>555-987-6543</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-6-appointment">
+                      <h4 data-testid="job-details-6-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-6-tech-status"><span class="detail-label">Tech Status:</span><span>Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-6-completion-date"><span class="detail-label">Completion Date:</span><span>June 14, 2019</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-6-activity">
+                    <h4 data-testid="job-details-6-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-6-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-6-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-6-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-6-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-6-activity-list">
+                      <div class="activity-item" data-testid="job-details-6-activity-item-1">
+                        <div class="activity-header"><span>Smoke Detectors Replaced</span><span class="activity-date">Jun 14, 2019 at 10:00</span></div>
+                        <div class="activity-body">2 hardwired smoke detectors replaced successfully</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 7 -->
+                <div class="job-row clickable-row" data-job-id="7" data-testid="job-row-7">
+                  <div data-testid="job-row-7-date">Wed, 02/20/2013 08:59:24</div>
+                  <div data-testid="job-row-7-status"><span class="status-pill canceled" data-testid="job-row-7-status-pill">Canceled</span></div>
+                  <div data-testid="job-row-7-number">801234573</div>
+                  <div data-testid="job-row-7-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-7-comment">alt# 5551234567, cst remodelled front door and needs...</div>
+                  <div class="actions-cell" data-testid="job-row-7-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-7-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-7-action-menu">
+                      <div data-testid="job-row-7-action-edit">Edit</div>
+                      <div data-testid="job-row-7-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-7-action-return">Return Trip</div>
+                      <div data-testid="job-row-7-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-7" data-testid="job-details-7">
+                  <div class="details-grid" data-testid="job-details-7-grid">
+                    <div class="details-column" data-testid="job-details-7-info">
+                      <h4 data-testid="job-details-7-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-7-created-date"><span class="detail-label">Created Date:</span><span>February 20, 2013</span></div>
+                      <div class="detail-row" data-testid="job-details-7-created-by"><span class="detail-label">Created By:</span><span>Install Team</span></div>
+                      <div class="detail-row" data-testid="job-details-7-phone"><span class="detail-label">Phone Number:</span><span>555-123-4567</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-7-appointment">
+                      <h4 data-testid="job-details-7-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-7-tech-status"><span class="detail-label">Tech Status:</span><span>-</span></div>
+                      <div class="detail-row" data-testid="job-details-7-cancel-reason"><span class="detail-label">Cancel Reason:</span><span>Scheduling Conflict</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-7-activity">
+                    <h4 data-testid="job-details-7-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-7-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-7-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-7-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-7-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-7-activity-list">
+                      <div class="activity-item" data-testid="job-details-7-activity-item-1">
+                        <div class="activity-header"><span>Job Canceled</span><span class="activity-date">Feb 25, 2013 at 09:00</span></div>
+                        <div class="activity-body">Customer rescheduled remodel project</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Row 8 -->
+                <div class="job-row clickable-row" data-job-id="8" data-testid="job-row-8">
+                  <div data-testid="job-row-8-date">Sat, 09/18/2010 11:30:53</div>
+                  <div data-testid="job-row-8-status"><span class="status-pill closed" data-testid="job-row-8-status-pill">Closed</span></div>
+                  <div data-testid="job-row-8-number">801234574</div>
+                  <div data-testid="job-row-8-type">SERVIC</div>
+                  <div class="job-comment" data-testid="job-row-8-comment">(555-123-4567) please contact cust. tested signals and n...</div>
+                  <div class="actions-cell" data-testid="job-row-8-actions">
+                    <button class="dots-btn" type="button" aria-label="Actions" data-testid="job-row-8-actions-btn">&#8942;</button>
+                    <div class="action-menu" data-testid="job-row-8-action-menu">
+                      <div data-testid="job-row-8-action-edit">Edit</div>
+                      <div data-testid="job-row-8-action-reschedule">Reschedule</div>
+                      <div data-testid="job-row-8-action-return">Return Trip</div>
+                      <div data-testid="job-row-8-action-cancel">Cancel</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="job-details" id="job-details-8" data-testid="job-details-8">
+                  <div class="details-grid" data-testid="job-details-8-grid">
+                    <div class="details-column" data-testid="job-details-8-info">
+                      <h4 data-testid="job-details-8-info-title">Job Details</h4>
+                      <div class="detail-row" data-testid="job-details-8-created-date"><span class="detail-label">Created Date:</span><span>September 18, 2010</span></div>
+                      <div class="detail-row" data-testid="job-details-8-created-by"><span class="detail-label">Created By:</span><span>Tech Support</span></div>
+                      <div class="detail-row" data-testid="job-details-8-phone"><span class="detail-label">Phone Number:</span><span>555-123-4567</span></div>
+                    </div>
+                    <div class="details-column" data-testid="job-details-8-appointment">
+                      <h4 data-testid="job-details-8-appointment-title">Appointment Details</h4>
+                      <div class="detail-row" data-testid="job-details-8-tech-status"><span class="detail-label">Tech Status:</span><span>Completed</span></div>
+                      <div class="detail-row" data-testid="job-details-8-completion-date"><span class="detail-label">Completion Date:</span><span>September 25, 2010</span></div>
+                    </div>
+                  </div>
+                  <div class="activity-section" data-testid="job-details-8-activity">
+                    <h4 data-testid="job-details-8-activity-title">Activity</h4>
+                    <div class="filter-buttons" data-testid="job-details-8-activity-filters">
+                      <button class="btn-filter active" type="button" data-testid="job-details-8-filter-all">All</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-8-filter-comments">Comments</button>
+                      <button class="btn-filter" type="button" data-testid="job-details-8-filter-history">History</button>
+                    </div>
+                    <div class="activity-list" data-testid="job-details-8-activity-list">
+                      <div class="activity-item" data-testid="job-details-8-activity-item-1">
+                        <div class="activity-header"><span>Signal Test Completed</span><span class="activity-date">Sep 25, 2010 at 15:00</span></div>
+                        <div class="activity-body">Tested signals and confirmed all working properly</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- AuthorizedDealer customer view -->
+            <div class="content" data-customer-view="AuthorizedDealer" style="display:none">
+
+              <!-- Tabs -->
+              <div data-component="tabs"
+                   data-active-tab="5"></div>
+
+              <div class="dealer-banner">
+                <strong>This is an Authorized Dealer account.</strong>
+                <span>Apex Shield Security, Inc.</span>
+                <span>(555) 867-5309</span>
+              </div>
+
+              <!-- Search section -->
+              <div class="search-section">
+                <div class="search-label">Search by job number</div>
+                <div class="search-row">
+                  <input class="search-input" type="text" placeholder="Search by job number ..." />
+                  <button class="search-btn" type="button">Search</button>
+                  <button class="refresh-jm-btn" type="button">&#8635;</button>
+                  <div class="search-actions">
+                    <button class="create-btn" type="button">Create New Job</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Jobs table - empty state -->
+              <div class="jobs-table">
+                <div class="jobs-head">
+                  <div>Date</div>
+                  <div class="sortable">Status <span class="caret">&#9660;</span></div>
+                  <div>Job Number</div>
+                  <div class="sortable">Job Type <span class="caret">&#9660;</span></div>
+                  <div>Comment</div>
+                  <div>Actions</div>
+                </div>
+                <div class="jobs-empty">No job data found for given search criteria.</div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>

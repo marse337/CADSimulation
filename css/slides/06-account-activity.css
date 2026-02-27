@@ -1,0 +1,352 @@
+/* =========================================================
+   SLIDE 9 (AccountActivity)
+   ========================================================= */
+.slide[data-title="AccountActivity"] .panel{
+  background:#ffffff;
+  border: none;
+  position: relative;
+}
+
+.slide[data-title="AccountActivity"] .content{
+  padding: 14px 16px 12px;
+}
+
+/* Tabs row */
+.slide[data-title="AccountActivity"] .tabs{
+  display:flex;
+  gap:0;
+  padding: 8px 6px 0;
+  align-items:flex-end;
+  border-bottom: 1px solid #d1d5db;
+}
+.slide[data-title="AccountActivity"] .tab{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding: 10px 14px;
+  border-radius: 6px 6px 0 0;
+  background:#d6d6d6;
+  color:#111827;
+  font-size: 12px;
+  font-weight: 650;
+  border: 1px solid #cfcfcf;
+  border-bottom: none;
+  cursor: default;
+  position: relative;
+  top: 1px;
+}
+.slide[data-title="AccountActivity"] .tab.active{
+  background:#ffffff;
+  border-color:#d1d5db;
+  border-bottom: 1px solid #ffffff;
+}
+.slide[data-title="AccountActivity"] .tab .ext{
+  display:inline-flex;
+  font-size: 10px;
+  opacity:.7;
+}
+
+/* Filters / actions line */
+.slide[data-title="AccountActivity"] .filters-bar{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap: 16px;
+  padding: 16px 8px 14px;
+}
+
+.slide[data-title="AccountActivity"] .date-group{
+  display:flex;
+  gap: 12px;
+  align-items:flex-end;
+}
+
+.slide[data-title="AccountActivity"] .date-field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.slide[data-title="AccountActivity"] .date-field label{
+  font-size:13px;
+  font-weight:600;
+  color:#111827;
+}
+
+.slide[data-title="AccountActivity"] .date-input-wrap{
+  position: relative;
+  display:inline-flex;
+  align-items:center;
+}
+
+.slide[data-title="AccountActivity"] .date-input{
+  width: 130px;
+  height: 38px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 8px 36px 8px 12px;
+  background:#ffffff;
+  color:#4b5563;
+  outline:none;
+  font-size: 13px;
+}
+
+.slide[data-title="AccountActivity"] .date-input:focus{
+  border-color: #0d9488;
+  box-shadow: 0 0 0 2px rgba(13,148,136,0.1);
+}
+
+.slide[data-title="AccountActivity"] .date-input-wrap:after{
+  content:"📅";
+  position:absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  opacity: .6;
+  pointer-events:none;
+}
+
+.slide[data-title="AccountActivity"] .date-arrow{
+  height: 36px;
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  color:#111827;
+  opacity:.7;
+  padding: 0 4px;
+}
+.slide[data-title="AccountActivity"] .date-arrow .swap{
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Refresh / Clear buttons */
+.slide[data-title="AccountActivity"] .aa-actions{
+  display:flex;
+  gap: 10px;
+  align-items:flex-end;
+}
+.slide[data-title="AccountActivity"] .aa-btn{
+  height: 38px;
+  min-width: 90px;
+  padding: 0 24px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor:pointer;
+}
+.slide[data-title="AccountActivity"] .aa-btn.refresh{
+  background:#15803d;
+  color:#ffffff;
+}
+.slide[data-title="AccountActivity"] .aa-btn.clear{
+  background:#ffffff;
+  color:#111827;
+  border: 1px solid #d1d5db;
+}
+.slide[data-title="AccountActivity"] .aa-btn.clear:hover{
+  background:#f9fafb;
+}
+.slide[data-title="AccountActivity"] .aa-btn:active{
+  transform: translateY(1px);
+}
+
+/* Table */
+.slide[data-title="AccountActivity"] .aa-table{
+  margin-top: 6px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Header row */
+.slide[data-title="AccountActivity"] .aa-head{
+  display:grid;
+  grid-template-columns: 120px 100px 1fr 80px;
+  gap: 14px;
+  padding: 14px 16px 14px 24px;
+  color:#374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.slide[data-title="AccountActivity"] .aa-head .sortable{
+  display:inline-flex;
+  gap: 6px;
+  align-items:center;
+  cursor: pointer;
+}
+.slide[data-title="AccountActivity"] .aa-head .caret{
+  font-size: 8px;
+  color: #6b7280;
+}
+
+/* Body scroll area */
+.slide[data-title="AccountActivity"] .aa-body{
+  max-height: 320px;
+  overflow-y: auto;
+  background:#ffffff;
+}
+
+/* Custom scrollbar styling */
+.slide[data-title="AccountActivity"] .aa-body::-webkit-scrollbar{
+  width: 8px;
+}
+.slide[data-title="AccountActivity"] .aa-body::-webkit-scrollbar-track{
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.slide[data-title="AccountActivity"] .aa-body::-webkit-scrollbar-thumb{
+  background: rgba(15,42,51,0.3);
+  border-radius: 4px;
+}
+.slide[data-title="AccountActivity"] .aa-body::-webkit-scrollbar-thumb:hover{
+  background: rgba(15,42,51,0.5);
+}
+
+/* Activity rows */
+.slide[data-title="AccountActivity"] .aa-row{
+  position: relative;
+  display:grid;
+  grid-template-columns: 120px 100px 1fr 80px;
+  gap: 14px;
+  align-items:center;
+  padding: 16px 16px 16px 24px;
+  border-top: 1px solid #e5e7eb;
+  background:#ffffff;
+  min-height: 68px;
+}
+
+/* left color bar - base */
+.slide[data-title="AccountActivity"] .aa-row:before{
+  content:"";
+  position:absolute;
+  left: 6px;
+  top: 14px;
+  bottom: 14px;
+  width: 5px;
+  border-radius: 3px;
+  background: #f97316;
+}
+
+/* Action type - pink */
+.slide[data-title="AccountActivity"] .aa-row.action:before{
+  background: #e61e9d;
+}
+
+/* Incident type - orange */
+.slide[data-title="AccountActivity"] .aa-row.incident:before{
+  background: #eb6100;
+}
+
+/* cells */
+.slide[data-title="AccountActivity"] .aa-date,
+.slide[data-title="AccountActivity"] .aa-type{
+  font-size: 12px;
+  color:#111827;
+}
+
+.slide[data-title="AccountActivity"] .aa-desc{
+  background:#ffffff;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  padding: 12px 15px;
+  font-size: 13px;
+  color:#333333;
+  min-height: 42px;
+  display:flex;
+  align-items:center;
+}
+
+.slide[data-title="AccountActivity"] .aa-action{
+  display:flex;
+  justify-content:center;
+}
+.slide[data-title="AccountActivity"] .eye{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid #9ca3af;
+  background:#ffffff;
+  display:grid;
+  place-items:center;
+  cursor:pointer;
+}
+.slide[data-title="AccountActivity"] .eye svg{
+  opacity:.8;
+}
+.slide[data-title="AccountActivity"] .eye svg path,
+.slide[data-title="AccountActivity"] .eye svg circle{
+  stroke: #0d9488;
+}
+.slide[data-title="AccountActivity"] .eye:hover{
+  border-color: #0d9488;
+}
+.slide[data-title="AccountActivity"] .eye:active{
+  transform: translateY(1px);
+}
+
+/* Status dots for nav items */
+.slide[data-title^="AccountActivity"] .nav-item .dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  margin-right:4px;
+}
+.slide[data-title^="AccountActivity"] .nav-item .dot.orange{ background:#f97316; }
+.slide[data-title^="AccountActivity"] .nav-item .dot.yellow{ background:#facc15; }
+
+/* ---- Collections Account Modal ---- */
+.slide[data-title="AccountActivity"] .collections-modal-overlay{
+  display:none;
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.42);
+  z-index:150;
+  justify-content:center;
+  align-items:center;
+}
+.slide[data-title="AccountActivity"] .collections-modal-overlay.active{
+  display:flex;
+}
+
+.slide[data-title="AccountActivity"] .collections-modal{
+  width:min(520px, 92%);
+  background:#0b2c3b;
+  border-radius:6px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+  padding:28px 30px 22px;
+  color:#fff;
+}
+
+.slide[data-title="AccountActivity"] .collections-modal-title{
+  margin:0 0 12px;
+  font-size:24px;
+  font-weight:950;
+  letter-spacing:.2px;
+  color:#fff;
+}
+
+.slide[data-title="AccountActivity"] .collections-modal-text{
+  margin:0 0 20px;
+  font-size:18px;
+  font-weight:650;
+  line-height:1.25;
+  opacity:.98;
+  color:#fff;
+}
+
+.slide[data-title="AccountActivity"] .collections-modal-close{
+  width:100%;
+  border:none;
+  background:#1c5f75;
+  color:#eaf6fb;
+  font-weight:950;
+  font-size:14px;
+  padding:14px 16px;
+  border-radius:4px;
+  cursor:pointer;
+  font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+}
+.slide[data-title="AccountActivity"] .collections-modal-close:active{
+  transform:translateY(1px);
+}

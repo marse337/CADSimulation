@@ -1,0 +1,109 @@
+    <!-- Slide 3 -->
+    <section class="slide" data-title="LoggedInResults">
+      <div class="app">
+        <div data-component="sidebar"
+             data-version="3.6.0"
+             data-active-nav="lookup"
+             data-show-cr-only="false"
+             data-show-status="false"
+             data-disabled-nav='["alarm","voziq"]'
+             data-nav-goto='{"myaccount":"31","support":"30"}'></div>
+
+        <div data-component="topbar"
+             data-market-type="--"></div>
+
+        <main class="main">
+          <section class="panel">
+            <div class="content">
+              <h1 class="h1">Customer Lookup</h1>
+
+              <div class="form-grid">
+                <div class="field"><label>Phone Number</label><input class="input" type="text" value="999-999-9999" data-automation-id="PhoneEntryLookup_Entry"></div>
+                <div class="field"><label>Email Address</label><input class="input" type="email" value="99999@99.com" data-automation-id="EmailEntryLookup_Entry"></div>
+                <div class="field"><label>Job Number</label><input class="input" type="text" value="99999999" data-automation-id="JobEntryLookup_Entry"></div>
+                <div class="field"><label>Customer Number</label><input class="input" type="text" value="99999999" data-automation-id="CustomerNoEntryLookup_Entry"></div>
+              </div>
+
+              <div class="form-grid row2">
+                <div class="field"><label>First Name</label><input class="input" type="text" value="First Name" data-automation-id="FirstNameEntryLookup_Entry"></div>
+                <div class="field"><label>Last Name</label><input class="input" type="text" value="Last Name" data-automation-id="LastNameEntryLookup_Entry"></div>
+                <div class="field"><label>Site Number</label><input class="input" type="text" value="999999999" data-automation-id="SiteNoEntryLookup_Entry"></div>
+              </div>
+
+              <div class="form-grid row3">
+                <div class="field"><label>Street Number</label><input class="input" type="text" value="999" data-automation-id="StreetNoEntryLookup_Entry"></div>
+                <div class="field"><label>Street Name</label><input class="input" type="text" value="Street Name" data-automation-id="StreetNameEntryLookup_Entry"></div>
+                <div class="field"><label>City</label><input class="input" type="text" value="City" data-automation-id="CityEntryLookup_Entry"></div>
+                <div class="field"><label>State</label><div class="select-wrap"><select class="select" data-automation-id="StateListComboEntry"><option value="" selected></option><option>IL</option></select></div></div>
+                <div class="field"><label>Zip Code</label><input class="input is-focus" type="text" value="99999" data-automation-id="ZipEntryLookup_Entry"></div>
+              </div>
+
+              <div class="actions">
+                <button class="btn primary" type="button" data-automation-id="SearchButtonLookup">Search</button>
+                <div class="goto-zone" data-goto-on-click="1">
+                  <button class="btn dark" type="button" data-automation-id="ClearSearchButtonLookup">Clear Search</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="results-head">
+              <span data-automation-id="StatusLabelSwicth">Status:</span>
+              <span style="opacity:.85;" data-automation-id="AllLabelSwicth">All</span>
+              <span class="toggle" role="switch" aria-checked="true"></span>
+              <span style="opacity:.85;" data-automation-id="ActiveLabelSwicth">Active</span>
+            </div>
+
+            <div class="table">
+              <div class="table-header">
+                <div><span class="th-caret">Status </span></div>
+                <div data-automation-id="NameTableRow">Site Name</div>
+                <div data-automation-id="AddressTableRow">Site Address</div>
+                <div data-automation-id="PhoneTableRow">Phone Number</div>
+                <div class="th-right"></div>
+              </div>
+
+              <div class="table-body">
+                <div class="table-row">
+                  <div><span class="status-pill" data-automation-id="StatusTableData">Stage 2</span></div>
+                  <div class="cell" data-automation-id="SiteNameTableData">John F Jones</div>
+                  <div class="cell muted" data-automation-id="AddressTableData">1234 Oak Street, SPRINGFIELD IL - 627018383</div>
+                  <div class="cell" data-automation-id="PhoneTableData">555-123-4567</div>
+                  <div class="goto-zone" data-goto-on-click="4" data-customer-type="AlarmDotCom">
+                    <button class="select-btn" type="button">Select</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div><span class="status-pill">Stage 1</span></div>
+                  <div class="cell">NonAlarm.com Cust</div>
+                  <div class="cell muted">4321 Willow Dr, SPRINGFIELD IL - 627018383</div>
+                  <div class="cell">555-123-4567</div>
+                  <div class="goto-zone" data-goto-on-click="4" data-customer-type="NonAlarm">
+                    <button class="select-btn" type="button">Select</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div><span class="status-pill">Cancelled</span></div>
+                  <div class="cell">Cancelled</div>
+                  <div class="cell muted">5678 Maple Ave, SPRINGFIELD IL - 627018383</div>
+                  <div class="cell">555-123-4567</div>
+                  <div class="goto-zone" data-goto-on-click="4" data-customer-type="Cancelled">
+                    <button class="select-btn" type="button">Select</button>
+                  </div>
+                </div>
+                <div class="table-row">
+                  <div><span class="status-pill">Active</span></div>
+                  <div class="cell">Authorized Dealer</div>
+                  <div class="cell muted">Fake Street</div>
+                  <div class="cell">999-999-9999</div>
+                  <div class="goto-zone" data-goto-on-click="4" data-customer-type="AuthorizedDealer">
+                    <button class="select-btn" type="button">Select</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </section>
